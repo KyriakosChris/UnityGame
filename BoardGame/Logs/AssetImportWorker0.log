@@ -15,11 +15,11 @@ D:/tuc/Github/UnityGame/BoardGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65533
+53966
 Successfully changed project path to: D:/tuc/Github/UnityGame/BoardGame
 D:/tuc/Github/UnityGame/BoardGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 23.78 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 57.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path D:/Kyriakos/Program Files/Unity_Hub/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,49 +35,88 @@ Initialize mono
 Mono path[0] = 'D:/Kyriakos/Program Files/Unity_Hub/Unity/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Kyriakos/Program Files/Unity_Hub/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Kyriakos/Program Files/Unity_Hub/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Kyriakos/Program Files/Unity_Hub/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001928 seconds.
+Registered in 0.004122 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 25.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 59.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.480 seconds
+- Completed reload, in  3.492 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000863 seconds.
+Registered in 0.001967 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.947 seconds
+- Completed reload, in  2.081 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 56.8 MB.
 System memory in use after: 56.9 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1555.
-Total: 2.028300 ms (FindLiveObjects: 0.193500 ms CreateObjectMapping: 0.054800 ms MarkObjects: 1.692800 ms  DeleteObjects: 0.086300 ms)
+Total: 4.255800 ms (FindLiveObjects: 0.369100 ms CreateObjectMapping: 0.248600 ms MarkObjects: 3.464700 ms  DeleteObjects: 0.170900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.023529 seconds
-  Import took 0.026119 seconds .
+  path: Assets/Materials
+  artifactKey: Guid(24a927518e9160042b095261283f25b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(24a927518e9160042b095261283f25b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf0c48f506bf8c031276403e4786cb1') in 0.015921 seconds
+  Import took 0.031739 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 25.679261 seconds.
+  path: Assets/Materials/Cube.mat
+  artifactKey: Guid(fc8431ca40940fe48b3ee57f3dfd56d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Cube.mat using Guid(fc8431ca40940fe48b3ee57f3dfd56d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2af1cf723858606ca47500f1f16462') in 0.314980 seconds
+  Import took 0.319370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1346.188938 seconds.
+  path: Assets/Building Apartment
+  artifactKey: Guid(95bfc15e056ccd14c90d7081c9598f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Building Apartment using Guid(95bfc15e056ccd14c90d7081c9598f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc94e4419ddc2f4f251819eca39746b') in 0.008097 seconds
+  Import took 0.010862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.601213 seconds.
+  path: Assets/Building Apartment/Mesh
+  artifactKey: Guid(5a67c7e7c64e7d647b5908feff949f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Building Apartment/Mesh using Guid(5a67c7e7c64e7d647b5908feff949f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27d922ad6138ae77ef1479ee6ef289e') in 0.007396 seconds
+  Import took 0.115859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027553 seconds.
+  path: Assets/Building Apartment/Mesh/Building_Apartment_10.fbx
+  artifactKey: Guid(a34d72531d842a242bb8027f743b1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Building Apartment/Mesh/Building_Apartment_10.fbx using Guid(a34d72531d842a242bb8027f743b1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb060cae809bbc7507c19b1f53f0af2') in 0.248570 seconds
+  Import took 0.251200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Building Apartment/Mesh/Building_Apartment_13.fbx
+  artifactKey: Guid(d6812f3f59620f84c91bbeb477f8f32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Building Apartment/Mesh/Building_Apartment_13.fbx using Guid(d6812f3f59620f84c91bbeb477f8f32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61012112003a47b25c46192de29013e2') in 0.027217 seconds
+  Import took 0.029775 seconds .
+
