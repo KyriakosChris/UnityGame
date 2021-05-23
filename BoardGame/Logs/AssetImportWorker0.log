@@ -352,3 +352,4 @@ Received Import Request.
 Start importing Assets/Materials/Dice/Resources/Prefabs/_FBX/Materials using Guid(4a55d74f976548240929c03fe1a210b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56cf935055dd83fd1e9e131cfc81c6d') in 0.007154 seconds
   Import took 0.010020 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
