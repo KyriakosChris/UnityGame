@@ -104,3 +104,1100 @@ Received Import Request.
 Start importing Assets/Materials/POLYGON city pack/Materials/color_windows/Windows no light.mat using Guid(26df91506bf83b343b8083c5322323ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78330354259ae9c141a0d3aa89f2ccbd') in 0.021258 seconds
   Import took 0.024584 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 100.599081 seconds.
+  path: Assets/Pavement textures pack
+  artifactKey: Guid(915e05a7e9d43ce408d4ebbaef5249ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pavement textures pack using Guid(915e05a7e9d43ce408d4ebbaef5249ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0586a1722ad299cb592e6201ad700bb') in 0.008581 seconds
+  Import took 0.010905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.487713 seconds.
+  path: Assets/Pavement textures pack/pavement 01
+  artifactKey: Guid(9160072642bc2924ca59fddb802e281f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pavement textures pack/pavement 01 using Guid(9160072642bc2924ca59fddb802e281f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b19911ffc709fa1c4619147dffb451') in 0.007964 seconds
+  Import took 0.010935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072996 seconds.
+  path: Assets/Pavement textures pack/pavement 01/diffuse.tga
+  artifactKey: Guid(dedb84fe0b9b97b40a9a905af06c8962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pavement textures pack/pavement 01/diffuse.tga using Guid(dedb84fe0b9b97b40a9a905af06c8962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b6af0bae9eed9cfd1de640a8aae31a') in 0.028200 seconds
+  Import took 0.031268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Pavement textures pack/pavement 01/pavement pattern 01.mat
+  artifactKey: Guid(6641b0d643f3f3641a48f1a476baf386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pavement textures pack/pavement 01/pavement pattern 01.mat using Guid(6641b0d643f3f3641a48f1a476baf386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034ddbad4c14d2361a2afc24e416a4da') in 0.026729 seconds
+  Import took 0.029710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Pavement textures pack/pavement 01/normal.tga
+  artifactKey: Guid(cd4aae3f35de44542b5692405c3a551f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pavement textures pack/pavement 01/normal.tga using Guid(cd4aae3f35de44542b5692405c3a551f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3257f8c695b04aa33117bc5057418766') in 0.068568 seconds
+  Import took 0.071902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Pavement textures pack/pavement 01/preview.jpg
+  artifactKey: Guid(0e9d542dd3280aa48b239f99ca93afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pavement textures pack/pavement 01/preview.jpg using Guid(0e9d542dd3280aa48b239f99ca93afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ac4c97912f01d232693214082b4e87') in 0.082536 seconds
+  Import took 0.085357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 552.687924 seconds.
+  path: Assets/Grass_layout/Entrance.prefab
+  artifactKey: Guid(0d02e46d4b9c4cb4ba1abc60afc56b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass_layout/Entrance.prefab using Guid(0d02e46d4b9c4cb4ba1abc60afc56b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522f8cf600a5a2ee8865e09295a9457b') in 0.031041 seconds
+  Import took 0.035583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000857 seconds.
+  path: Assets/Grass_layout/Entrance.prefab
+  artifactKey: Guid(0d02e46d4b9c4cb4ba1abc60afc56b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass_layout/Entrance.prefab using Guid(0d02e46d4b9c4cb4ba1abc60afc56b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522f8cf600a5a2ee8865e09295a9457b') in 0.021934 seconds
+  Import took 0.024496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 289.584477 seconds.
+  path: Assets/Grass_layout/Entrance (1).prefab
+  artifactKey: Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass_layout/Entrance (1).prefab using Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313fdf5c75f9d3ac6accac9b2faabd88') in 0.024892 seconds
+  Import took 0.028189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006220 seconds.
+  path: Assets/Grass_layout/Entrance (1).prefab
+  artifactKey: Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass_layout/Entrance (1).prefab using Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313fdf5c75f9d3ac6accac9b2faabd88') in 0.020479 seconds
+  Import took 0.023210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.519992 seconds.
+  path: Assets/Grass_layout/Entrance.prefab
+  artifactKey: Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass_layout/Entrance.prefab using Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00766e2959049e33aa67dcb202aab099') in 0.019648 seconds
+  Import took 0.022982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013004 seconds.
+  path: Assets/Grass_layout/Entrance.prefab
+  artifactKey: Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass_layout/Entrance.prefab using Guid(07b215640d23525408ed9266198faa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00766e2959049e33aa67dcb202aab099') in 0.017832 seconds
+  Import took 0.020599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 235.256414 seconds.
+  path: Assets/Materials/HousePack/Models/House2
+  artifactKey: Guid(ac0961ddf8095284081493371fefd015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/HousePack/Models/House2 using Guid(ac0961ddf8095284081493371fefd015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb16b4c6a011331022e93fad8a6426d7') in 0.120466 seconds
+  Import took 0.123331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1469.413948 seconds.
+  path: Assets/Materials/POLYGON city pack/Meshes,textures
+  artifactKey: Guid(c7a7549c349412740b70056f5a09907c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Meshes,textures using Guid(c7a7549c349412740b70056f5a09907c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a53ce9ef49bb122ed6e22757778118') in 0.113547 seconds
+  Import took 0.117273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6159.812369 seconds.
+  path: Assets/Materials/POLYGON city pack/Meshes,textures/Letters FBX
+  artifactKey: Guid(623dc8c4def700c488659ec50fc558d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Meshes,textures/Letters FBX using Guid(623dc8c4def700c488659ec50fc558d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599962570f28f09cb67ae86a4e087cbf') in 0.024294 seconds
+  Import took 0.046379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.626748 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters
+  artifactKey: Guid(b774ec948cc018445a76a0cef6fb39ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters using Guid(b774ec948cc018445a76a0cef6fb39ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad343b2e6b645f516fdc2ec1c0ba2d8') in 0.099735 seconds
+  Import took 0.102814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003966 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_A_Prefab.prefab
+  artifactKey: Guid(486263a6295235a40a3ba56b8111437e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_A_Prefab.prefab using Guid(486263a6295235a40a3ba56b8111437e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4028916eac1402c2049d68d7958132cd') in 0.169004 seconds
+  Import took 0.171406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_D_Prefab.prefab
+  artifactKey: Guid(b5adf05bb13f2d845934cb5ad393fb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_D_Prefab.prefab using Guid(b5adf05bb13f2d845934cb5ad393fb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb16c8e94b9d1059a7c6f824401a2987') in 0.057022 seconds
+  Import took 0.059960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_F_Prefab.prefab
+  artifactKey: Guid(88e3cb9a63aebb648aafa17c2b585aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_F_Prefab.prefab using Guid(88e3cb9a63aebb648aafa17c2b585aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1ec98c4f11b30e378e3a340c44ebfe') in 0.045553 seconds
+  Import took 0.047787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_E_Prefab.prefab
+  artifactKey: Guid(3a8c76fe5ec38c6458fcafb62cb2a0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_E_Prefab.prefab using Guid(3a8c76fe5ec38c6458fcafb62cb2a0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9123221092670f57ac3f64b9a4bc7d') in 0.064517 seconds
+  Import took 0.066984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_I_Prefab.prefab
+  artifactKey: Guid(bcec7c2b0048dfa4582dd821645c76b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_I_Prefab.prefab using Guid(bcec7c2b0048dfa4582dd821645c76b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178cf8f40ed2b0de766d2b3b37cc22c9') in 0.085553 seconds
+  Import took 0.087600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_L_Prefab.prefab
+  artifactKey: Guid(13e171104ed12b849a7bd5e888d86142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_L_Prefab.prefab using Guid(13e171104ed12b849a7bd5e888d86142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95fe516d2e75f1e1fa6d6e6c0b9974d') in 0.070093 seconds
+  Import took 0.072342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_M_Prefab.prefab
+  artifactKey: Guid(99425f43b7fcd40418bff56972c15b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_M_Prefab.prefab using Guid(99425f43b7fcd40418bff56972c15b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f463796038755a4ba98e3e048d62863f') in 0.026012 seconds
+  Import took 0.028251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_J_Prefab.prefab
+  artifactKey: Guid(7752320cf6198664eb1aca7ace852384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_J_Prefab.prefab using Guid(7752320cf6198664eb1aca7ace852384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b2a3c4720100a307e7bd69b141b7dd8') in 0.039205 seconds
+  Import took 0.041511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_S_Prefab.prefab
+  artifactKey: Guid(a853a23c8b083df4a88eb2fc76e64a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_S_Prefab.prefab using Guid(a853a23c8b083df4a88eb2fc76e64a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2824608d07e7e0aeaed905373a347736') in 0.038787 seconds
+  Import took 0.040895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_U_Prefab.prefab
+  artifactKey: Guid(bad69329b592f22448ec9dd8ac687ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_U_Prefab.prefab using Guid(bad69329b592f22448ec9dd8ac687ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26106ea3e8f660e5dee723ce10820d15') in 0.064050 seconds
+  Import took 0.066936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000483 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_X_Prefab.prefab
+  artifactKey: Guid(2d6b3d1847e9e6f46902c988da524081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_X_Prefab.prefab using Guid(2d6b3d1847e9e6f46902c988da524081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c85b85f8c4952e67cb5e3c1b16a4292') in 0.029895 seconds
+  Import took 0.032919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Q_Prefab.prefab
+  artifactKey: Guid(91ab83aee48df174a82434785f82806d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Q_Prefab.prefab using Guid(91ab83aee48df174a82434785f82806d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c40fe820748429c01d7ef6f415fe8f3') in 0.032590 seconds
+  Import took 0.034901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_T_Prefab.prefab
+  artifactKey: Guid(624f250b25af37343ada3e052b9968b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_T_Prefab.prefab using Guid(624f250b25af37343ada3e052b9968b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf1035d299c87c52b65007949be5bf06') in 0.049794 seconds
+  Import took 0.052887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_K_Prefab.prefab
+  artifactKey: Guid(c7464297316a22143a5cb70f3c732226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_K_Prefab.prefab using Guid(c7464297316a22143a5cb70f3c732226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a17e489aa3ec9cf1b1551744860896') in 0.021331 seconds
+  Import took 0.024319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Z_Prefab.prefab
+  artifactKey: Guid(3d1a7b5520cd4504fa9c2d0c7896d270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Z_Prefab.prefab using Guid(3d1a7b5520cd4504fa9c2d0c7896d270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029471114cf01894c4837da5f381418a') in 0.031489 seconds
+  Import took 0.034098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_W_Prefab.prefab
+  artifactKey: Guid(524bd252d99a0cc44ac73104d16de0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_W_Prefab.prefab using Guid(524bd252d99a0cc44ac73104d16de0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a90a540bdd34a009d1e902682723103') in 0.018018 seconds
+  Import took 0.020564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_O_Prefab.prefab
+  artifactKey: Guid(1388611d0c053e54ab3bb60eb6e40eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_O_Prefab.prefab using Guid(1388611d0c053e54ab3bb60eb6e40eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296813cfc532fc6f36db2bbe2369e115') in 0.031839 seconds
+  Import took 0.034343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_R_Prefab.prefab
+  artifactKey: Guid(61b323fb6c8919949b372fc09502107d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_R_Prefab.prefab using Guid(61b323fb6c8919949b372fc09502107d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe4f5c0b758cb146de8402964bdadbf') in 0.083916 seconds
+  Import took 0.086439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_B_Prefab.prefab
+  artifactKey: Guid(57671d8d7e3c6ac4484342e67b69f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_B_Prefab.prefab using Guid(57671d8d7e3c6ac4484342e67b69f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930eafc398513130916efff2f528e309') in 0.066097 seconds
+  Import took 0.069520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_V_Prefab.prefab
+  artifactKey: Guid(39327451d36aac1409ec3750439e7a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_V_Prefab.prefab using Guid(39327451d36aac1409ec3750439e7a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fcc14e782048b6e931a9d369e8499f') in 0.026524 seconds
+  Import took 0.030185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_N_Prefab.prefab
+  artifactKey: Guid(0778b4c717fc2d141bfacce1e4453883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_N_Prefab.prefab using Guid(0778b4c717fc2d141bfacce1e4453883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d60995ba9b80c35751f351b3ff6fc6') in 0.025045 seconds
+  Import took 0.027883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Y_Prefab.prefab
+  artifactKey: Guid(7a84762656a300e40b7f661a09c36e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Y_Prefab.prefab using Guid(7a84762656a300e40b7f661a09c36e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56701c4386ab419f4164984ef19300e0') in 0.030412 seconds
+  Import took 0.033127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_G_Prefab.prefab
+  artifactKey: Guid(6487558c8141df54f8660f86fe691e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_G_Prefab.prefab using Guid(6487558c8141df54f8660f86fe691e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf267b1bfec7e7bd68cce503133040bb') in 0.033056 seconds
+  Import took 0.035966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Y_Prefab.prefab
+  artifactKey: Guid(7a84762656a300e40b7f661a09c36e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_Y_Prefab.prefab using Guid(7a84762656a300e40b7f661a09c36e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56701c4386ab419f4164984ef19300e0') in 0.017158 seconds
+  Import took 0.020044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_P_Prefab.prefab
+  artifactKey: Guid(8974ac32dde6fd848bebffb7724a1aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_P_Prefab.prefab using Guid(8974ac32dde6fd848bebffb7724a1aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532ee350328d5b523af0582015ed5661') in 0.021119 seconds
+  Import took 0.023713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_H_Prefab.prefab
+  artifactKey: Guid(c5e09aa47d89a3b41a039ade63f867b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_H_Prefab.prefab using Guid(c5e09aa47d89a3b41a039ade63f867b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ceb36dbd26ce0f18897f02f43274cd3') in 0.050413 seconds
+  Import took 0.052956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_C_Prefab.prefab
+  artifactKey: Guid(41191e97f24858b4b982738b33be1ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Letters/Letter_C_Prefab.prefab using Guid(41191e97f24858b4b982738b33be1ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea5e23870a6d676334755bc397890b2') in 0.038360 seconds
+  Import took 0.040684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.244589 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props
+  artifactKey: Guid(dce026fb71e70fd42acd6fbfdecc07a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props using Guid(dce026fb71e70fd42acd6fbfdecc07a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5dd3930238365ec5cca495ea60ff9e9') in 0.008718 seconds
+  Import took 0.011137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039425 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/air conditioner roof Prefab.prefab
+  artifactKey: Guid(a56a9ff0410540141a4b57353191a959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/air conditioner roof Prefab.prefab using Guid(a56a9ff0410540141a4b57353191a959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386cfb3eee783029745f2de820e8b675') in 0.157955 seconds
+  Import took 0.160702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/ATM_prefab.prefab
+  artifactKey: Guid(971885f35036d834d9e87999c41920fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/ATM_prefab.prefab using Guid(971885f35036d834d9e87999c41920fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c34900a171a72c9a7f628190fa73565') in 0.070791 seconds
+  Import took 0.073154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bus stop pole prefabe.prefab
+  artifactKey: Guid(937333d453eaea246af48ac0fc62b5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bus stop pole prefabe.prefab using Guid(937333d453eaea246af48ac0fc62b5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ab407c925b1823fa1010c8493bf098') in 0.145265 seconds
+  Import took 0.147842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/air conditioner wall Prefab.prefab
+  artifactKey: Guid(3efcc829b17627b42be7c2557c91a937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/air conditioner wall Prefab.prefab using Guid(3efcc829b17627b42be7c2557c91a937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce0086108c0d7c96da06d1875bcb3c4') in 0.068060 seconds
+  Import took 0.070711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Can_orange prefab.prefab
+  artifactKey: Guid(fc7f1d4af8d817e4f98e42d198325d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Can_orange prefab.prefab using Guid(fc7f1d4af8d817e4f98e42d198325d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc5805c5326b63b51adf48609b9bbf7') in 0.078147 seconds
+  Import took 0.080845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab G.prefab
+  artifactKey: Guid(e698f0d8234b54e419217034d057fe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab G.prefab using Guid(e698f0d8234b54e419217034d057fe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31cb3381d0c711a61bda12ca7e7f2873') in 0.198352 seconds
+  Import took 0.200734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Grass mass_prefab.prefab
+  artifactKey: Guid(e53777a03d3be324ab0664ab7ef3d886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Grass mass_prefab.prefab using Guid(e53777a03d3be324ab0664ab7ef3d886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709c4a9f05bca5053eb089e39920109d') in 0.090527 seconds
+  Import took 0.092735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/mayonnaise prefab.prefab
+  artifactKey: Guid(25b21e881a014da46bf94e610b2777b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/mayonnaise prefab.prefab using Guid(25b21e881a014da46bf94e610b2777b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258f4cb173120857f416fd789e5aad94') in 0.026043 seconds
+  Import took 0.028215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/platt pole prefab.prefab
+  artifactKey: Guid(512782c78ed494441ad23e5fe0ab6a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/platt pole prefab.prefab using Guid(512782c78ed494441ad23e5fe0ab6a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011bf661fdfdb2e107fa02abe34779a4') in 0.038744 seconds
+  Import took 0.040919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bank_sign Prefab.prefab
+  artifactKey: Guid(d11c03cec4369ea4aa3d29744046d625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bank_sign Prefab.prefab using Guid(d11c03cec4369ea4aa3d29744046d625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6e12c27742c84a8ae565d35c862859') in 0.068517 seconds
+  Import took 0.071061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 1 Prefab.prefab
+  artifactKey: Guid(53a178f42f52a0c4e9fe7bac7f1bfcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 1 Prefab.prefab using Guid(53a178f42f52a0c4e9fe7bac7f1bfcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7aaf923e2cde224704ee17795f5dcd0') in 0.153724 seconds
+  Import took 0.157035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 2 Prefab.prefab
+  artifactKey: Guid(5a525eed3adce3248bcfd773cab5d126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 2 Prefab.prefab using Guid(5a525eed3adce3248bcfd773cab5d126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc418ed8474b7c214ec2baed84a70d30') in 0.041271 seconds
+  Import took 0.044010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab F.prefab
+  artifactKey: Guid(67086b7e1b4a07246aaebc44c363dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab F.prefab using Guid(67086b7e1b4a07246aaebc44c363dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6b4a9a8ad46b9f90d011082d55cbec') in 0.038254 seconds
+  Import took 0.042121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Parking_barrier prefab.prefab
+  artifactKey: Guid(a560b249e984af144b222ea1d93fe697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Parking_barrier prefab.prefab using Guid(a560b249e984af144b222ea1d93fe697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42af998966aa286b25662384ce58c973') in 0.045162 seconds
+  Import took 0.047886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 1 Prefab.prefab
+  artifactKey: Guid(64c8858bb5c72b0449860f828a7a54fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 1 Prefab.prefab using Guid(64c8858bb5c72b0449860f828a7a54fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791cf3a2472394a44e1057601fc6eafe') in 0.022297 seconds
+  Import took 0.025078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bus stop prefab.prefab
+  artifactKey: Guid(30916da9dd66da74d8e831f29c0b250f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bus stop prefab.prefab using Guid(30916da9dd66da74d8e831f29c0b250f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2082d3114d4c1ab88e9263d3876ff3') in 0.397605 seconds
+  Import took 0.399918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/GlassCola prefab.prefab
+  artifactKey: Guid(d55339d5a4e0b8f41a0448068bd26f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/GlassCola prefab.prefab using Guid(d55339d5a4e0b8f41a0448068bd26f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49807291fcc4b0658d2971c6f4c4031e') in 0.088257 seconds
+  Import took 0.091628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/BurgerSho_Sign prefab.prefab
+  artifactKey: Guid(331204bcfe96d5f4d83f7bdf75ea0873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/BurgerSho_Sign prefab.prefab using Guid(331204bcfe96d5f4d83f7bdf75ea0873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9516d0a5d23230d8802d65a5821162d2') in 0.049003 seconds
+  Import took 0.052246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Dynamic_power_pole_cable prefab.prefab
+  artifactKey: Guid(0a804f15ce1f1d34eabed72f25b3d732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Dynamic_power_pole_cable prefab.prefab using Guid(0a804f15ce1f1d34eabed72f25b3d732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79bae1e9f76a607ba9986dfc4ecae6e4') in 0.064957 seconds
+  Import took 0.067563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower mass prefab.prefab
+  artifactKey: Guid(3793ad411fa918d4685c2c4c1494c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower mass prefab.prefab using Guid(3793ad411fa918d4685c2c4c1494c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0166b0c7f63cea5e992fd2f677237f30') in 0.204786 seconds
+  Import took 0.207539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/bench prefab.prefab
+  artifactKey: Guid(80c5916b9606ce646be16611d9a06d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/bench prefab.prefab using Guid(80c5916b9606ce646be16611d9a06d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82e26b44c72122b6b22a95000e687a4') in 0.067285 seconds
+  Import took 0.070832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Hydrant prefab.prefab
+  artifactKey: Guid(abc98a3329f924b4680c86edde08968d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Hydrant prefab.prefab using Guid(abc98a3329f924b4680c86edde08968d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f629ad0c40d10ff7e71903a93f2310aa') in 0.276241 seconds
+  Import took 0.280528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/plant 1 prefab.prefab
+  artifactKey: Guid(d15d3707ee72e6e4992de2448a2bfccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/plant 1 prefab.prefab using Guid(d15d3707ee72e6e4992de2448a2bfccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3525f41fbfd743293934494e161531b3') in 0.140877 seconds
+  Import took 0.143589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 2 Prefab.prefab
+  artifactKey: Guid(d7cdfd713e1c02c49b7eb072ff0c50b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 2 Prefab.prefab using Guid(d7cdfd713e1c02c49b7eb072ff0c50b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44764683898d240768b578b807b38f91') in 0.041169 seconds
+  Import took 0.044027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/drain 2 prefab.prefab
+  artifactKey: Guid(cc198c66ba240c946b6f10f40c60795a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/drain 2 prefab.prefab using Guid(cc198c66ba240c946b6f10f40c60795a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db60f6101f16e8caa3b64c2026ee46b0') in 0.057362 seconds
+  Import took 0.060081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Pot_tree prefab.prefab
+  artifactKey: Guid(8e00364320862a746a6e67a5af5e5979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Pot_tree prefab.prefab using Guid(8e00364320862a746a6e67a5af5e5979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d202fa94d158aa9c31f157d85ee9563') in 0.098874 seconds
+  Import took 0.102024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/flower 2 prefab.prefab
+  artifactKey: Guid(0f1f4c4f42ef5c74c8dd43866325948d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/flower 2 prefab.prefab using Guid(0f1f4c4f42ef5c74c8dd43866325948d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842ab6fe0986b15a8b400bc516f16c5a') in 0.020921 seconds
+  Import took 0.024460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 5 prefab.prefab
+  artifactKey: Guid(b16f11b0d09550241914b5bb604da520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 5 prefab.prefab using Guid(b16f11b0d09550241914b5bb604da520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78785bd2bd19b900ece7428d9bf88a0a') in 0.033622 seconds
+  Import took 0.037190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/shopping cart prefab.prefab
+  artifactKey: Guid(e70233268e8d3e64187fc14a41cacef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/shopping cart prefab.prefab using Guid(e70233268e8d3e64187fc14a41cacef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722f478932bce76a6b03ef4b56c376a1') in 0.237524 seconds
+  Import took 0.240958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bush 2 prefab.prefab
+  artifactKey: Guid(6ebfc6898dc70814c86bb78d43e72a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bush 2 prefab.prefab using Guid(6ebfc6898dc70814c86bb78d43e72a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71636aa80e92d2a464e35caa76a01cf9') in 0.058978 seconds
+  Import took 0.062201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/stone pot prefab.prefab
+  artifactKey: Guid(7f788b3ac76896b459c93cf4d673fa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/stone pot prefab.prefab using Guid(7f788b3ac76896b459c93cf4d673fa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508ab74f5ae2dfb4d285bc9803b3199b') in 0.031916 seconds
+  Import took 0.035260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 4 Prefab.prefab
+  artifactKey: Guid(334aad2b5d3ce18449f0aac7e90fe56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 4 Prefab.prefab using Guid(334aad2b5d3ce18449f0aac7e90fe56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4df91147f873a8485900d89dcff37d') in 0.048607 seconds
+  Import took 0.052610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab H.prefab
+  artifactKey: Guid(b1fb400995a0fe641bd3e5fdfb630751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab H.prefab using Guid(b1fb400995a0fe641bd3e5fdfb630751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac0610c52d1b7bc034d741503996152') in 0.022740 seconds
+  Import took 0.028650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/electrcity box prefab.prefab
+  artifactKey: Guid(00330848c56cf3e42aefd14a7ebd14c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/electrcity box prefab.prefab using Guid(00330848c56cf3e42aefd14a7ebd14c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb3ade821bba5d54ee2dcb6fd6752e4') in 0.031491 seconds
+  Import took 0.035027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/traffic_obj prefab.prefab
+  artifactKey: Guid(b0c71b64a7dfbd74cb2f2acf7a3637a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/traffic_obj prefab.prefab using Guid(b0c71b64a7dfbd74cb2f2acf7a3637a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc340f4d6554146094291eef63f826e2') in 0.060575 seconds
+  Import took 0.063872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/StreetSellerStand prefab.prefab
+  artifactKey: Guid(110af0d3eee946d4d9ee0ca4e522611a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/StreetSellerStand prefab.prefab using Guid(110af0d3eee946d4d9ee0ca4e522611a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e71999ef0f7e8b2e7f0e375e5d7b00a') in 0.135930 seconds
+  Import took 0.139912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab E.prefab
+  artifactKey: Guid(662342a1f0535f34db513eb61d76ee9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab E.prefab using Guid(662342a1f0535f34db513eb61d76ee9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30dcd02c8bb77e3836518f453d7a62b') in 0.020820 seconds
+  Import took 0.023898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/trashBag prefab.prefab
+  artifactKey: Guid(b0bb4b9691721cf4791e1124d867edd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/trashBag prefab.prefab using Guid(b0bb4b9691721cf4791e1124d867edd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a68b6d9e82a50b0330c5167890ea794') in 0.041580 seconds
+  Import took 0.045103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Ketchup prefab.prefab
+  artifactKey: Guid(31f2ecfec20d54541ace8f82e1071325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Ketchup prefab.prefab using Guid(31f2ecfec20d54541ace8f82e1071325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f0c142f0b7fed81062e19e979d8889') in 0.020561 seconds
+  Import took 0.024945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Can_lemon prefab.prefab
+  artifactKey: Guid(af9d0903bfdf9c749ac85725af5631ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Can_lemon prefab.prefab using Guid(af9d0903bfdf9c749ac85725af5631ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f0dd2b349087f0809c6a65efcf929ba') in 0.054832 seconds
+  Import took 0.058378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab D.prefab
+  artifactKey: Guid(c1a6c832f3b6e494d80a048d5e7ff3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab D.prefab using Guid(c1a6c832f3b6e494d80a048d5e7ff3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09c84acf2c9c76ff672c4b87d9788ec') in 0.025707 seconds
+  Import took 0.029579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Can_cola 1 prefab.prefab
+  artifactKey: Guid(81d26dcff31f3ee45a7af58439d44b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Can_cola 1 prefab.prefab using Guid(81d26dcff31f3ee45a7af58439d44b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1141e17b95123df6276300e8435b0b') in 0.022538 seconds
+  Import took 0.025827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Fence_B_2 prefab.prefab
+  artifactKey: Guid(c469c07c5b45c454db32065c2f59b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Fence_B_2 prefab.prefab using Guid(c469c07c5b45c454db32065c2f59b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27ba079a18641b4f6e9fe0700d7bc3a') in 0.057062 seconds
+  Import took 0.060381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/fence c prefab.prefab
+  artifactKey: Guid(6c59ef0028580ac429571adf93ff0a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/fence c prefab.prefab using Guid(6c59ef0028580ac429571adf93ff0a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b8105b1716c67472c43e57a09402af') in 0.068120 seconds
+  Import took 0.072877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Grass_prefab.prefab
+  artifactKey: Guid(e3ee9b4631379bf44b7e076739afa41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Grass_prefab.prefab using Guid(e3ee9b4631379bf44b7e076739afa41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285f21d872e35dd6a872592cb4ecf00a') in 0.019850 seconds
+  Import took 0.023081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Hotdog prefab.prefab
+  artifactKey: Guid(57a987e39cc3143448c053e7a5925600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Hotdog prefab.prefab using Guid(57a987e39cc3143448c053e7a5925600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c54a744b18b581925fa7fd60d443768') in 0.022566 seconds
+  Import took 0.025891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/hedge 1m prefab.prefab
+  artifactKey: Guid(21048f3cc3ec7d54286ad6aba869f84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/hedge 1m prefab.prefab using Guid(21048f3cc3ec7d54286ad6aba869f84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fce905f0b60e6ba851538aa492d35af') in 0.031963 seconds
+  Import took 0.035395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Mail_box prefab.prefab
+  artifactKey: Guid(3f3f0ad0013c05f478f38f3920e05817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Mail_box prefab.prefab using Guid(3f3f0ad0013c05f478f38f3920e05817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1db36ee75d9a56f4dec749e91defda5') in 0.047857 seconds
+  Import took 0.051062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/StoneStreet prefab.prefab
+  artifactKey: Guid(b371324d60f1ca9408481c0bd5f4539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/StoneStreet prefab.prefab using Guid(b371324d60f1ca9408481c0bd5f4539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe54d30c18f0ce543aaf3b782f33dad') in 0.027438 seconds
+  Import took 0.030818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/hedge prefab.prefab
+  artifactKey: Guid(3f544eaa13dc7074cba3aed998b27842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/hedge prefab.prefab using Guid(3f544eaa13dc7074cba3aed998b27842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d99e65e06cfccd1e7016c1cdab0df9') in 0.038640 seconds
+  Import took 0.042804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 3 Prefab.prefab
+  artifactKey: Guid(5d51484289d125e48b3eecf5fbd4d7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 3 Prefab.prefab using Guid(5d51484289d125e48b3eecf5fbd4d7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0dd0e95310b2c6322b4973e38110d36') in 0.034702 seconds
+  Import took 0.038312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 4 prefab.prefab
+  artifactKey: Guid(8375612b26134aa47966b68d5e0b25bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 4 prefab.prefab using Guid(8375612b26134aa47966b68d5e0b25bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d88c1aecb8822b3f8fd85e4e5590116') in 0.029364 seconds
+  Import took 0.032799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/trashcan prefab 1.prefab
+  artifactKey: Guid(ef0db6475b65e3f4caf48f2481a05f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/trashcan prefab 1.prefab using Guid(ef0db6475b65e3f4caf48f2481a05f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b848b57b558f96e916e6aad1bbc8efff') in 0.061354 seconds
+  Import took 0.064755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab A.prefab
+  artifactKey: Guid(721f9aeb18a56f644828aa93a686bcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab A.prefab using Guid(721f9aeb18a56f644828aa93a686bcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6a462bb8cc3c73190953e7c588d99d') in 0.023097 seconds
+  Import took 0.026743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/bush prefab.prefab
+  artifactKey: Guid(fb63f2d87ad55dd42891f1e2dbfe660d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/bush prefab.prefab using Guid(fb63f2d87ad55dd42891f1e2dbfe660d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d28a61245f177e463844b11b14b890') in 0.076033 seconds
+  Import took 0.079963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab C.prefab
+  artifactKey: Guid(f5b753a0f2ae4e3448b73f8f56e8c157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab C.prefab using Guid(f5b753a0f2ae4e3448b73f8f56e8c157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f94c9d61a65994a0aadba9478a3b95') in 0.021106 seconds
+  Import took 0.024578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Fence_B_1 prefab.prefab
+  artifactKey: Guid(a0c9730978f0d194c9b79ac6b6aa2c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Fence_B_1 prefab.prefab using Guid(a0c9730978f0d194c9b79ac6b6aa2c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27564f90376d8c13e07e950ba129a0bc') in 0.039734 seconds
+  Import took 0.043382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bench 2 prefab.prefab
+  artifactKey: Guid(c954a7e383194f246b3502f6c815acb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bench 2 prefab.prefab using Guid(c954a7e383194f246b3502f6c815acb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a3918aeafcb4b153143361a68effc4') in 0.069700 seconds
+  Import took 0.072929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Power_poles prefab.prefab
+  artifactKey: Guid(ad77b71bebe086d48ab3d1cd35b2746b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Power_poles prefab.prefab using Guid(ad77b71bebe086d48ab3d1cd35b2746b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b69706143f80cd78a0b2a956fec36b') in 0.034794 seconds
+  Import took 0.038045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/flower 3 prefab.prefab
+  artifactKey: Guid(6b24ffcfe69c69248a5197ca61cb57bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/flower 3 prefab.prefab using Guid(6b24ffcfe69c69248a5197ca61cb57bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f701552ce69ac985c545e58175cfb2') in 0.021501 seconds
+  Import took 0.025015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab B.prefab
+  artifactKey: Guid(e5a1a9b64f8e53f489e80aa11edd54b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Flower 1 prefab B.prefab using Guid(e5a1a9b64f8e53f489e80aa11edd54b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42ba1e72519861e553ca27f70c54b9f') in 0.069267 seconds
+  Import took 0.072558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/streetprop prefab.prefab
+  artifactKey: Guid(b9241325cf17fc546b1db887ded397d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/streetprop prefab.prefab using Guid(b9241325cf17fc546b1db887ded397d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc81d53ef703474a97ac2d819053d16') in 0.027751 seconds
+  Import took 0.030845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Hospital_sign prefab.prefab
+  artifactKey: Guid(59f2f37d570039d41891cb6cb0bf2011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Hospital_sign prefab.prefab using Guid(59f2f37d570039d41891cb6cb0bf2011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e6ae8e714fea62ded73ddb22971011') in 0.046904 seconds
+  Import took 0.050288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/ColaMachine prefab.prefab
+  artifactKey: Guid(2bf7da734f1a8224fb14055902b5b343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/ColaMachine prefab.prefab using Guid(2bf7da734f1a8224fb14055902b5b343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a667ad873dbd19ad84a75bbc61f52413') in 0.061265 seconds
+  Import took 0.064324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 4 Prefab.prefab
+  artifactKey: Guid(b4289919ba517cd45aff629c81afa3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Stone 4 Prefab.prefab using Guid(b4289919ba517cd45aff629c81afa3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982213edfb2bef8f1d85a352af9d2c50') in 0.021018 seconds
+  Import took 0.024241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 3 prefab.prefab
+  artifactKey: Guid(99bdf8c075f79ec499c340f68f8d6ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 3 prefab.prefab using Guid(99bdf8c075f79ec499c340f68f8d6ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa31ec47a1d3990079dcbd69dc9968c') in 0.025260 seconds
+  Import took 0.028885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/phone booth prefab.prefab
+  artifactKey: Guid(b995d8a7dcf811740b66ae5cf81e4fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/phone booth prefab.prefab using Guid(b995d8a7dcf811740b66ae5cf81e4fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824d55377ecdba4177258fe37b65b26b') in 0.038555 seconds
+  Import took 0.042521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 3 Prefab.prefab
+  artifactKey: Guid(2da3775d316a3e04da01b3c659ee96db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic light 3 Prefab.prefab using Guid(2da3775d316a3e04da01b3c659ee96db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d008169d6445130225281124bf7e45') in 0.060842 seconds
+  Import took 0.064661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bush 2 mass prefab.prefab
+  artifactKey: Guid(7c311e85b96e43d4aaaf68e86c127195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bush 2 mass prefab.prefab using Guid(7c311e85b96e43d4aaaf68e86c127195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9598ff1f047760991c763a8b1b200fb6') in 0.024087 seconds
+  Import took 0.028095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Bin prefab.prefab
+  artifactKey: Guid(dd28fe4d5eb7bcb479b5338f128cdf70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Bin prefab.prefab using Guid(dd28fe4d5eb7bcb479b5338f128cdf70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148d336835a2838be32edbee42715ceb') in 0.049601 seconds
+  Import took 0.053412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/parking meter prefab.prefab
+  artifactKey: Guid(dbdf3da5684f16d4fb4464f7337c942e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/parking meter prefab.prefab using Guid(dbdf3da5684f16d4fb4464f7337c942e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb21b7ed037cbd7eb0f78e9618f1947') in 0.049505 seconds
+  Import took 0.053776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/burger prefab.prefab
+  artifactKey: Guid(6a21df4da585e0946a2b991447fabcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/burger prefab.prefab using Guid(6a21df4da585e0946a2b991447fabcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34c45d82061b6a638bc4a6daf0a5acc') in 0.050922 seconds
+  Import took 0.054210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 1 prefab.prefab
+  artifactKey: Guid(d646b8ef31f0dac4aac6c8c3c1be41ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 1 prefab.prefab using Guid(d646b8ef31f0dac4aac6c8c3c1be41ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7db16e46f1d3334cae54d47b0c9dc9') in 0.019616 seconds
+  Import took 0.022691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/televserion antenna prefab.prefab
+  artifactKey: Guid(672edbc300fa6bd439cf13ff7878bdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/televserion antenna prefab.prefab using Guid(672edbc300fa6bd439cf13ff7878bdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e41b4d2eea9339f63f2148feeafd2b6') in 0.031338 seconds
+  Import took 0.035293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/traffic_warning_stand prefab.prefab
+  artifactKey: Guid(883cf758fdbaad44fbf987329131dbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/traffic_warning_stand prefab.prefab using Guid(883cf758fdbaad44fbf987329131dbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adce6639274e23a88dd135fcc0cef16') in 0.023476 seconds
+  Import took 0.027176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 2 prefab.prefab
+  artifactKey: Guid(63708caac38471a45b6ba845efc890e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/platt sign 2 prefab.prefab using Guid(63708caac38471a45b6ba845efc890e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad61f9d4485422fe16978ed3e8cce632') in 0.037923 seconds
+  Import took 0.041971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/hedge_curve prefab.prefab
+  artifactKey: Guid(f2a4c4a6f1e89a74a995f3108da5be04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/hedge_curve prefab.prefab using Guid(f2a4c4a6f1e89a74a995f3108da5be04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd316ea10e078ed620c3dc288cadfd4e9') in 0.023819 seconds
+  Import took 0.027857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/drain 1 prefab.prefab
+  artifactKey: Guid(0222be6389069a24db934273f2a9f031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/drain 1 prefab.prefab using Guid(0222be6389069a24db934273f2a9f031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89d14501a1f69ccaa3df5a35ab316d8') in 0.070527 seconds
+  Import took 0.073949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic_pot prefab.prefab
+  artifactKey: Guid(419d31cd2358c274b93f3ed5fac4773f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Traffic_pot prefab.prefab using Guid(419d31cd2358c274b93f3ed5fac4773f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17dcc92c38118b56e566913182c800a') in 0.036995 seconds
+  Import took 0.040268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Can_cola 2 prefab.prefab
+  artifactKey: Guid(95ad7e2cecb192d43a4a02f1b422beed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Can_cola 2 prefab.prefab using Guid(95ad7e2cecb192d43a4a02f1b422beed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961d4460c3fa73b04bc71838ed4dd15e') in 0.022690 seconds
+  Import took 0.026266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Big_trash_bin prefab.prefab
+  artifactKey: Guid(331560f2206dc024cb084301a19c05ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Big_trash_bin prefab.prefab using Guid(331560f2206dc024cb084301a19c05ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faadf491672c6ae7cd75682c23e85019') in 0.039847 seconds
+  Import took 0.043377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.488221 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/trashcan prefab.prefab
+  artifactKey: Guid(8983c8df5fb12ea4bb76cdf0ef2f9c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/trashcan prefab.prefab using Guid(8983c8df5fb12ea4bb76cdf0ef2f9c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271855de01a0230553da720e6f496055') in 0.105771 seconds
+  Import took 0.108922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 4 prefab.prefab
+  artifactKey: Guid(34ba8d2a4c4d0b14c8c5d619aa76047b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 4 prefab.prefab using Guid(34ba8d2a4c4d0b14c8c5d619aa76047b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb73cff06d8df40f8b1eda4391ff48c') in 0.089488 seconds
+  Import took 0.092385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 1 prefab.prefab
+  artifactKey: Guid(effb1b31d7e11a54e9b051312c1a2ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 1 prefab.prefab using Guid(effb1b31d7e11a54e9b051312c1a2ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419c22db9ccf3449231050029e1c418b') in 0.027502 seconds
+  Import took 0.030538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 3 prefab.prefab
+  artifactKey: Guid(d3279157e4e75be44a4c862cb4e328a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 3 prefab.prefab using Guid(d3279157e4e75be44a4c862cb4e328a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7242efb9fbd3fb6e7720e904f8c098ec') in 0.022224 seconds
+  Import took 0.025667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 2 prefab.prefab
+  artifactKey: Guid(9256d77e61c437a4a9afb333ff47af4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 2 prefab.prefab using Guid(9256d77e61c437a4a9afb333ff47af4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6ac3060bc85bcf8c4d169ac29a82a5') in 0.046926 seconds
+  Import took 0.050530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 6 prefab.prefab
+  artifactKey: Guid(facc5fd5141efde4491e095867e3730e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 6 prefab.prefab using Guid(facc5fd5141efde4491e095867e3730e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953aa4452668e8f6226f71465f5c8560') in 0.068119 seconds
+  Import took 0.071630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/wrench prefab.prefab
+  artifactKey: Guid(b3fc4a46e12c3c9438328b649f2ba084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/wrench prefab.prefab using Guid(b3fc4a46e12c3c9438328b649f2ba084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e718a7d66e5552d40eccdcebc39909eb') in 0.019974 seconds
+  Import took 0.023244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/wood pot prefab.prefab
+  artifactKey: Guid(9d4eff3ec34236147b12cbbb7b994959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/wood pot prefab.prefab using Guid(9d4eff3ec34236147b12cbbb7b994959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d34ef27f651b3ff94c8d9f2a614aac') in 0.054203 seconds
+  Import took 0.058088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 7 prefab.prefab
+  artifactKey: Guid(f902153ff8ccfb04091c1bd2019134b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 7 prefab.prefab using Guid(f902153ff8ccfb04091c1bd2019134b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324a77d0fcfc6ea1abcb58e376ec8b29') in 0.059012 seconds
+  Import took 0.062372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 5 prefab.prefab
+  artifactKey: Guid(ba471d562324e9c499483b4816ba3be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Wall 5 prefab.prefab using Guid(ba471d562324e9c499483b4816ba3be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907279f65f1c23dfc900001dc95bae88') in 0.042338 seconds
+  Import took 0.045615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Water tank prefab.prefab
+  artifactKey: Guid(12ba3d1ec135f1b4e9caddc7e211dd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Water tank prefab.prefab using Guid(12ba3d1ec135f1b4e9caddc7e211dd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1824c2f2c3fae41d4085f4b33b96a9') in 0.050983 seconds
+  Import took 0.054543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Materials/POLYGON city pack/Prefabs/Props/Tree prefab.prefab
+  artifactKey: Guid(1be61187b5d765449be824463642cb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/POLYGON city pack/Prefabs/Props/Tree prefab.prefab using Guid(1be61187b5d765449be824463642cb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf2ae6866bbb638aff54b2025f011ee') in 0.071815 seconds
+  Import took 0.075133 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
