@@ -1,0 +1,10 @@
+[api-updater (non-obsolete-error-filter)] 5/28/2021 6:02:17 AM : Starting D:/Kyriakos/Program Files/Unity_Hub/Unity/2020.3.0f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1130.3943ms
+moved types parse time: 222ms
+candidates parse time : 5ms
+C# parse time         : 1131ms
+candidates check time : 224ms
+console write time    : 2ms
+
