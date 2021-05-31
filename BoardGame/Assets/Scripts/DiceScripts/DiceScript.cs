@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DiceScript : MonoBehaviour
 {
-
+	public  Collider[] colliders;
 	static Rigidbody rb;
 	public static Vector3 diceVelocity;
-
+	public static bool RollDice = false;
+	public Camera Cam1, Cam2;
 	// Use this for initialization
 	void Start()
 	{
@@ -19,8 +20,13 @@ public class DiceScript : MonoBehaviour
 	{
 		diceVelocity = rb.velocity;
 
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (RollDice && Rules.Roll1DicePerTurn)
 		{
+			//Cam1.enabled = false;
+			//Cam2.enabled = true;
+			RollDice = false;
+			isTriggers(true);
+			
 			DiceNumberTextScript.diceNumber = 0;
 			float dirX = Random.Range(0, 500);
 			float dirY = Random.Range(0, 500);
@@ -30,5 +36,19 @@ public class DiceScript : MonoBehaviour
 			rb.AddForce(transform.up * 500);
 			rb.AddTorque(dirX, dirY, dirZ);
 		}
+		if(Rules.Roll1DicePerTurn == false)
+        {
+			//Cam1.enabled = true;
+			//Cam2.enabled = false;
+
+		}
 	}
+
+	public  void isTriggers( bool onOff)
+    {
+		for(int i=0; i < 6; i++)
+        {
+			colliders[i].isTrigger = onOff;
+        }
+    }
 }
