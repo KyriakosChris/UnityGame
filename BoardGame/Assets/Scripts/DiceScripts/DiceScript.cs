@@ -7,7 +7,6 @@ public class DiceScript : MonoBehaviour
 	public  Collider[] colliders;
 	static Rigidbody rb;
 	public static Vector3 diceVelocity;
-	public static bool RollDice = false;
 	public Camera Cam1, Cam2;
 	// Use this for initialization
 	void Start()
@@ -20,13 +19,10 @@ public class DiceScript : MonoBehaviour
 	{
 		diceVelocity = rb.velocity;
 
-		if (RollDice && Rules.Roll1DicePerTurn)
+		if (Rules.states == Rules.MyEnum.ROLL_DICE && Rules.Roll1DicePerTurn)
 		{
-			//Cam1.enabled = false;
-			//Cam2.enabled = true;
-			RollDice = false;
 			isTriggers(true);
-			
+			Rules.states = Rules.MyEnum.SHOW_DICE;
 			DiceNumberTextScript.diceNumber = 0;
 			float dirX = Random.Range(0, 500);
 			float dirY = Random.Range(0, 500);
@@ -35,12 +31,6 @@ public class DiceScript : MonoBehaviour
 			transform.rotation = Quaternion.identity;
 			rb.AddForce(transform.up * 500);
 			rb.AddTorque(dirX, dirY, dirZ);
-		}
-		if(Rules.Roll1DicePerTurn == false)
-        {
-			//Cam1.enabled = true;
-			//Cam2.enabled = false;
-
 		}
 	}
 

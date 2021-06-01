@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
         {
             if (Vector3.Distance(this.transform.position, target) > 0.1f)
             {
-                NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
+                GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
                 Vector3 movementDirection = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
                 transform.position = movementDirection;
                 transform.LookAt(target);

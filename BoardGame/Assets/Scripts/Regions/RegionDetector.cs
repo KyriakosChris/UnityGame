@@ -6,7 +6,6 @@ public class RegionDetector : MonoBehaviour
 {
     // Start is called before the first frame update
     Text text;
-    public static string region;
     void Start()
     {
         
@@ -22,13 +21,13 @@ public class RegionDetector : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player 1"))
         {
-            Debug.Log(other.gameObject.name + "Region 1");
-            region = other.gameObject.name + "Region 1";
+            Debug.Log(this.name +other.gameObject.name);
+            DisplayReg.region = this.name + "   " + other.gameObject.name;
         }
         else
         {
-            Debug.Log(other.gameObject.name + "Region 1");
-            region = other.gameObject.name + "Region 1";
+            Debug.Log(this.name + other.gameObject.name);
+            DisplayReg.region = this.name + "   " + other.gameObject.name;
         }
     }
 }

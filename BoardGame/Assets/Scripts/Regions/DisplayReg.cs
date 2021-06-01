@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class DisplayReg : MonoBehaviour
 {
 	Text text;
-
+	public static string region=" ";
 	// Use this for initialization
 	void Start()
 	{
@@ -15,7 +15,7 @@ public class DisplayReg : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		text.text = RegionDetector.region.ToString();
+		text.text = region.ToString();
 
 
     }

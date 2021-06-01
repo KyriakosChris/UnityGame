@@ -39,6 +39,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 						DiceNumberTextScript.diceNumber = 1;
 						break;
 				}
+				Rules.states = Rules.MyEnum.MOVE_PLAYER;
 				Rules.Roll1DicePerTurn = false;
 				col.GetComponentInParent<DiceScript>().isTriggers(false);
 				StartCoroutine(MoveToNextNode());
@@ -53,5 +54,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 			CarManager.getInstance().MoveToNext();
 			yield return new WaitForSeconds(1);
 		}
+
+		Rules.states = Rules.MyEnum.CHECK_NODE;
 	}
 }

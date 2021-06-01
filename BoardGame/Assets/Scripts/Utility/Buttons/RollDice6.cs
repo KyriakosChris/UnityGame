@@ -7,8 +7,7 @@ public class RollDice6 : MonoBehaviour
     
     public void rollDice()
     {
-        DiceScript.RollDice = true;
-
+        Rules.states = Rules.MyEnum.ROLL_DICE;
     }
 
 }
