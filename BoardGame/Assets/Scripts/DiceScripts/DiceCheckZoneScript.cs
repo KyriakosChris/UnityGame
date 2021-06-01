@@ -5,8 +5,9 @@ using UnityEngine;
 public class DiceCheckZoneScript : MonoBehaviour
 {
 	Vector3 diceVelocity;
-    // Update is called once per frame
-    void FixedUpdate()
+	public static int diceNumber;
+	// Update is called once per frame
+	void FixedUpdate()
 	{
 		diceVelocity = DiceScript.diceVelocity;
 	}
@@ -15,28 +16,28 @@ public class DiceCheckZoneScript : MonoBehaviour
 	{
 		if (col.name.Contains("Side") && Rules.Roll1DicePerTurn)
 		{
-			if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f)
+			if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f && diceNumber==0)
 			{
 
 				switch (col.gameObject.name)
 				{
 					case "Side1":
-						DiceNumberTextScript.diceNumber = 6;
+						diceNumber = 6;
 						break;
 					case "Side2":
-						DiceNumberTextScript.diceNumber = 5;
+						diceNumber = 5;
 						break;
 					case "Side3":
-						DiceNumberTextScript.diceNumber = 4;
+						diceNumber = 4;
 						break;
 					case "Side4":
-						DiceNumberTextScript.diceNumber = 3;
+						diceNumber = 3;
 						break;
 					case "Side5":
-						DiceNumberTextScript.diceNumber = 2;
+						diceNumber = 2;
 						break;
 					case "Side6":
-						DiceNumberTextScript.diceNumber = 1;
+						diceNumber = 1;
 						break;
 				}
 				Rules.states = Rules.MyEnum.MOVE_PLAYER;
@@ -49,11 +50,18 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
     {
-		for (int i = 0; i <= DiceNumberTextScript.diceNumber; i++)
+        if (Rules.Turn_Counter <= 2)
+        {
+			diceNumber++;
+			Debug.Log("Rolled:");
+		}
+		for (int i = 1; i <= diceNumber; i++)
 		{
 			CarManager.getInstance().MoveToNext();
+			//Debug.Log("Rolled:  "+ diceNumber + "  Steps : " + i);
 			yield return new WaitForSeconds(1);
 		}
+		diceNumber = 0;
 
 		Rules.states = Rules.MyEnum.CHECK_NODE;
 	}

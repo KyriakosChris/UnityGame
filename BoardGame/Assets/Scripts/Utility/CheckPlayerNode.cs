@@ -18,10 +18,14 @@ public class CheckPlayerNode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        turn = TurnManager.getInstance().getCurrentPlayer().ToString();
+        player = GameObject.FindGameObjectWithTag(turn);
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
-            Debug.Log(nodelist.nodes[player.GetComponent<Player>().locationIndex].name);
+            int index = player.GetComponent<Player>().locationIndex - 1;
+            //Debug.Log("Node Name:  "+nodelist.nodes[player.GetComponent<Player>().locationIndex-1].name+" Number of Node : "+ index);
             Rules.states = Rules.MyEnum.ACTION_OF_NODE;
+            Rules.CurrentPlayerNode = nodelist.nodes[player.GetComponent<Player>().locationIndex - 1].name;
         }
         
     }

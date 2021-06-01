@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class EndTurnButton : MonoBehaviour
 {
-    public Text turnText;
+
     public void EndTurn()
     {
         TurnManager.getInstance().EndTurn();
-        turnText.text = TurnManager.getInstance().getCurrentPlayer();
+        Rules.Turn_Counter++;
 
     }
 }

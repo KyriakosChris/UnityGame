@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class DiceNumberTextScript : MonoBehaviour
+using TMPro;
+public class TurnDisplay : MonoBehaviour
 {
 
-	Text text;
-	
+	TextMeshProUGUI text;
+
 
 	// Use this for initialization
 	void Start()
 	{
-		text = GetComponent<Text>();
+		text = GetComponent<TextMeshProUGUI>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		text.text = DiceCheckZoneScript.diceNumber.ToString();
-		
+		text.text = "TURN : "+Rules.Turn_Counter.ToString();
+
 	}
 }

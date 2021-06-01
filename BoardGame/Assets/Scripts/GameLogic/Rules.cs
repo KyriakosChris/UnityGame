@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Rules : MonoBehaviour
 {
-    public static bool Roll1DicePerTurn = true;
-    
+
     public enum MyEnum
     {
         INIT,
@@ -16,11 +15,15 @@ public class Rules : MonoBehaviour
         ACTION_OF_NODE
     }
 
-    public static MyEnum states;
+    public static bool Roll1DicePerTurn = true;
+    public static int Turn_Counter = 1;
+    public static string CurrentPlayerNode;
+    public static MyEnum states = MyEnum.INIT;
+
 
     void Awake()
     {
-        states = MyEnum.INIT;
+
     }
 
     // Update is called once per frame

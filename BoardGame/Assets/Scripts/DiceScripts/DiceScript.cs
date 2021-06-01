@@ -23,7 +23,7 @@ public class DiceScript : MonoBehaviour
 		{
 			isTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;
-			DiceNumberTextScript.diceNumber = 0;
+			DiceCheckZoneScript.diceNumber = 0;
 			float dirX = Random.Range(0, 500);
 			float dirY = Random.Range(0, 500);
 			float dirZ = Random.Range(0, 500);
