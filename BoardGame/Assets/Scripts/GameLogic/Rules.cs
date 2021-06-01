@@ -9,6 +9,8 @@ public class Rules : MonoBehaviour
     {
         INIT,
         ROLL_DICE,
+        ROLL_BUILD_DICE,
+        ACTION_BUILDDICE,
         SHOW_DICE,
         MOVE_PLAYER,
         CHECK_NODE,
@@ -19,17 +21,7 @@ public class Rules : MonoBehaviour
     public static int Turn_Counter = 1;
     public static string CurrentPlayerNode;
     public static MyEnum states = MyEnum.INIT;
+    public static string DiceChoose = "Normal Dice";
 
-
-    void Awake()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 }

@@ -8,7 +8,7 @@ public class CarManager
     GameObject car2;
     #region Singleton
     private static CarManager instance = null;
-    public static CarManager getInstance()
+    public static CarManager GetInstance()
     {
         if (instance == null)
         {

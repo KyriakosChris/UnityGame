@@ -5,9 +5,15 @@ public class RollDice6 : MonoBehaviour
 {
 
     
-    public void rollDice()
+    public void RollDice_6()
     {
         Rules.states = Rules.MyEnum.ROLL_DICE;
+    }
+
+
+    public void RollDice_Build()
+    {
+        Rules.states = Rules.MyEnum.ROLL_BUILD_DICE;
     }
 
 }

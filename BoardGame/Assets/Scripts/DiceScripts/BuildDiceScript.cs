@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiceScript : MonoBehaviour
+public class BuildDiceScript : MonoBehaviour
 {
-	public  Collider[] colliders;
+	public Collider[] colliders;
 	static Rigidbody rb;
 	public static Vector3 diceVelocity;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -18,10 +19,11 @@ public class DiceScript : MonoBehaviour
 	{
 		diceVelocity = rb.velocity;
 
-		if (Rules.states == Rules.MyEnum.ROLL_DICE && Rules.Roll1DicePerTurn)
+		if (Rules.states == Rules.MyEnum.ROLL_BUILD_DICE && Rules.Roll1DicePerTurn)
 		{
 			isTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;
+			Rules.DiceChoose = "Build Dice";
 			DiceCheckZoneScript.diceNumber = 0;
 			float dirX = Random.Range(0, 500);
 			float dirY = Random.Range(0, 500);
@@ -33,11 +35,14 @@ public class DiceScript : MonoBehaviour
 		}
 	}
 
-	public  void isTriggers( bool onOff)
-    {
-		for(int i=0; i < 6; i++)
-        {
+
+
+
+	public void isTriggers(bool onOff)
+	{
+		for (int i = 0; i < 6; i++)
+		{
 			colliders[i].isTrigger = onOff;
-        }
-    }
+		}
+	}
 }

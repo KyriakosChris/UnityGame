@@ -5,18 +5,21 @@ using UnityEngine;
 public class DiceCheckZoneScript : MonoBehaviour
 {
 	Vector3 diceVelocity;
+	Vector3 BuilddiceVelocity;
 	public static int diceNumber;
+	public static string BuildDice;
 	// Update is called once per frame
 	void FixedUpdate()
 	{
 		diceVelocity = DiceScript.diceVelocity;
+		BuilddiceVelocity = BuildDiceScript.diceVelocity;
 	}
 
 	void OnTriggerStay(Collider col)
 	{
 		if (col.name.Contains("Side") && Rules.Roll1DicePerTurn)
 		{
-			if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f && diceNumber==0)
+			if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f && diceNumber == 0)
 			{
 
 				switch (col.gameObject.name)
@@ -46,18 +49,50 @@ public class DiceCheckZoneScript : MonoBehaviour
 				StartCoroutine(MoveToNextNode());
 			}
 		}
+		if (col.name.Contains("Build") && Rules.states == Rules.MyEnum.SHOW_DICE && Rules.DiceChoose == "Build Dice")
+		{
+			Debug.Log("Build");
+			if (BuilddiceVelocity.x == 0f && BuilddiceVelocity.y == 0f && BuilddiceVelocity.z == 0f)
+			{
+
+				switch (col.gameObject.name)
+				{
+					case "Build1":
+						BuildDice = "Green";
+						break;
+					case "Build2":
+						BuildDice = "Green";
+						break;
+					case "Build3":
+						BuildDice = "2";
+						break;
+					case "Build4":
+						BuildDice = "H";
+						break;
+					case "Build5":
+						BuildDice = "Green";
+						break;
+					case "Build6":
+						BuildDice = "Red";
+						break;
+				}
+				Rules.states = Rules.MyEnum.ACTION_BUILDDICE;
+				col.GetComponentInParent<BuildDiceScript>().isTriggers(false);
+				Debug.Log("Dice: "+BuildDice);
+			}
+		}
 	}
 
+
 	IEnumerator MoveToNextNode()
-    {
-        if (Rules.Turn_Counter <= 2)
-        {
+	{
+		if (Rules.Turn_Counter <= 2)
+		{
 			diceNumber++;
-			Debug.Log("Rolled:");
 		}
 		for (int i = 1; i <= diceNumber; i++)
 		{
-			CarManager.getInstance().MoveToNext();
+			CarManager.GetInstance().MoveToNext();
 			//Debug.Log("Rolled:  "+ diceNumber + "  Steps : " + i);
 			yield return new WaitForSeconds(1);
 		}
@@ -66,3 +101,5 @@ public class DiceCheckZoneScript : MonoBehaviour
 		Rules.states = Rules.MyEnum.CHECK_NODE;
 	}
 }
+
+
