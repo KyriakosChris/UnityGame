@@ -19,16 +19,16 @@ public class BuildDiceScript : MonoBehaviour
 	{
 		diceVelocity = rb.velocity;
 
-		if (Rules.states == Rules.MyEnum.ROLL_BUILD_DICE && Rules.Roll1DicePerTurn)
+		if (Rules.states == Rules.MyEnum.ACTION_OF_NODE && Rules.Roll1DicePerTurn)
 		{
-			isTriggers(true);
+			IsTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;
 			Rules.DiceChoose = "Build Dice";
 			DiceCheckZoneScript.diceNumber = 0;
 			float dirX = Random.Range(0, 500);
 			float dirY = Random.Range(0, 500);
 			float dirZ = Random.Range(0, 500);
-			transform.position = new Vector3(477, 12, 73);
+			transform.position = new Vector3(475, 12, 71);
 			transform.rotation = Quaternion.identity;
 			rb.AddForce(transform.up * 500);
 			rb.AddTorque(dirX, dirY, dirZ);
@@ -38,7 +38,7 @@ public class BuildDiceScript : MonoBehaviour
 
 
 
-	public void isTriggers(bool onOff)
+	public void IsTriggers(bool onOff)
 	{
 		for (int i = 0; i < 6; i++)
 		{

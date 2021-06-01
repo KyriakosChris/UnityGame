@@ -20,7 +20,7 @@ public class DiceScript : MonoBehaviour
 
 		if (Rules.states == Rules.MyEnum.ROLL_DICE && Rules.Roll1DicePerTurn)
 		{
-			isTriggers(true);
+			IsTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;
 			DiceCheckZoneScript.diceNumber = 0;
 			float dirX = Random.Range(0, 500);
@@ -33,7 +33,7 @@ public class DiceScript : MonoBehaviour
 		}
 	}
 
-	public  void isTriggers( bool onOff)
+	public  void IsTriggers( bool onOff)
     {
 		for(int i=0; i < 6; i++)
         {

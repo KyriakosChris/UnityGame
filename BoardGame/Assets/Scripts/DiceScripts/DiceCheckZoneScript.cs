@@ -45,7 +45,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 				}
 				Rules.states = Rules.MyEnum.MOVE_PLAYER;
 				Rules.Roll1DicePerTurn = false;
-				col.GetComponentInParent<DiceScript>().isTriggers(false);
+				col.GetComponentInParent<DiceScript>().IsTriggers(false);
 				StartCoroutine(MoveToNextNode());
 			}
 		}
@@ -58,7 +58,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 				switch (col.gameObject.name)
 				{
 					case "Build1":
-						BuildDice = "Green";
+						BuildDice = "Red";
 						break;
 					case "Build2":
 						BuildDice = "Green";
@@ -73,12 +73,14 @@ public class DiceCheckZoneScript : MonoBehaviour
 						BuildDice = "Green";
 						break;
 					case "Build6":
-						BuildDice = "Red";
+						BuildDice = "Green";
 						break;
 				}
 				Rules.states = Rules.MyEnum.ACTION_BUILDDICE;
-				col.GetComponentInParent<BuildDiceScript>().isTriggers(false);
+				col.GetComponentInParent<BuildDiceScript>().IsTriggers(false);
 				Debug.Log("Dice: "+BuildDice);
+				Rules.DiceChoose = "Normal Dice";
+				
 			}
 		}
 	}

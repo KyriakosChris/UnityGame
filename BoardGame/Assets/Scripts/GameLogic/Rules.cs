@@ -9,7 +9,6 @@ public class Rules : MonoBehaviour
     {
         INIT,
         ROLL_DICE,
-        ROLL_BUILD_DICE,
         ACTION_BUILDDICE,
         SHOW_DICE,
         MOVE_PLAYER,
