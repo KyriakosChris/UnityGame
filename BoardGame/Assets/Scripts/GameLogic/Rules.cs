@@ -9,11 +9,13 @@ public class Rules : MonoBehaviour
     {
         INIT,
         ROLL_DICE,
-        ACTION_BUILDDICE,
         SHOW_DICE,
         MOVE_PLAYER,
         CHECK_NODE,
-        ACTION_OF_NODE
+        ACTION_OF_NODE,
+        ROLL_BUILDDICE,
+        ACTION_BUILDDICE,
+        END_TURN
     }
 
     public static bool Roll1DicePerTurn = true;

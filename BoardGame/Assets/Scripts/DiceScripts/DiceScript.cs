@@ -40,4 +40,12 @@ public class DiceScript : MonoBehaviour
 			colliders[i].isTrigger = onOff;
         }
     }
+
+
+	public void DisappearDice()
+	{
+		transform.position = new Vector3(0, 0, 0);
+		transform.rotation = Quaternion.identity;
+		rb.AddForce(transform.up * 500);
+	}
 }

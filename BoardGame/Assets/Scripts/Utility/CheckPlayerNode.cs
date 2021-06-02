@@ -22,14 +22,12 @@ public class CheckPlayerNode : MonoBehaviour
         player = GameObject.FindGameObjectWithTag(turn);
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
-            //int index = player.GetComponent<Player>().locationIndex - 1;
-            //Debug.Log("Node Name:  "+nodelist.nodes[player.GetComponent<Player>().locationIndex-1].name+" Number of Node : "+ index);
             Rules.states = Rules.MyEnum.ACTION_OF_NODE;
             Rules.CurrentPlayerNode = nodelist.nodes[player.GetComponent<Player>().locationIndex - 1].name;
-
-            if (Rules.CurrentPlayerNode == "Build Dice")
+            if (Rules.CurrentPlayerNode == "Build Node")
             {
-                Rules.DiceChoose = "Build Dice";
+                InitVars.Buildbutton.SetActive(true);
+                
             }
         }
         

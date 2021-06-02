@@ -19,7 +19,7 @@ public class BuildDiceScript : MonoBehaviour
 	{
 		diceVelocity = rb.velocity;
 
-		if (Rules.states == Rules.MyEnum.ACTION_OF_NODE && Rules.Roll1DicePerTurn)
+		if (Rules.states == Rules.MyEnum.ROLL_BUILDDICE)
 		{
 			IsTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;
@@ -44,5 +44,13 @@ public class BuildDiceScript : MonoBehaviour
 		{
 			colliders[i].isTrigger = onOff;
 		}
+	}
+
+
+	public void DisappearDice()
+	{
+		transform.position = new Vector3(0, 0, 0);
+		transform.rotation = Quaternion.identity;
+		rb.AddForce(transform.up * 500);
 	}
 }

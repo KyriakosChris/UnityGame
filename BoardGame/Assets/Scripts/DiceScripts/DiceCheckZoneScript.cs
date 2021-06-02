@@ -45,13 +45,16 @@ public class DiceCheckZoneScript : MonoBehaviour
 				}
 				Rules.states = Rules.MyEnum.MOVE_PLAYER;
 				Rules.Roll1DicePerTurn = false;
+				InitVars.RollDice.SetActive(false);
 				col.GetComponentInParent<DiceScript>().IsTriggers(false);
+				col.GetComponentInParent<DiceScript>().DisappearDice();
+
 				StartCoroutine(MoveToNextNode());
+				
 			}
 		}
 		if (col.name.Contains("Build") && Rules.states == Rules.MyEnum.SHOW_DICE && Rules.DiceChoose == "Build Dice")
 		{
-			Debug.Log("Build");
 			if (BuilddiceVelocity.x == 0f && BuilddiceVelocity.y == 0f && BuilddiceVelocity.z == 0f)
 			{
 
@@ -78,9 +81,11 @@ public class DiceCheckZoneScript : MonoBehaviour
 				}
 				Rules.states = Rules.MyEnum.ACTION_BUILDDICE;
 				col.GetComponentInParent<BuildDiceScript>().IsTriggers(false);
+				col.GetComponentInParent<BuildDiceScript>().DisappearDice();
 				Debug.Log("Dice: "+BuildDice);
 				Rules.DiceChoose = "Normal Dice";
-				
+				InitVars.Buildbutton.SetActive(false);
+
 			}
 		}
 	}

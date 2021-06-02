@@ -9,6 +9,9 @@ TagManager:
   - Inspector
   - Normal Dice
   - Build Dice
+  - Button Build Dice
+  - Button End Turn
+  - Button Roll Dice
   layers:
   - Default
   - TransparentFX
