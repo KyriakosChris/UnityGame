@@ -13,16 +13,24 @@ public class Rules : MonoBehaviour
         MOVE_PLAYER,
         CHECK_NODE,
         ACTION_OF_NODE,
+        BUY_NODE,
         ROLL_BUILDDICE,
         ACTION_BUILDDICE,
         END_TURN
     }
 
-    public static bool Roll1DicePerTurn = true;
-    public static int Turn_Counter = 1;
+    public static bool Roll1DicePerTurn;
+    public static int Turn_Counter;
+    public static int P1Money;
+    public static int P2Money;
+    public static int CostToBuy = 1000;
+    public static int OverNight = 100;
+    public static int[] Owners = new int[36];
     public static string CurrentPlayerNode;
     public static MyEnum states = MyEnum.INIT;
     public static string DiceChoose = "Normal Dice";
 
+
+    
 
 }

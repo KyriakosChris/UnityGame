@@ -17,7 +17,7 @@ public class DisplayPlayer2Reg : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		text.text = "Player 2 " + region.ToString();
+		text.text =  region.ToString();
 
 
 	}

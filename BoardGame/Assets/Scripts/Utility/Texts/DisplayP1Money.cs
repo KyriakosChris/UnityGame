@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-
-public class DisplayPlayer1Reg : MonoBehaviour
+public class DisplayP1Money : MonoBehaviour
 {
 	TextMeshProUGUI text;
-	public static string region=" ";
+	
 	// Use this for initialization
 	void Start()
 	{
@@ -17,8 +15,8 @@ public class DisplayPlayer1Reg : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		text.text = region.ToString();
+		text.text = Rules.P1Money.ToString();
 
 
-    }
+	}
 }

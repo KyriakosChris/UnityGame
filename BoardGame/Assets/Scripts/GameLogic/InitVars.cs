@@ -19,6 +19,16 @@ public class InitVars : MonoBehaviour
             Buildbutton.SetActive(false);
             Endturn.SetActive(true);
         }
+        
+        for (int i=0; i<Rules.Owners.Length; i++)
+        {
+            Rules.Owners.SetValue(0, i);
+        }
+        Rules.P1Money = 2500;
+        Rules.P2Money = 2500;
+        Rules.Turn_Counter = 1;
+        Rules.Roll1DicePerTurn = true;
+
     }
 
 

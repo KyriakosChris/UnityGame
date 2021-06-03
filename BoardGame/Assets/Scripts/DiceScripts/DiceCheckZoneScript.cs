@@ -103,6 +103,13 @@ public class DiceCheckZoneScript : MonoBehaviour
 			//Debug.Log("Rolled:  "+ diceNumber + "  Steps : " + i);
 			yield return new WaitForSeconds(1);
 		}
+		// If they end up in the same block, move to the next one.
+		if(GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex ==
+			GameObject.FindGameObjectWithTag("Player 2").GetComponent<Player>().locationIndex)
+        {
+			CarManager.GetInstance().MoveToNext();
+			yield return new WaitForSeconds(1);
+		}
 		diceNumber = 0;
 
 		Rules.states = Rules.MyEnum.CHECK_NODE;
