@@ -1,28 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Text.RegularExpressions;
 public class Buy : MonoBehaviour
 {
 
-    public static Renderer myrenderer;
-    public Color redColor= new Color(1, 0, 0);
-    public Color BlackColor = new Color(0,0,0);
-    void Start()
-    {
-        myrenderer = gameObject.GetComponent<Renderer>();
-    }
+    public GameObject NameRegion;
+    public Renderer ren;
+    string reg;
     void Update()
     {
-        myrenderer.material.color = redColor;
+        if (Rules.states == Rules.MyEnum.ACTION_OF_NODE && Rules.CurrentPlayerNode == "Buy Node")
+        {
+            BuyNode();
+        }
     }
-    public static void BuyNode()
+
+    public void BuyNode()
     {
         Rules.states = Rules.MyEnum.BUY_NODE;
         string turn = TurnManager.getInstance().getCurrentPlayer().ToString();
         GameObject player = GameObject.FindGameObjectWithTag(turn);
-        int index = player.GetComponent<Player>().locationIndex - 1;
+        int index;
 
+        if (player.name == "Player_1")
+        {
+            reg = DisplayPlayer1Reg.region;
+        }
+        else
+        {
+            reg = DisplayPlayer2Reg.region;
+            
+        }
+        index = RegionNumber(reg);
         if (Rules.Owners[index] == 0)
         {
             NormalBuyNode(turn, index);
@@ -31,38 +41,77 @@ public class Buy : MonoBehaviour
         {
             SellNode(turn, index);
         }
-        
+
+    }
+
+    public int RegionNumber(string reg)
+    {
+        string[] digits = Regex.Split(reg, @"\D+");
+        foreach (string value in digits)
+        {
+           
+            if (int.TryParse(value, out int number))
+            {
+                return number - 1;
+            }
         }
-    public static void SellNode(string turn, int index)
+        return 0;
+    }
+
+    public void SellNode(string turn, int index)
     {
         if (turn.Equals("Player 1"))
         {
             Rules.P1Money -= Rules.CostToBuy / 2;
             Rules.P2Money += Rules.CostToBuy / 2;
-            Rules.Owners[index] = 1;
+            ColorTheRegion(1); // 1 for red 
+
         }
         else
         {
             Rules.P2Money -= Rules.CostToBuy / 2;
             Rules.P1Money += Rules.CostToBuy / 2;
             Rules.Owners[index] = 2;
+            ColorTheRegion(0); // 1 for black 
         }
     }
     
 
-    public static void NormalBuyNode(string turn,int index)
+    public  void NormalBuyNode(string turn,int index)
     {
         if (turn.Equals("Player 1"))
         {
             Rules.P1Money -= Rules.CostToBuy;
             Rules.Owners[index] = 1;
+            ColorTheRegion(1); // 1 for red 
         }
         else
         {
             Rules.P2Money -= Rules.CostToBuy;
             Rules.Owners[index] = 2;
+            ColorTheRegion(0); // 1 for black 
         }
         
     }
+    public void ColorTheRegion(float color)
+    {
+        reg += "/Name";
+        NameRegion = GameObject.Find(reg);
+        Transform allchildren = NameRegion.transform.GetComponentInChildren<Transform>();
+        //Debug.Log(allchildren.childCount);
+        for (int i = 0; i < allchildren.childCount; i++)
+        {
+            //Debug.Log(allchildren.GetChild(i).name);
+            if (allchildren.GetChild(i).name.Contains("Prefab"))
+            {
+                if (allchildren.GetChild(i).name.Contains("_E") || allchildren.GetChild(i).name.Contains("_G"))
+                    ren = allchildren.GetChild(i).GetChild(0).GetChild(1).GetComponent<Renderer>();
+                else
+                    ren = allchildren.GetChild(i).GetChild(0).GetComponent<Renderer>();
+            }
+            ren.material.color = new Color(color, 0, 0);
+        }
+    }
+
 
 }

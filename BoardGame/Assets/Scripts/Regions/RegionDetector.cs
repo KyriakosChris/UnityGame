@@ -9,15 +9,11 @@ public class RegionDetector : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player 1"))
         {
-            Debug.Log(this.name +other.gameObject.name);
             DisplayPlayer1Reg.region = this.name;
-            //DisplayPlayer1Reg.region = this.name;
         }
         else
         {
-            Debug.Log(this.name + other.gameObject.name);
             DisplayPlayer2Reg.region = this.name;
-           // DisplayPlayer2Reg.region = this.name;
         }
         
     }
