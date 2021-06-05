@@ -10,15 +10,27 @@ public class Buy : MonoBehaviour
     string reg;
     void Update()
     {
-        if (Rules.states == Rules.MyEnum.ACTION_OF_NODE && Rules.CurrentPlayerNode == "Buy Node")
+        if (Rules.states == Rules.MyEnum.BUY_NODE && Rules.CurrentPlayerNode == "Buy Node")
         {
             BuyNode();
+            Checkmoney();
         }
     }
 
+    public void Checkmoney()
+    {
+        if (Rules.P1Money < 0)
+        {
+            Rules.states = Rules.MyEnum.GAME_OVER;
+        }
+        else
+        {
+            Rules.states = Rules.MyEnum.END_TURN;
+        }
+    }
     public void BuyNode()
     {
-        Rules.states = Rules.MyEnum.BUY_NODE;
+        Rules.states = Rules.MyEnum.CHECK_MONEY;
         string turn = TurnManager.getInstance().getCurrentPlayer().ToString();
         GameObject player = GameObject.FindGameObjectWithTag(turn);
         int index;
@@ -33,11 +45,11 @@ public class Buy : MonoBehaviour
             
         }
         index = RegionNumber(reg);
-        if (Rules.Owners[index] == 0)
+        if (Rules.Owners[index,0] == 0)
         {
             NormalBuyNode(turn, index);
         }
-        else if (!turn.EndsWith(Rules.Owners[index].ToString()))
+        else if (!turn.EndsWith(Rules.Owners[index,0].ToString()))
         {
             SellNode(turn, index);
         }
@@ -60,19 +72,31 @@ public class Buy : MonoBehaviour
 
     public void SellNode(string turn, int index)
     {
-        if (turn.Equals("Player 1"))
+        bool check = false;
+        for (int i =1; i<5; i++)
         {
-            Rules.P1Money -= Rules.CostToBuy / 2;
-            Rules.P2Money += Rules.CostToBuy / 2;
-            ColorTheRegion(1); // 1 for red 
-
+            if (Rules.Owners[index, i] == 0)
+            {
+                check = true;
+                break;
+            }
         }
-        else
+        if (check)
         {
-            Rules.P2Money -= Rules.CostToBuy / 2;
-            Rules.P1Money += Rules.CostToBuy / 2;
-            Rules.Owners[index] = 2;
-            ColorTheRegion(0); // 1 for black 
+            if (turn.Equals("Player 1"))
+            {
+                Rules.P1Money -= Rules.CostToBuy / 2;
+                Rules.P2Money += Rules.CostToBuy / 2;
+                ColorTheRegion(1); // 1 for red 
+
+            }
+            else
+            {
+                Rules.P2Money -= Rules.CostToBuy / 2;
+                Rules.P1Money += Rules.CostToBuy / 2;
+                Rules.Owners[index, 0] = 2;
+                ColorTheRegion(0); // 1 for black 
+            }
         }
     }
     
@@ -82,13 +106,13 @@ public class Buy : MonoBehaviour
         if (turn.Equals("Player 1"))
         {
             Rules.P1Money -= Rules.CostToBuy;
-            Rules.Owners[index] = 1;
+            Rules.Owners[index,0] = 1;
             ColorTheRegion(1); // 1 for red 
         }
         else
         {
             Rules.P2Money -= Rules.CostToBuy;
-            Rules.Owners[index] = 2;
+            Rules.Owners[index,0] = 2;
             ColorTheRegion(0); // 1 for black 
         }
         

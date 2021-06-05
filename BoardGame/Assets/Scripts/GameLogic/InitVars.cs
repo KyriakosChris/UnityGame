@@ -9,6 +9,7 @@ public class InitVars : MonoBehaviour
     public static GameObject Buildbutton;
     public static GameObject RollDice;
     public static GameObject Endturn;
+    public static GameObject Buybutton;
     void Awake()
     {
         if (Rules.states == Rules.MyEnum.INIT)
@@ -16,15 +17,21 @@ public class InitVars : MonoBehaviour
             Buildbutton = GameObject.FindGameObjectWithTag("Button Build Dice");
             RollDice = GameObject.FindGameObjectWithTag("Button Roll Dice");
             Endturn = GameObject.FindGameObjectWithTag("Button End Turn");
+            Buybutton = GameObject.Find("BuyButton");
             Buildbutton.SetActive(false);
+            Buybutton.SetActive(false);
             Endturn.SetActive(true);
         }
         
-        for (int i=0; i<Rules.Owners.Length; i++)
+
+        for (int i = 0; i < 8; i++)
         {
-            Rules.Owners.SetValue(0, i);
+            for (int j = 0; j < 5; j++)
+            {
+                Rules.Owners[i, j] = 0;
+            }
         }
-        Rules.P1Money = 2500;
+               Rules.P1Money = 2500;
         Rules.P2Money = 2500;
         Rules.Turn_Counter = 1;
         Rules.Roll1DicePerTurn = true;
