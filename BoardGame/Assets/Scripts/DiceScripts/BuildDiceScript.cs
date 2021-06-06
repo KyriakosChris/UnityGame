@@ -21,6 +21,7 @@ public class BuildDiceScript : MonoBehaviour
 
 		if (Rules.states == Rules.MyEnum.ROLL_BUILDDICE)
 		{
+			InitVars.Buildbutton.SetActive(false);
 			IsTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;
 			Rules.DiceChoose = "Build Dice";

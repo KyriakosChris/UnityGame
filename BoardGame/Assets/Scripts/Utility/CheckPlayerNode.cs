@@ -26,6 +26,7 @@ public class CheckPlayerNode : MonoBehaviour
             Rules.CurrentPlayerNode = nodelist.nodes[(player.GetComponent<Player>().locationIndex - 1) % nodelist.nodes.Length].name;
             if (Rules.CurrentPlayerNode == "Build Node")
             {
+                Rules.states = Rules.MyEnum.BUILD_NODE;
                 InitVars.Buildbutton.SetActive(true);
                 
             }

@@ -10,17 +10,41 @@ public class InitVars : MonoBehaviour
     public static GameObject RollDice;
     public static GameObject Endturn;
     public static GameObject Buybutton;
+    public static GameObject Regions;
+
     void Awake()
     {
         if (Rules.states == Rules.MyEnum.INIT)
         {
-            Buildbutton = GameObject.FindGameObjectWithTag("Button Build Dice");
-            RollDice = GameObject.FindGameObjectWithTag("Button Roll Dice");
-            Endturn = GameObject.FindGameObjectWithTag("Button End Turn");
+            // Disable buttons
+            Buildbutton = GameObject.Find("BuildDiceRoll");
+            RollDice = GameObject.Find("RollDiceButton");
+            Endturn = GameObject.Find("EndTurnButton");
             Buybutton = GameObject.Find("BuyButton");
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);
             Endturn.SetActive(true);
+
+            // Disable hotels
+            Regions = GameObject.Find("Regions");
+            Transform childs = Regions.GetComponentInChildren<Transform>();
+            for (int i = 0; i < childs.childCount; i++)
+            {
+                for(int j = 0; j < childs.GetChild(i).childCount; j++)
+                {
+                    // Keep the name of each Region
+                    if(!childs.GetChild(i).GetChild(j).gameObject.name.Equals("Name"))
+                        childs.GetChild(i).GetChild(j).gameObject.SetActive(false);
+                    else
+                    {
+                        //Later set color to default for restart game
+                    }
+
+                }
+                
+
+            }
+               
         }
         
 

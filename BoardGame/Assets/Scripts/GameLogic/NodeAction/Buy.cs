@@ -10,7 +10,7 @@ public class Buy : MonoBehaviour
     string reg;
     void Update()
     {
-        if (Rules.states == Rules.MyEnum.BUY_NODE && Rules.CurrentPlayerNode == "Buy Node")
+        if (Rules.states == Rules.MyEnum.BUY_NODE)
         {
             BuyNode();
             Checkmoney();
@@ -21,11 +21,12 @@ public class Buy : MonoBehaviour
     {
         if (Rules.P1Money < 0)
         {
-            Rules.states = Rules.MyEnum.GAME_OVER;
+            Rules.states = Rules.MyEnum.GAME_OVER;  // To Do reset everythings
         }
         else
         {
             Rules.states = Rules.MyEnum.END_TURN;
+            InitVars.Endturn.SetActive(true);
         }
     }
     public void BuyNode()
@@ -56,7 +57,7 @@ public class Buy : MonoBehaviour
 
     }
 
-    public int RegionNumber(string reg)
+    public static int RegionNumber(string reg)
     {
         string[] digits = Regex.Split(reg, @"\D+");
         foreach (string value in digits)

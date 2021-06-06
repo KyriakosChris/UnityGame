@@ -14,6 +14,7 @@ public class Rules : MonoBehaviour
         CHECK_NODE,
         ACTION_OF_NODE,
         BUY_NODE,
+        BUILD_NODE,
         ROLL_BUILDDICE,
         ACTION_BUILDDICE,
         CHECK_MONEY,
@@ -31,7 +32,6 @@ public class Rules : MonoBehaviour
     public static string CurrentPlayerNode;
     public static MyEnum states = MyEnum.INIT;
     public static string DiceChoose = "Normal Dice";
-    public static bool WantsToBuy;
 
     
 
