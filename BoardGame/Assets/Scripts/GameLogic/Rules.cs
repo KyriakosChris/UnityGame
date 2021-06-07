@@ -14,11 +14,13 @@ public class Rules : MonoBehaviour
         CHECK_NODE,
         ACTION_OF_NODE,
         BUY_NODE,
+        NUMBER_HOUSE,
         BUILD_NODE,
         ROLL_BUILDDICE,
         ACTION_BUILDDICE,
         CHECK_MONEY,
         END_TURN,
+        SELL_TO_SURVIVE,
         GAME_OVER
     }
 
@@ -27,6 +29,7 @@ public class Rules : MonoBehaviour
     public static int P1Money;
     public static int P2Money;
     public static int CostToBuy = 1000;
+    public static int CostToBuild = 200;
     public static int OverNight = 100;
     public static int[,] Owners = new int[8,5];
     public static string CurrentPlayerNode;

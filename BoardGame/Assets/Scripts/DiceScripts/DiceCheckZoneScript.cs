@@ -93,10 +93,12 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
 	{
+		diceNumber = 1;
 		if (Rules.Turn_Counter <= 2)
 		{
 			diceNumber++;
 		}
+		
 		for (int i = 1; i <= diceNumber; i++)
 		{
 			CarManager.GetInstance().MoveToNext();

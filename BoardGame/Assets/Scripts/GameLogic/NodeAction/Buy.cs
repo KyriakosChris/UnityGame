@@ -19,15 +19,20 @@ public class Buy : MonoBehaviour
 
     public void Checkmoney()
     {
-        if (Rules.P1Money < 0)
-        {
-            Rules.states = Rules.MyEnum.GAME_OVER;  // To Do reset everythings
-        }
+        int money;
+        if (TurnManager.getInstance().getCurrentPlayer().ToString().Equals("Player 1"))
+            money = Rules.P1Money;
         else
-        {
-            Rules.states = Rules.MyEnum.END_TURN;
-            InitVars.Endturn.SetActive(true);
-        }
+            money = Rules.P2Money;
+            if (money < 0)
+            {
+                Rules.states = Rules.MyEnum.SELL_TO_SURVIVE;  // To Do sell
+            }
+            else
+            {
+                Rules.states = Rules.MyEnum.END_TURN;
+                InitVars.Endturn.SetActive(true);
+            }
     }
     public void BuyNode()
     {

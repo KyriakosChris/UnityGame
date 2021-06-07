@@ -11,6 +11,7 @@ public class InitVars : MonoBehaviour
     public static GameObject Endturn;
     public static GameObject Buybutton;
     public static GameObject Regions;
+    public static GameObject Inputfield;
 
     void Awake()
     {
@@ -21,10 +22,15 @@ public class InitVars : MonoBehaviour
             RollDice = GameObject.Find("RollDiceButton");
             Endturn = GameObject.Find("EndTurnButton");
             Buybutton = GameObject.Find("BuyButton");
+            Inputfield = GameObject.Find("HousesToBuild");
+            Inputfield.SetActive(false);
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);
             Endturn.SetActive(true);
 
+            // Init cameras
+            GameObject.Find("MapCamera").GetComponent<Camera>().enabled = false;
+            GameObject.Find("Player1_camera").GetComponent<Camera>().enabled = true;
             // Disable hotels
             Regions = GameObject.Find("Regions");
             Transform childs = Regions.GetComponentInChildren<Transform>();
