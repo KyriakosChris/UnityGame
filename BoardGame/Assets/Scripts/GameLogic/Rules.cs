@@ -14,6 +14,7 @@ public class Rules : MonoBehaviour
         CHECK_NODE,
         ACTION_OF_NODE,
         BUY_NODE,
+        CHOOSE_REGION,
         NUMBER_HOUSE,
         BUILD_NODE,
         ROLL_BUILDDICE,
@@ -36,6 +37,5 @@ public class Rules : MonoBehaviour
     public static MyEnum states = MyEnum.INIT;
     public static string DiceChoose = "Normal Dice";
 
-    
 
 }

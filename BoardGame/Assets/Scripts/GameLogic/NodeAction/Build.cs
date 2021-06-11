@@ -22,7 +22,7 @@ public class Build : MonoBehaviour
             }
             Rules.states = Rules.MyEnum.CHECK_MONEY;
             string turn = TurnManager.getInstance().getCurrentPlayer().ToString();
-            GameObject player = GameObject.FindGameObjectWithTag(turn);
+            //GameObject player = GameObject.FindGameObjectWithTag(turn);
             if (turn.Equals("Player 1"))
             {
                 p = 1;
@@ -40,14 +40,14 @@ public class Build : MonoBehaviour
                 Rules.CostToBuild *= 2;
             }
             Debug.Log("Building  for: "+ Rules.CostToBuild);
-            CanBuild(turn, player);
+            CanBuild(turn);
 
 
             
         }
     }
 
-    public void CanBuild(string turn, GameObject player)
+    public void CanBuild(string turn)
     {
         string own="";
         for (int i = 0; i < 8; i++)
@@ -55,7 +55,7 @@ public class Build : MonoBehaviour
             own += Rules.Owners[i, 0].ToString()+" ";
             for (int j = 1; j < 5; j++)
             {
-                if (Rules.Owners[i, j] == 0  && InputScript.houseNumber > 0) // if a player has an area and has not build yet, he can build
+                if (Rules.Owners[i, j] == 0 && p == Rules.Owners[i, 0] && InputScript.houseNumber > 0) // if a player has an area and has not build yet, he can build
                 {
                     // He will build in the firsts availables places
                     

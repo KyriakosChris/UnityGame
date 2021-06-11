@@ -15,8 +15,9 @@ public class InputScript : MonoBehaviour
             Debug.Log("String is the number: " + houseNumber);
             Rules.states = Rules.MyEnum.BUILD_NODE;
             InitVars.Buildbutton.SetActive(true);
-            InitVars.Inputfield.SetActive(false);
             GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text = "";
+            InitVars.Inputfield.SetActive(false);
+            
         }
         else
         {
