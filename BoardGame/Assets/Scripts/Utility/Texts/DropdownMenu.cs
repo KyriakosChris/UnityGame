@@ -5,29 +5,38 @@ using UnityEngine.UI;
 public class DropdownMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Dropdown dropdown;
+    public static string RegionSelector;
     void Start()
     {
-        dropdown.ClearOptions();
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Rules.states == Rules.MyEnum.CHOOSE_REGION)
-        RegionToBuild();
+        
+        
+        if (Rules.states == Rules.MyEnum.CHOOSE_REGION)
+        {
+            Dropdown dropdown = InitVars.Regiondropdown.GetComponent<Dropdown>();
+            RegionToBuild(dropdown);
+            //dropdown.gameObject.SetActive(false);
+            Rules.states = Rules.MyEnum.NUMBER_HOUSE;
+            InitVars.Inputfield.SetActive(true);
+        }
     }
 
-    public void RegionToBuild()
+    public void RegionToBuild(Dropdown dropdown)
     {
 
         dropdown.ClearOptions();
         string turn = TurnManager.getInstance().getCurrentPlayer().ToString();
-        string own = "";
         int p;
-        List<string> items = new List<string>();
-        items.Add("Select Region");
+        List<string> items = new List<string>
+        {
+            "Select Region"
+        };
         if (turn.Equals("Player 1"))
         {
             p = 1;
@@ -40,7 +49,6 @@ public class DropdownMenu : MonoBehaviour
         {
             if (p == Rules.Owners[i, 0])
             {
-                own += "Region " + i + 1;
                 items.Add("Region " + (i+1).ToString());
                 
             }
@@ -49,19 +57,15 @@ public class DropdownMenu : MonoBehaviour
         // Fill dropdown
         dropdown.AddOptions(items);
         //Print();
-        dropdown.onValueChanged.AddListener(delegate { Print(); });
+        dropdown.onValueChanged.AddListener(delegate { Print(dropdown); });
         //dropdown.gameObject.SetActive(false);
     }
 
-    void Print()
+    void Print(Dropdown dropdown)
     {
         int index = dropdown.value;
         Debug.Log(dropdown.value);
-       
-        if (index > 0)
-        {
-            Debug.Log(index);
-        }
+        RegionSelector = dropdown.options[index].text;
         Debug.Log(dropdown.options[index].text);
     }
 

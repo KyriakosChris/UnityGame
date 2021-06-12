@@ -26,8 +26,8 @@ public class CheckPlayerNode : MonoBehaviour
             Rules.CurrentPlayerNode = nodelist.nodes[(player.GetComponent<Player>().locationIndex - 1) % nodelist.nodes.Length].name;
             if (Rules.CurrentPlayerNode == "Build Node")
             {
-                Rules.states = Rules.MyEnum.NUMBER_HOUSE;
-                InitVars.Inputfield.SetActive(true);
+                Rules.states = Rules.MyEnum.CHOOSE_REGION;
+                InitVars.Regiondropdown.SetActive(true);
 
             }
             else if (Rules.CurrentPlayerNode == "Buy Node")

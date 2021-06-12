@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class InitVars : MonoBehaviour
 {
 
@@ -12,6 +12,7 @@ public class InitVars : MonoBehaviour
     public static GameObject Buybutton;
     public static GameObject Regions;
     public static GameObject Inputfield;
+    public static GameObject Regiondropdown;
 
     void Awake()
     {
@@ -23,10 +24,13 @@ public class InitVars : MonoBehaviour
             Endturn = GameObject.Find("EndTurnButton");
             Buybutton = GameObject.Find("BuyButton");
             Inputfield = GameObject.Find("HousesToBuild");
+            Regiondropdown = GameObject.Find("ListOfRegions");
             Inputfield.SetActive(false);
+            Regiondropdown.SetActive(false);
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);
             Endturn.SetActive(true);
+            Regiondropdown.GetComponent<Dropdown>().ClearOptions();
 
             // Init cameras
             GameObject.Find("MapCamera").GetComponent<Camera>().enabled = false;

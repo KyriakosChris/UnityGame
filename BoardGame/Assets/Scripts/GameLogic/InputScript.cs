@@ -13,6 +13,7 @@ public class InputScript : MonoBehaviour
         if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out houseNumber))
         {
             Debug.Log("String is the number: " + houseNumber);
+            InitVars.Regiondropdown.SetActive(false);
             Rules.states = Rules.MyEnum.BUILD_NODE;
             InitVars.Buildbutton.SetActive(true);
             GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text = "";
