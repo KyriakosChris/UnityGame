@@ -12,5 +12,6 @@ public class EndTurnButton : MonoBehaviour
         Rules.Turn_Counter++;
         InitVars.Endturn.SetActive(true);
         InitVars.RollDice.SetActive(true);
+        InitVars.Regiondropdown.SetActive(false);
     }
 }

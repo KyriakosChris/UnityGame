@@ -93,10 +93,15 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
 	{
-		diceNumber = 1;
+		diceNumber = 2;
 		if (Rules.Turn_Counter <= 2)
 		{
+			
 			diceNumber++;
+		}
+        else
+        {
+			diceNumber = 5;
 		}
 		
 		for (int i = 1; i <= diceNumber; i++)

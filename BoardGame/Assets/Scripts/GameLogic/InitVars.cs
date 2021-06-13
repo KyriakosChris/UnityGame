@@ -13,7 +13,7 @@ public class InitVars : MonoBehaviour
     public static GameObject Regions;
     public static GameObject Inputfield;
     public static GameObject Regiondropdown;
-
+    public static GameObject EnterButton;
     void Awake()
     {
         if (Rules.states == Rules.MyEnum.INIT)
@@ -25,7 +25,9 @@ public class InitVars : MonoBehaviour
             Buybutton = GameObject.Find("BuyButton");
             Inputfield = GameObject.Find("HousesToBuild");
             Regiondropdown = GameObject.Find("ListOfRegions");
+            EnterButton = GameObject.Find("EnterButton");
             Inputfield.SetActive(false);
+            EnterButton.SetActive(false);
             Regiondropdown.SetActive(false);
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);

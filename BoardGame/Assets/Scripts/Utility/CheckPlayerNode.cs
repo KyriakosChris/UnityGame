@@ -24,16 +24,21 @@ public class CheckPlayerNode : MonoBehaviour
         {
             Rules.states = Rules.MyEnum.ACTION_OF_NODE;
             Rules.CurrentPlayerNode = nodelist.nodes[(player.GetComponent<Player>().locationIndex - 1) % nodelist.nodes.Length].name;
-            if (Rules.CurrentPlayerNode == "Build Node")
+            if (Rules.CurrentPlayerNode.Equals("Build Node"))
             {
                 Rules.states = Rules.MyEnum.CHOOSE_REGION;
                 InitVars.Regiondropdown.SetActive(true);
 
             }
-            else if (Rules.CurrentPlayerNode == "Buy Node")
+            else if (Rules.CurrentPlayerNode.Equals("Buy Node"))
             {
                 InitVars.Buybutton.SetActive(true);
                 InitVars.Endturn.SetActive(true);
+            }
+            else if (Rules.CurrentPlayerNode.Equals("Free Build Node"))
+            {
+                Rules.states = Rules.MyEnum.CHOOSE_REGION;
+                InitVars.Regiondropdown.SetActive(true);
             }
         }
         

@@ -6,11 +6,6 @@ public class DropdownMenu : MonoBehaviour
 {
     // Start is called before the first frame update
     public static string RegionSelector;
-    void Start()
-    {
-
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -19,11 +14,19 @@ public class DropdownMenu : MonoBehaviour
         
         if (Rules.states == Rules.MyEnum.CHOOSE_REGION)
         {
+
             Dropdown dropdown = InitVars.Regiondropdown.GetComponent<Dropdown>();
+            
             RegionToBuild(dropdown);
+            
+            if (!Rules.CurrentPlayerNode.Equals("Free Build Node"))
+            {
+                InitVars.Inputfield.SetActive(true);
+            }
+
             //dropdown.gameObject.SetActive(false);
-            Rules.states = Rules.MyEnum.NUMBER_HOUSE;
-            InitVars.Inputfield.SetActive(true);
+            Rules.states = Rules.MyEnum.WAITING;
+
         }
     }
 
@@ -58,15 +61,25 @@ public class DropdownMenu : MonoBehaviour
         dropdown.AddOptions(items);
         //Print();
         dropdown.onValueChanged.AddListener(delegate { Print(dropdown); });
-        //dropdown.gameObject.SetActive(false);
+
+        if (items.Count <= 1)
+        {
+            InitVars.Regiondropdown.SetActive(false);
+            Rules.states = Rules.MyEnum.END_TURN;
+        }
+        else
+        {
+            InitVars.EnterButton.SetActive(true);
+        }
     }
 
     void Print(Dropdown dropdown)
     {
         int index = dropdown.value;
-        Debug.Log(dropdown.value);
+       // Debug.Log(dropdown.value);
         RegionSelector = dropdown.options[index].text;
-        Debug.Log(dropdown.options[index].text);
+
+        //Debug.Log(dropdown.options[index].text);
     }
 
 

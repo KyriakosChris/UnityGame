@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CarManager
 {
-    GameObject car1;
-    GameObject car2;
+    private readonly GameObject car1;
+    private readonly GameObject car2;
     #region Singleton
     private static CarManager instance = null;
     public static CarManager GetInstance()
@@ -36,14 +36,14 @@ public class CarManager
           
             car1.GetComponent<PlayerMove>().target = nodelist.nodes[car1.GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position;
             car1.GetComponent<Player>().locationIndex++;
-            
+            //Debug.Log("Car 1 Location "+car1.GetComponent<Player>().locationIndex);
 
         }
         else
         {
             car2.GetComponent<PlayerMove>().target = nodelist.nodes[car2.GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position;
             car2.GetComponent<Player>().locationIndex++;
-
+           // Debug.Log("Car 2 Location " + car2.GetComponent<Player>().locationIndex);
         }
     }
 

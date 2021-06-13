@@ -10,15 +10,24 @@ public class InputScript : MonoBehaviour
     public void GetInput()
     {
 
-        if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out houseNumber))
+        if (Rules.CurrentPlayerNode.Equals("Free Build Node"))
         {
-            Debug.Log("String is the number: " + houseNumber);
+           
+            Rules.states = Rules.MyEnum.FREE_BUILD;
             InitVars.Regiondropdown.SetActive(false);
-            Rules.states = Rules.MyEnum.BUILD_NODE;
+            InitVars.EnterButton.SetActive(false);
+            //Debug.Log(DropdownMenu.RegionSelector + " With State "+ Rules.states);
+        }
+        else if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out houseNumber))
+        {
+           // Debug.Log("String is the number: " + houseNumber);
+            InitVars.Regiondropdown.SetActive(false);
+            Rules.states = Rules.MyEnum.WAITING;
             InitVars.Buildbutton.SetActive(true);
             GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text = "";
             InitVars.Inputfield.SetActive(false);
-            
+            InitVars.EnterButton.SetActive(false);
+
         }
         else
         {
@@ -26,6 +35,6 @@ public class InputScript : MonoBehaviour
         }
 
         
-        Debug.Log("houseNumber : " + houseNumber);
+       // Debug.Log("houseNumber : " + houseNumber);
     }
 }

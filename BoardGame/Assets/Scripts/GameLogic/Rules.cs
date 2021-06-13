@@ -15,13 +15,13 @@ public class Rules : MonoBehaviour
         ACTION_OF_NODE,
         BUY_NODE,
         CHOOSE_REGION,
-        NUMBER_HOUSE,
-        BUILD_NODE,
+        WAITING,
         ROLL_BUILDDICE,
         ACTION_BUILDDICE,
         CHECK_MONEY,
         END_TURN,
         SELL_TO_SURVIVE,
+        FREE_BUILD,
         GAME_OVER
     }
 

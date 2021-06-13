@@ -64,6 +64,8 @@ public class Buy : MonoBehaviour
 
     public static int RegionNumber(string reg)
     {
+        if (reg == null)
+            return -1;
         string[] digits = Regex.Split(reg, @"\D+");
         foreach (string value in digits)
         {
@@ -73,7 +75,7 @@ public class Buy : MonoBehaviour
                 return number - 1;
             }
         }
-        return 0;
+        return -1;
     }
 
     public void SellNode(string turn, int index)
