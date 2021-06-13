@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class FreeEntrance : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Rules.states == Rules.MyEnum.FREE_ENTRANCE) {
+            
+            Rules.states = Rules.MyEnum.END_TURN;
+            if(DropdownMenu.EntrancePosition == "")
+            {
+                return;
+            }
+            string[] splitArray = DropdownMenu.EntrancePosition.Split(char.Parse(","));
+            DropdownMenu.EntrancePosition = "";
+            int region = Buy.RegionNumber(splitArray[0]);
+            int position = Buy.RegionNumber(splitArray[1])+1;
+            Debug.Log("Reg " +region + " Posisiton "+ position);
+            // Add +2 for entrance
+            Rules.Owners[region, position] += 2;
+            Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
+            childs.GetChild(region).Find("Entrance"+ (position).ToString()).gameObject.SetActive(true);
+            InitVars.Endturn.SetActive(true);
+        }
     }
 }

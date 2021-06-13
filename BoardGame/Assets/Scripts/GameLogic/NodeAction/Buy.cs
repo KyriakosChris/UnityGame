@@ -20,7 +20,7 @@ public class Buy : MonoBehaviour
     public void Checkmoney()
     {
         int money;
-        if (TurnManager.getInstance().getCurrentPlayer().ToString().Equals("Player 1"))
+        if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
             money = Rules.P1Money;
         else
             money = Rules.P2Money;
@@ -37,7 +37,7 @@ public class Buy : MonoBehaviour
     public void BuyNode()
     {
         Rules.states = Rules.MyEnum.CHECK_MONEY;
-        string turn = TurnManager.getInstance().getCurrentPlayer().ToString();
+        string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         GameObject player = GameObject.FindGameObjectWithTag(turn);
         int index;
 

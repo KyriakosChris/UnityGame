@@ -96,14 +96,17 @@ public class DiceCheckZoneScript : MonoBehaviour
 		diceNumber = 2;
 		if (Rules.Turn_Counter <= 2)
 		{
-			
+
 			diceNumber++;
 		}
-        else
-        {
+		else if (Rules.Turn_Counter == 3)
+		{
 			diceNumber = 5;
 		}
-		
+		else
+			diceNumber = 1;
+
+
 		for (int i = 1; i <= diceNumber; i++)
 		{
 			CarManager.GetInstance().MoveToNext();

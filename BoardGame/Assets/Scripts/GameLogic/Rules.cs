@@ -22,6 +22,8 @@ public class Rules : MonoBehaviour
         END_TURN,
         SELL_TO_SURVIVE,
         FREE_BUILD,
+        FREE_ENTRANCE,
+        CHOOSE_REGION_NODE,
         GAME_OVER
     }
 

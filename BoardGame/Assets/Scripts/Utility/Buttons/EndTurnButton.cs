@@ -8,7 +8,7 @@ public class EndTurnButton : MonoBehaviour
 
     public void EndTurn()
     {
-        TurnManager.getInstance().EndTurn();
+        TurnManager.GetInstance().EndTurn();
         Rules.Turn_Counter++;
         InitVars.Endturn.SetActive(true);
         InitVars.RollDice.SetActive(true);

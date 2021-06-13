@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class InputScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static int houseNumber;
+    public static int InputNumber;
 
     public void GetInput()
     {
@@ -18,7 +18,15 @@ public class InputScript : MonoBehaviour
             InitVars.EnterButton.SetActive(false);
             //Debug.Log(DropdownMenu.RegionSelector + " With State "+ Rules.states);
         }
-        else if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out houseNumber))
+        else if (Rules.CurrentPlayerNode.Equals("Free Entrance Node"))
+        {
+
+            Rules.states = Rules.MyEnum.FREE_ENTRANCE;
+            InitVars.Regiondropdown.SetActive(false);
+            InitVars.EnterButton.SetActive(false);
+            Debug.Log(DropdownMenu.EntrancePosition + " With State "+ Rules.states);
+        }
+        else if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out InputNumber))
         {
            // Debug.Log("String is the number: " + houseNumber);
             InitVars.Regiondropdown.SetActive(false);

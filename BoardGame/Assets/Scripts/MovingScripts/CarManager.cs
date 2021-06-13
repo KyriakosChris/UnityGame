@@ -31,7 +31,7 @@ public class CarManager
         NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
 
 
-        if (TurnManager.getInstance().getCurrentPlayer().Equals("Player 1"))
+        if (TurnManager.GetInstance().GetCurrentPlayer().Equals("Player 1"))
         {
           
             car1.GetComponent<PlayerMove>().target = nodelist.nodes[car1.GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position;

@@ -14,7 +14,7 @@ public class FreeBuild : MonoBehaviour
         {
             Debug.Log("Free in  " + DropdownMenu.RegionSelector);
 
-            string turn = TurnManager.getInstance().getCurrentPlayer().ToString();
+            string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
             int p;
             if (turn.Equals("Player 1"))
             {
@@ -40,7 +40,7 @@ public class FreeBuild : MonoBehaviour
                     Rules.Owners[region, j] = 1;
                     Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
                     childs.GetChild(region).GetChild(j - 1).gameObject.SetActive(true);
-                    childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
+                    //childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
                     Debug.Log("Set Active region " + (region + 1).ToString() + " House " + j);
                     Debug.Log("Free Build was successful");
                     break;

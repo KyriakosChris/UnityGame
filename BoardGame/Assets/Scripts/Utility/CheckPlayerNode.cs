@@ -11,14 +11,14 @@ public class CheckPlayerNode : MonoBehaviour
     void Start()
     {
         nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
-        turn = TurnManager.getInstance().getCurrentPlayer().ToString();
+        turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         player = GameObject.FindGameObjectWithTag(turn);
     }
 
     // Update is called once per frame
     void Update()
     {
-        turn = TurnManager.getInstance().getCurrentPlayer().ToString();
+        turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         player = GameObject.FindGameObjectWithTag(turn);
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
@@ -39,6 +39,15 @@ public class CheckPlayerNode : MonoBehaviour
             {
                 Rules.states = Rules.MyEnum.CHOOSE_REGION;
                 InitVars.Regiondropdown.SetActive(true);
+            }
+            else if (Rules.CurrentPlayerNode.Equals("Free Entrance Node"))
+            {
+                Rules.states = Rules.MyEnum.CHOOSE_REGION_NODE;
+                InitVars.Regiondropdown.SetActive(true);
+            }
+            else {
+                // Decor Nodes do nothing
+                Rules.states = Rules.MyEnum.END_TURN;
             }
         }
         

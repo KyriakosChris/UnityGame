@@ -6,7 +6,7 @@ public class TurnManager
 {
     #region Singleton
     private static TurnManager instance = null;
-    public static TurnManager getInstance()
+    public static TurnManager GetInstance()
     {
         if (instance == null)
         {
@@ -39,7 +39,7 @@ public class TurnManager
         }
     }
 
-    public string getCurrentPlayer()
+    public string GetCurrentPlayer()
     {
         return players[currentTurn];
     }
