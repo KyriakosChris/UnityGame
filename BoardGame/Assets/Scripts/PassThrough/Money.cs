@@ -9,11 +9,11 @@ public class Money : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player 1"))
         {
-            Rules.P1Money += 500;
+            Rules.P1Money += 100;
         }
         else
         {
-            Rules.P2Money += 500;
+            Rules.P2Money += 100;
         }
 
     }

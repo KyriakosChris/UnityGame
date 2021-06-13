@@ -19,10 +19,7 @@ public class DropdownMenu : MonoBehaviour
             
             RegionToBuild(dropdown);
             
-            if (!Rules.CurrentPlayerNode.Equals("Free Build Node"))
-            {
-                InitVars.Inputfield.SetActive(true);
-            }
+
             Rules.states = Rules.MyEnum.WAITING;
 
         }
@@ -137,17 +134,12 @@ public class DropdownMenu : MonoBehaviour
         }
         else
         {
+            if (!Rules.CurrentPlayerNode.Equals("Build Node"))
+            {
+                InitVars.Inputfield.SetActive(true);
+            }
             InitVars.EnterButton.SetActive(true);
         }
-    }
-
-    void Print(Dropdown dropdown)
-    {
-        int index = dropdown.value;
-       // Debug.Log(dropdown.value);
-        RegionSelector = dropdown.options[index].text;
-
-        //Debug.Log(dropdown.options[index].text);
     }
 
 
