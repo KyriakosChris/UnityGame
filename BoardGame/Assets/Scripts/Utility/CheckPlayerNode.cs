@@ -11,8 +11,6 @@ public class CheckPlayerNode : MonoBehaviour
     void Start()
     {
         nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
-        turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
-        player = GameObject.FindGameObjectWithTag(turn);
     }
 
     // Update is called once per frame
@@ -20,6 +18,22 @@ public class CheckPlayerNode : MonoBehaviour
     {
         turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         player = GameObject.FindGameObjectWithTag(turn);
+        if (Rules.PlayerEntrancePoint != 0)
+        {
+            Rules.states = Rules.MyEnum.ENTRANCE_POINT;
+            if (Rules.PlayerEntrancePoint == 1)
+            {
+
+            }
+            else
+            {
+
+            }
+            Rules.PlayerEntrancePoint = 0;
+            return;
+        }
+
+
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
             Rules.states = Rules.MyEnum.ACTION_OF_NODE;

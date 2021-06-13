@@ -24,6 +24,7 @@ public class Rules : MonoBehaviour
         FREE_BUILD,
         FREE_ENTRANCE,
         CHOOSE_REGION_NODE,
+        ENTRANCE_POINT,
         GAME_OVER
     }
 
@@ -38,6 +39,7 @@ public class Rules : MonoBehaviour
     public static string CurrentPlayerNode;
     public static MyEnum states = MyEnum.INIT;
     public static string DiceChoose = "Normal Dice";
+    public static int PlayerEntrancePoint;
 
 
 }

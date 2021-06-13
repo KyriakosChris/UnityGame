@@ -54,11 +54,12 @@ public class Build : MonoBehaviour
             return;
         for (int j = 1; j < 5; j++)
         {
-            if (Rules.Owners[region, j] == 0 && p == Rules.Owners[region, 0] && InputScript.InputNumber > 0) // if a player has an area and has not build yet, he can build
+            // 0 if has nothing, 2 if he has only entrance
+            if ((Rules.Owners[region, j] == 0 || Rules.Owners[region, j] == 2) && p == Rules.Owners[region, 0] && InputScript.InputNumber > 0) // if a player has an area and has not build yet, he can build
             {
                 // He will build in the firsts availables places
                     
-                Rules.Owners[region, j] = 1;
+                Rules.Owners[region, j] += 1;
                 InputScript.InputNumber--;
                 Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
                 childs.GetChild(region).GetChild(j-1).gameObject.SetActive(true);

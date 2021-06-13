@@ -34,10 +34,11 @@ public class FreeBuild : MonoBehaviour
 
             for (int j = 1; j < 5; j++)
             {
-                if (Rules.Owners[region, j] == 0 && p == Rules.Owners[region, 0]) // if a player has an area and has not build yet, he can build
+                // 0 if has nothing, 2 if he has only entrance
+                if ((Rules.Owners[region, j] == 0 || Rules.Owners[region, j] == 2) && p == Rules.Owners[region, 0]) // if a player has an area and has not build yet, he can build
                 {
                     // He will build in the first available place
-                    Rules.Owners[region, j] = 1;
+                    Rules.Owners[region, j] += 1;
                     Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
                     childs.GetChild(region).GetChild(j - 1).gameObject.SetActive(true);
                     //childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
