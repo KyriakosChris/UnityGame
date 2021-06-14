@@ -14,6 +14,7 @@ public class InitVars : MonoBehaviour
     public static GameObject Inputfield;
     public static GameObject Regiondropdown;
     public static GameObject EnterButton;
+    public static GameObject Messages;
     void Awake()
     {
         if (Rules.states == Rules.MyEnum.INIT)
@@ -26,7 +27,9 @@ public class InitVars : MonoBehaviour
             Inputfield = GameObject.Find("HousesToBuild");
             Regiondropdown = GameObject.Find("ListOfRegions");
             EnterButton = GameObject.Find("EnterButton");
+            Messages = GameObject.Find("MessagesToShow");
             Inputfield.SetActive(false);
+            Messages.SetActive(true);
             EnterButton.SetActive(false);
             Regiondropdown.SetActive(false);
             Buildbutton.SetActive(false);

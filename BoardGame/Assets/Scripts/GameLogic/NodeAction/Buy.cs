@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text.RegularExpressions;
+using TMPro;
 public class Buy : MonoBehaviour
 {
 
@@ -31,7 +32,6 @@ public class Buy : MonoBehaviour
             else
             {
                 Rules.states = Rules.MyEnum.END_TURN;
-                InitVars.Endturn.SetActive(true);
             }
     }
     public void BuyNode()
@@ -80,12 +80,13 @@ public class Buy : MonoBehaviour
 
     public void SellNode(string turn, int index)
     {
-        bool check = false;
+        bool check = true;
+
         for (int i =1; i<5; i++)
         {
-            if (Rules.Owners[index, i] == 0)
+            if (Rules.Owners[index, i] != 0)
             {
-                check = true;
+                check = false;
                 break;
             }
         }
@@ -105,6 +106,11 @@ public class Buy : MonoBehaviour
                 Rules.Owners[index, 0] = 2;
                 ColorTheRegion(0); // 1 for black 
             }
+        }
+        else
+        {
+            InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't buy this Region anymore.";
+            InitVars.Buybutton.SetActive(false);
         }
     }
     

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class DropdownMenu : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -89,6 +90,7 @@ public class DropdownMenu : MonoBehaviour
         {
             InitVars.Regiondropdown.SetActive(false);
             Rules.states = Rules.MyEnum.END_TURN;
+            InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Buy Entrys";
         }
         else
         {
@@ -130,11 +132,12 @@ public class DropdownMenu : MonoBehaviour
         if (items.Count <= 1)
         {
             InitVars.Regiondropdown.SetActive(false);
+            InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Build Houses";
             Rules.states = Rules.MyEnum.END_TURN;
         }
         else
         {
-            if (!Rules.CurrentPlayerNode.Equals("Build Node"))
+            if (Rules.CurrentPlayerNode.Equals("Build Node"))
             {
                 InitVars.Inputfield.SetActive(true);
             }

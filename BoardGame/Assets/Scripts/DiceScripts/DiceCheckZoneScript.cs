@@ -121,7 +121,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 			yield return new WaitForSeconds(1);
 		}
 		diceNumber = 0;
-
+		InitVars.Endturn.SetActive(true);
 		Rules.states = Rules.MyEnum.CHECK_NODE;
 	}
 }
