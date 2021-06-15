@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class InitVars : MonoBehaviour
 {
 
@@ -25,7 +26,7 @@ public class InitVars : MonoBehaviour
             Endturn = GameObject.Find("EndTurnButton");
             Buybutton = GameObject.Find("BuyButton");
             Inputfield = GameObject.Find("HousesToBuild");
-            Regiondropdown = GameObject.Find("ListOfRegions");
+            Regiondropdown = GameObject.Find("ListOfRegion");
             EnterButton = GameObject.Find("EnterButton");
             Messages = GameObject.Find("MessagesToShow");
             Inputfield.SetActive(false);
@@ -35,7 +36,7 @@ public class InitVars : MonoBehaviour
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);
             Endturn.SetActive(true);
-            Regiondropdown.GetComponent<Dropdown>().ClearOptions();
+            Regiondropdown.GetComponent<TMP_Dropdown>().ClearOptions();
 
             // Init cameras
             GameObject.Find("MapCamera").GetComponent<Camera>().enabled = false;
@@ -70,7 +71,8 @@ public class InitVars : MonoBehaviour
                 Rules.Owners[i, j] = 0;
             }
         }
-               Rules.P1Money = 2500;
+
+        Rules.P1Money = 2500;
         Rules.P2Money = 2500;
         Rules.Turn_Counter = 1;
         Rules.Roll1DicePerTurn = true;

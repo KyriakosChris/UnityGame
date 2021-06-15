@@ -18,24 +18,23 @@ public class CheckPlayerNode : MonoBehaviour
     {
         turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         player = GameObject.FindGameObjectWithTag(turn);
-        if (Rules.PlayerEntrancePoint != 0)
-        {
-            Rules.states = Rules.MyEnum.ENTRANCE_POINT;
-            if (Rules.PlayerEntrancePoint == 1)
-            {
 
-            }
-            else
-            {
-
-            }
-            Rules.PlayerEntrancePoint = 0;
-            return;
-        }
 
 
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
+
+
+            if (Rules.PlayerEntrancePoint)
+            {
+                Debug.Log("Happend: " + Rules.states);
+                InitVars.Regiondropdown.SetActive(true);
+                Rules.states = Rules.MyEnum.CHOOSE_REGION_NODE;
+                return;
+            }
+
+
+
             Rules.states = Rules.MyEnum.ACTION_OF_NODE;
             Rules.CurrentPlayerNode = nodelist.nodes[(player.GetComponent<Player>().locationIndex - 1) % nodelist.nodes.Length].name;
             if (Rules.CurrentPlayerNode.Equals("Build Node"))
@@ -67,4 +66,5 @@ public class CheckPlayerNode : MonoBehaviour
         
         
     }
+
 }

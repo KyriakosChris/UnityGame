@@ -16,7 +16,7 @@ public class DropdownMenu : MonoBehaviour
         if (Rules.states == Rules.MyEnum.CHOOSE_REGION)
         {
 
-            Dropdown dropdown = InitVars.Regiondropdown.GetComponent<Dropdown>();
+            TMP_Dropdown dropdown = InitVars.Regiondropdown.GetComponent<TMP_Dropdown>();
             
             RegionToBuild(dropdown);
             
@@ -27,22 +27,19 @@ public class DropdownMenu : MonoBehaviour
 
         if (Rules.states == Rules.MyEnum.CHOOSE_REGION_NODE)
         {
-
-            Dropdown dropdown = InitVars.Regiondropdown.GetComponent<Dropdown>();
+            Debug.Log("Came?");
+            TMP_Dropdown dropdown = InitVars.Regiondropdown.GetComponent<TMP_Dropdown>();
             ChooseEntrancePossition(dropdown);
             Rules.states = Rules.MyEnum.WAITING;
 
         }
     }
-    public void ChooseEntrancePossition(Dropdown dropdown)
+    public void ChooseEntrancePossition(TMP_Dropdown dropdown)
     {
         dropdown.ClearOptions();
         string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         int p;
-        List<string> items = new List<string>
-        {
-            "Select Position in Region"
-        };
+        List<string> items = new List<string>();
         if (turn.Equals("Player 1"))
         {
             p = 1;
@@ -81,12 +78,16 @@ public class DropdownMenu : MonoBehaviour
                 }
             }
         }
+        if (items.Count == 1)
+        {
+            RegionSelector = items[0];
+        }
         // Fill dropdown
         dropdown.AddOptions(items);
-        //Print();
+        
         dropdown.onValueChanged.AddListener(delegate { EntrancePosition = dropdown.options[dropdown.value].text; });
         // If we dont have where to build end turn
-        if (items.Count <= 1)
+        if (items.Count <= 0)
         {
             InitVars.Regiondropdown.SetActive(false);
             Rules.states = Rules.MyEnum.END_TURN;
@@ -94,19 +95,30 @@ public class DropdownMenu : MonoBehaviour
         }
         else
         {
+            if (Rules.PlayerEntrancePoint)
+            {
+                if (turn.Equals("Player 1"))
+                {
+                    Rules.P1Money -= Rules.EntryCost;
+                }
+                else
+                {
+                    Rules.P2Money -= Rules.EntryCost;
+                }
+
+            }
+
             InitVars.EnterButton.SetActive(true);
         }
+       
     }
-    public void RegionToBuild(Dropdown dropdown)
+    public void RegionToBuild(TMP_Dropdown dropdown)
     {
 
         dropdown.ClearOptions();
         string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         int p;
-        List<string> items = new List<string>
-        {
-            "Select Region"
-        };
+        List<string> items = new List<string>();
         if (turn.Equals("Player 1"))
         {
             p = 1;
@@ -123,13 +135,17 @@ public class DropdownMenu : MonoBehaviour
                 
             }
         }
+        if(items.Count == 1)
+        {
+            RegionSelector = items[0];
+        }
 
         // Fill dropdown
         dropdown.AddOptions(items);
         //Print();
         dropdown.onValueChanged.AddListener(delegate { RegionSelector = dropdown.options[dropdown.value].text; });
         // If we dont have where to build end turn
-        if (items.Count <= 1)
+        if (items.Count <= 0)
         {
             InitVars.Regiondropdown.SetActive(false);
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Build Houses";

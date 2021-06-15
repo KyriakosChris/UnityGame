@@ -104,7 +104,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 			diceNumber = 5;
 		}
 		else
-			diceNumber = 1;
+			diceNumber = 3;
 
 
 		for (int i = 1; i <= diceNumber; i++)

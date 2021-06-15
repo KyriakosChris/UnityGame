@@ -9,9 +9,9 @@ public class FreeEntrance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Rules.states == Rules.MyEnum.FREE_ENTRANCE) {
+        if (Rules.states == Rules.MyEnum.FREE_ENTRANCE || Rules.states == Rules.MyEnum.ENTRANCE_POINT) {
             
-            Rules.states = Rules.MyEnum.END_TURN;
+            
             if(DropdownMenu.EntrancePosition == "")
             {
                 return;
@@ -25,7 +25,16 @@ public class FreeEntrance : MonoBehaviour
             Rules.Owners[region, position] += 2;
             Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
             childs.GetChild(region).Find("Entrance"+ (position).ToString()).gameObject.SetActive(true);
-            InitVars.Endturn.SetActive(true);
+            if (Rules.PlayerEntrancePoint)
+            {
+                Rules.PlayerEntrancePoint = false;
+                Rules.states = Rules.MyEnum.CHECK_NODE;
+            }
+            else
+            {
+                Rules.states = Rules.MyEnum.END_TURN;
+            }
+            
         }
     }
 }

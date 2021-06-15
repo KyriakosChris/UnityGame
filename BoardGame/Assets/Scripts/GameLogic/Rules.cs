@@ -34,12 +34,13 @@ public class Rules : MonoBehaviour
     public static int P2Money;
     public static int CostToBuy = 1000;
     public static int CostToBuild = 200;
-    public static int OverNight = 100;
+    public static int EntryCost = 100;
+    public static int OverNight = 50;
     public static int[,] Owners = new int[8,5];
     public static string CurrentPlayerNode;
     public static MyEnum states = MyEnum.INIT;
     public static string DiceChoose = "Normal Dice";
-    public static int PlayerEntrancePoint;
+    public static bool PlayerEntrancePoint;
 
 
 }
