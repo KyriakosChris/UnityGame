@@ -12,12 +12,12 @@ public class FreeEntrance : MonoBehaviour
         if (Rules.states == Rules.MyEnum.FREE_ENTRANCE || Rules.states == Rules.MyEnum.ENTRANCE_POINT) {
             
             
-            if(DropdownMenu.EntrancePosition == "")
+            if(DropdownMenu.EntrancePosition == null)
             {
                 return;
             }
             string[] splitArray = DropdownMenu.EntrancePosition.Split(char.Parse(","));
-            DropdownMenu.EntrancePosition = "";
+            DropdownMenu.EntrancePosition = null;
             int region = Buy.RegionNumber(splitArray[0]);
             int position = Buy.RegionNumber(splitArray[1])+1;
             Debug.Log("Reg " +region + " Posisiton "+ position);

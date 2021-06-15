@@ -19,10 +19,17 @@ public class PlayerMove : MonoBehaviour
         {
             if (Vector3.Distance(this.transform.position, target) > 0.1f)
             {
-                GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
+                NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
                 Vector3 movementDirection = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
                 transform.position = movementDirection;
-                transform.LookAt(target);
+                if (TurnManager.GetInstance().GetCurrentPlayer().Equals("Player 1"))
+                {
+                    transform.LookAt(nodelist.nodes[GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position);
+                }
+                else
+                {
+                    transform.LookAt(nodelist.nodes[GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position);
+                }
             }
 
         }
