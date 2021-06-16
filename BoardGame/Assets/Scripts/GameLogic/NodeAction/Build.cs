@@ -17,6 +17,7 @@ public class Build : MonoBehaviour
             if (DiceCheckZoneScript.BuildDice == "Red")
             {
                 Rules.states = Rules.MyEnum.CHECK_MONEY;
+
                 Debug.Log("Building Rejected");
                 return;
             }

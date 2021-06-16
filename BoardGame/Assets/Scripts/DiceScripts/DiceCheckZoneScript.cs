@@ -90,7 +90,8 @@ public class DiceCheckZoneScript : MonoBehaviour
 				col.GetComponentInParent<BuildDiceScript>().DisappearDice();
 				//Debug.Log("Dice: "+BuildDice);
 				Rules.DiceChoose = "Normal Dice";
-				
+				Rules.CamChange();
+
 
 			}
 		}
@@ -99,19 +100,11 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
 	{
-		diceNumber = 2;
 		if (Rules.Turn_Counter <= 2)
 		{
 
 			diceNumber++;
 		}
-		else if (Rules.Turn_Counter == 3)
-		{
-			diceNumber = 5;
-		}
-		else
-			diceNumber = 3;
-
 
 		for (int i = 1; i <= diceNumber; i++)
 		{

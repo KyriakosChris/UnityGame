@@ -17,7 +17,9 @@ public class DropdownMenu : MonoBehaviour
         {
 
             TMP_Dropdown dropdown = InitVars.Regiondropdown.GetComponent<TMP_Dropdown>();
-            
+            if(Rules.CurrentPlayerNode.Equals("Build Node"))
+                InitVars.Inputfield.SetActive(true);
+
             RegionToBuild(dropdown);
             
 
@@ -27,7 +29,6 @@ public class DropdownMenu : MonoBehaviour
 
         if (Rules.states == Rules.MyEnum.CHOOSE_REGION_NODE)
         {
-            Debug.Log("Came?");
             TMP_Dropdown dropdown = InitVars.Regiondropdown.GetComponent<TMP_Dropdown>();
             ChooseEntrancePossition(dropdown);
             Rules.states = Rules.MyEnum.WAITING;
@@ -82,6 +83,8 @@ public class DropdownMenu : MonoBehaviour
         {
             RegionSelector = items[0];
         }
+
+
         // Fill dropdown
         dropdown.AddOptions(items);
         
@@ -89,9 +92,16 @@ public class DropdownMenu : MonoBehaviour
         // If we dont have where to build end turn
         if (items.Count <= 0)
         {
+
             InitVars.Regiondropdown.SetActive(false);
+            
             Rules.states = Rules.MyEnum.END_TURN;
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Buy Entrys";
+            if (Rules.PlayerEntrancePoint)
+            {
+                Rules.states = Rules.MyEnum.CHECK_NODE;
+                Rules.PlayerEntrancePoint = false;
+            }
         }
         else
         {
@@ -148,6 +158,7 @@ public class DropdownMenu : MonoBehaviour
         if (items.Count <= 0)
         {
             InitVars.Regiondropdown.SetActive(false);
+            InitVars.Inputfield.SetActive(false);
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Build Houses";
             Rules.states = Rules.MyEnum.END_TURN;
         }

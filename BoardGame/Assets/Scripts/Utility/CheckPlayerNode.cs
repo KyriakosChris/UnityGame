@@ -23,10 +23,12 @@ public class CheckPlayerNode : MonoBehaviour
 
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
-
+            if(Rules.cam == InitVars.cam1.name)
+                Rules.CamChange();
 
             if (Rules.PlayerEntrancePoint)
             {
+                
                 Debug.Log("Happend: " + Rules.states);
                 InitVars.Regiondropdown.SetActive(true);
                 Rules.states = Rules.MyEnum.CHOOSE_REGION_NODE;
@@ -51,7 +53,7 @@ public class CheckPlayerNode : MonoBehaviour
             {
                 Rules.states = Rules.MyEnum.CHOOSE_REGION;
                 InitVars.Regiondropdown.SetActive(true);
-
+                InitVars.Inputfield.SetActive(true);
             }
             else if (Rules.CurrentPlayerNode.Equals("Buy Node"))
             {

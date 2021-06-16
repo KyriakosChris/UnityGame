@@ -42,6 +42,23 @@ public class Rules : MonoBehaviour
     public static string DiceChoose = "Normal Dice";
     public static bool PlayerEntrancePoint;
     public static bool Pay;
+    public static string cam;
+
+    public static void CamChange()
+    {
 
 
+        if (cam == InitVars.cam1.name)
+        {
+            InitVars.cam1.enabled = false;
+            InitVars.cam2.enabled = true;
+            cam = InitVars.cam2.name;
+        }
+        else
+        {
+            InitVars.cam1.enabled = true;
+            InitVars.cam2.enabled = false;
+            cam = InitVars.cam1.name;
+        }
+    }
 }

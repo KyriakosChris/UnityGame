@@ -16,6 +16,8 @@ public class InitVars : MonoBehaviour
     public static GameObject Regiondropdown;
     public static GameObject EnterButton;
     public static GameObject Messages;
+    public static Camera cam1;
+    public static Camera cam2;
     void Awake()
     {
         if (Rules.states == Rules.MyEnum.INIT)
@@ -35,12 +37,17 @@ public class InitVars : MonoBehaviour
             Regiondropdown.SetActive(false);
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);
-            Endturn.SetActive(true);
+            Endturn.SetActive(false);
             Regiondropdown.GetComponent<TMP_Dropdown>().ClearOptions();
 
+
             // Init cameras
-            GameObject.Find("MapCamera").GetComponent<Camera>().enabled = false;
-            GameObject.Find("Player1_camera").GetComponent<Camera>().enabled = true;
+            
+            cam1=GameObject.Find("Player_camera").GetComponent<Camera>();
+            cam2 = GameObject.Find("MapCamera").GetComponent<Camera>();
+            cam1.enabled = true;
+            cam2.enabled = false;
+            Rules.cam = cam1.name;
             // Disable hotels
             Regions = GameObject.Find("Regions");
             Transform childs = Regions.GetComponentInChildren<Transform>();
@@ -77,19 +84,5 @@ public class InitVars : MonoBehaviour
         Rules.Turn_Counter = 1;
         Rules.Roll1DicePerTurn = true;
 
-    }
-
-
-    void Update()
-    {
-        if(Rules.states == Rules.MyEnum.INIT)
-        {
-           
-        }
-
-        if (Rules.states == Rules.MyEnum.END_TURN)
-        {
-            Endturn.SetActive(true);
-        }
     }
 }

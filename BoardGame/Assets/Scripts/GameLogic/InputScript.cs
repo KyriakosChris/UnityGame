@@ -15,7 +15,7 @@ public class InputScript : MonoBehaviour
             Rules.states = Rules.MyEnum.ENTRANCE_POINT;
             return;
         }
-
+        InitVars.Inputfield.SetActive(true);
         if (Rules.CurrentPlayerNode.Equals("Free Build Node"))
         {
            
@@ -47,5 +47,6 @@ public class InputScript : MonoBehaviour
         {
             GameObject.Find("HousesToBuild/ErrorMsg").GetComponent<Text>().text = "The input must be an integer, try again";
         }
+        InitVars.Inputfield.SetActive(false);
     }
 }
