@@ -28,7 +28,7 @@ public class PlayerMove : MonoBehaviour
                 }
                 else
                 {
-                    transform.LookAt(nodelist.nodes[GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position);
+                    transform.LookAt(nodelist.nodes[GameObject.FindGameObjectWithTag("Player 2").GetComponent<Player>().locationIndex % nodelist.nodes.Length].transform.position);
                 }
             }
 

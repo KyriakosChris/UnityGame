@@ -35,6 +35,7 @@ public class FreeEntrance : MonoBehaviour
                 Rules.states = Rules.MyEnum.END_TURN;
             }
             
+
         }
     }
 }

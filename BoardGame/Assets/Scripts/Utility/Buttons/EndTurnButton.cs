@@ -15,6 +15,7 @@ public class EndTurnButton : MonoBehaviour
         InitVars.Buybutton.SetActive(false);
         InitVars.Regiondropdown.SetActive(false);
         
+        Rules.Pay = false;
         // Delete all messages at the end of the turn.
         InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "";
     }

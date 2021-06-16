@@ -70,7 +70,7 @@ public class Build : MonoBehaviour
                     Rules.P1Money -= Rules.CostToBuild;
                     if (Rules.P1Money < 0)
                     {
-                        Rules.states = Rules.MyEnum.SELL_TO_SURVIVE;
+                        Rules.states = Rules.MyEnum.GAME_OVER;
                         Rules.CostToBuild = 200;
                         return;
                     }
@@ -80,7 +80,7 @@ public class Build : MonoBehaviour
                     Rules.P2Money -= Rules.CostToBuild;
                     if (Rules.P2Money < 0)
                     {
-                        Rules.states = Rules.MyEnum.SELL_TO_SURVIVE;
+                        Rules.states = Rules.MyEnum.GAME_OVER;
                         Rules.CostToBuild = 200;
                         return;
                     }

@@ -20,11 +20,11 @@ public class Rules : MonoBehaviour
         ACTION_BUILDDICE,
         CHECK_MONEY,
         END_TURN,
-        SELL_TO_SURVIVE,
         FREE_BUILD,
         FREE_ENTRANCE,
         CHOOSE_REGION_NODE,
         ENTRANCE_POINT,
+        PAY,
         GAME_OVER
     }
 
@@ -41,6 +41,7 @@ public class Rules : MonoBehaviour
     public static MyEnum states = MyEnum.INIT;
     public static string DiceChoose = "Normal Dice";
     public static bool PlayerEntrancePoint;
+    public static bool Pay;
 
 
 }

@@ -17,7 +17,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	void OnTriggerStay(Collider col)
 	{
-		if (col.name.Contains("Side") && Rules.Roll1DicePerTurn)
+		if ((col.name.Contains("Side") && Rules.Roll1DicePerTurn))
 		{
 			if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f && diceNumber == 0)
 			{
@@ -48,9 +48,15 @@ public class DiceCheckZoneScript : MonoBehaviour
 				
 				col.GetComponentInParent<DiceScript>().IsTriggers(false);
 				col.GetComponentInParent<DiceScript>().DisappearDice();
+				if (!Rules.Pay)
+					StartCoroutine(MoveToNextNode());
+                else
+                {
+					Rules.states = Rules.MyEnum.PAY;
 
-				StartCoroutine(MoveToNextNode());
-				
+				}
+				Rules.Pay = false;
+
 			}
 		}
 		if (col.name.Contains("Build") && Rules.states == Rules.MyEnum.SHOW_DICE && Rules.DiceChoose == "Build Dice")

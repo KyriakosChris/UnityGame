@@ -18,7 +18,7 @@ public class Buy : MonoBehaviour
         }
     }
 
-    public void Checkmoney()
+    public static void Checkmoney()
     {
         int money;
         if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
@@ -27,7 +27,7 @@ public class Buy : MonoBehaviour
             money = Rules.P2Money;
             if (money < 0)
             {
-                Rules.states = Rules.MyEnum.SELL_TO_SURVIVE;  // To Do sell
+                Rules.states = Rules.MyEnum.GAME_OVER; 
             }
             else
             {
@@ -38,10 +38,9 @@ public class Buy : MonoBehaviour
     {
         Rules.states = Rules.MyEnum.CHECK_MONEY;
         string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
-        GameObject player = GameObject.FindGameObjectWithTag(turn);
         int index;
 
-        if (player.name == "Player_1")
+        if (turn == "Player 1")
         {
             reg = DisplayPlayer1Reg.region;
         }
@@ -94,6 +93,11 @@ public class Buy : MonoBehaviour
         {
             if (turn.Equals("Player 1"))
             {
+                if (Rules.P1Money < Rules.CostToBuy / 2)
+                {
+                    InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
+                    return;
+                }
                 Rules.P1Money -= Rules.CostToBuy / 2;
                 Rules.P2Money += Rules.CostToBuy / 2;
                 ColorTheRegion(1); // 1 for red 
@@ -101,6 +105,11 @@ public class Buy : MonoBehaviour
             }
             else
             {
+                if (Rules.P2Money < Rules.CostToBuy / 2)
+                {
+                    InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
+                    return;
+                }
                 Rules.P2Money -= Rules.CostToBuy / 2;
                 Rules.P1Money += Rules.CostToBuy / 2;
                 Rules.Owners[index, 0] = 2;
@@ -119,12 +128,23 @@ public class Buy : MonoBehaviour
     {
         if (turn.Equals("Player 1"))
         {
+            if (Rules.P1Money < Rules.CostToBuy)
+            {
+                InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
+                return;
+            }
             Rules.P1Money -= Rules.CostToBuy;
             Rules.Owners[index,0] = 1;
             ColorTheRegion(1); // 1 for red 
         }
         else
         {
+            if (Rules.P2Money < Rules.CostToBuy)
+            {
+                InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
+                
+                return;
+            }
             Rules.P2Money -= Rules.CostToBuy;
             Rules.Owners[index,0] = 2;
             ColorTheRegion(0); // 1 for black 
