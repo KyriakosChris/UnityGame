@@ -31,7 +31,7 @@ public class DropdownMenu : MonoBehaviour
         {
             TMP_Dropdown dropdown = InitVars.Regiondropdown.GetComponent<TMP_Dropdown>();
             ChooseEntrancePossition(dropdown);
-            Rules.states = Rules.MyEnum.WAITING;
+            
 
         }
     }
@@ -99,8 +99,10 @@ public class DropdownMenu : MonoBehaviour
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Buy Entrys";
             if (Rules.PlayerEntrancePoint)
             {
+                Debug.Log("Bug in Entry");
                 Rules.states = Rules.MyEnum.CHECK_NODE;
                 Rules.PlayerEntrancePoint = false;
+                return;
             }
         }
         else
@@ -117,7 +119,7 @@ public class DropdownMenu : MonoBehaviour
                 }
 
             }
-
+            Rules.states = Rules.MyEnum.WAITING;
             InitVars.EnterButton.SetActive(true);
         }
        

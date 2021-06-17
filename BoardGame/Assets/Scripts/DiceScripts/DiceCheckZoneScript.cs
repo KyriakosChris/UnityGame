@@ -115,7 +115,8 @@ public class DiceCheckZoneScript : MonoBehaviour
 			string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
 			GameObject player = GameObject.FindGameObjectWithTag(turn);
 			NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
-			if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node"))
+
+			if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node") && i<diceNumber)
             {
 				FindObjectOfType<AudioManager>().Play("Drift");
             }
