@@ -73,6 +73,7 @@ public class Build : MonoBehaviour
                     {
                         Rules.states = Rules.MyEnum.GAME_OVER;
                         Rules.CostToBuild = 200;
+                        Debug.Log("Dead");
                         return;
                     }
                 }
@@ -83,12 +84,13 @@ public class Build : MonoBehaviour
                     {
                         Rules.states = Rules.MyEnum.GAME_OVER;
                         Rules.CostToBuild = 200;
+                        Debug.Log("Dead");
                         return;
                     }
                 }
 
             }
         }
-        Rules.CostToBuild = 200;
+        Rules.CostToBuild = 1000;
     }
 }

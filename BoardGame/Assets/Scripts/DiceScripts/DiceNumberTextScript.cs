@@ -6,19 +6,5 @@ using UnityEngine.UI;
 public class DiceNumberTextScript : MonoBehaviour
 {
 
-	Text text;
-	
 
-	// Use this for initialization
-	void Start()
-	{
-		text = GetComponent<Text>();
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		text.text = DiceCheckZoneScript.diceNumber.ToString();
-		
-	}
 }

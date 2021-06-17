@@ -55,15 +55,21 @@ public class DropdownMenu : MonoBehaviour
            
             if (p == Rules.Owners[i, 0]) // Check the owned regions by the player only
             {
+                int regionHouseNumber = 0;
                 // Check if at least a house exist in the Region in order to build an entrance 
                 for (int j = 1; j < 5; j++)
                 {
-                    if (Rules.Owners[i, j] > 0) {
+                    if (Rules.Owners[i, j] > 0 ) {
                         houseInRegion = true;
-                        break;
+                        
                     }
+                    // If he has build all houses dont add this region to the list
+                    if (Rules.Owners[i, j] == 1 || Rules.Owners[i, j] == 3)
+                        regionHouseNumber++;
 
                 }
+                if (regionHouseNumber == 4)
+                    houseInRegion = false;
 
                 if (houseInRegion)
                 {

@@ -14,6 +14,7 @@ public class Pay : MonoBehaviour
             int cost = DiceCheckZoneScript.diceNumber * Rules.OverNight * numOfBuilding;
             string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
             FindObjectOfType<AudioManager>().Play("CashOut");
+            Rules.CamChange();
             if (turn == "Player 1")
             {
                 Rules.P1Money-=cost;
@@ -24,6 +25,7 @@ public class Pay : MonoBehaviour
             }
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You Paid "+ cost + " $";
             Buy.Checkmoney();
+
         }
     }
 }

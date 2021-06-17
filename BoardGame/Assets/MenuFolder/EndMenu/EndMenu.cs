@@ -16,13 +16,14 @@ public class EndMenu : MonoBehaviour
         }
         else
         {
+            TurnManager.GetInstance().EndTurn();
             GameObject.Find("Name").GetComponent<TextMeshProUGUI>().text = "Player 1";
         }
     }
     public void Restart()
     {
         Rules.states = Rules.MyEnum.INIT;
-        TurnManager.GetInstance().EndTurn();
+        
         SceneManager.LoadScene("GameScene");
     }
 

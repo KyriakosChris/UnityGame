@@ -100,9 +100,10 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
 	{
+		
 		if (Rules.Turn_Counter <= 2)
 		{
-
+			
 			diceNumber++;
 		}
 
