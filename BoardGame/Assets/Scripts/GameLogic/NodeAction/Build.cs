@@ -91,6 +91,6 @@ public class Build : MonoBehaviour
 
             }
         }
-        Rules.CostToBuild = 1000;
+        Rules.CostToBuild = 200;
     }
 }

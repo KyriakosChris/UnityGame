@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int locationIndex = 0;
+    public  int locationIndex = 0;
 }

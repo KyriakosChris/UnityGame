@@ -137,6 +137,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 			CarManager.GetInstance().MoveToNext();
 			yield return new WaitForSeconds(1);
 		}
+
 		diceNumber = 0;
 		InitVars.Endturn.SetActive(true);
 		Rules.states = Rules.MyEnum.CHECK_NODE;

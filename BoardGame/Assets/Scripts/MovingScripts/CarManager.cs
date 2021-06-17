@@ -7,7 +7,7 @@ public class CarManager
     private readonly GameObject car1;
     private readonly GameObject car2;
     #region Singleton
-    private static CarManager instance = null;
+    public static CarManager instance = null;
     public static CarManager GetInstance()
     {
         if (instance == null)
@@ -30,7 +30,7 @@ public class CarManager
     {
         NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
 
-        GetInstance();
+        
         if (TurnManager.GetInstance().GetCurrentPlayer().Equals("Player 1"))
         {
           

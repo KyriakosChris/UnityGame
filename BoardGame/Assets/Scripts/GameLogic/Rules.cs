@@ -32,7 +32,7 @@ public class Rules : MonoBehaviour
     public static int Turn_Counter;
     public static int P1Money;
     public static int P2Money;
-    public static int CostToBuy = 1000;
+    public static int CostToBuy = 200;
     public static int CostToBuild = 1000;
     public static int EntryCost = 100;
     public static int OverNight = 50;

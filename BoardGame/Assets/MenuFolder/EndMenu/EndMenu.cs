@@ -23,7 +23,7 @@ public class EndMenu : MonoBehaviour
     public void Restart()
     {
         Rules.states = Rules.MyEnum.INIT;
-        
+        CarManager.instance = null;
         SceneManager.LoadScene("GameScene");
     }
 
