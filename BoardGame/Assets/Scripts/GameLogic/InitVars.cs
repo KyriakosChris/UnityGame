@@ -39,11 +39,12 @@ public class InitVars : MonoBehaviour
             Buybutton.SetActive(false);
             Endturn.SetActive(false);
             Regiondropdown.GetComponent<TMP_Dropdown>().ClearOptions();
-
+            Debug.Log("RESTART  ");
+            Debug.Log("Loc of p1 " + GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex);
 
             // Init cameras
-            
-            cam1=GameObject.Find("Player_camera").GetComponent<Camera>();
+
+            cam1 =GameObject.Find("Player_camera").GetComponent<Camera>();
             cam2 = GameObject.Find("MapCamera").GetComponent<Camera>();
             cam1.enabled = true;
             cam2.enabled = false;

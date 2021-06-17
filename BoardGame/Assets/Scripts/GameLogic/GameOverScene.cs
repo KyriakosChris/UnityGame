@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameOverScene : MonoBehaviour
 {
 
@@ -10,7 +10,9 @@ public class GameOverScene : MonoBehaviour
     {
         if (Rules.states == Rules.MyEnum.GAME_OVER)
         {
-            FindObjectOfType<AudioManager>().Play("GameOver");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
+            
             Debug.Log(TurnManager.GetInstance().GetCurrentPlayer().ToString()+ "  Lost");
         }
     }
