@@ -23,7 +23,8 @@ public class CheckPlayerNode : MonoBehaviour
 
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
-            if(Rules.cam == InitVars.cam1.name)
+            FindObjectOfType<AudioManager>().Stop("CarSound");
+            if (Rules.cam == InitVars.cam1.name)
                 Rules.CamChange();
 
             if (Rules.PlayerEntrancePoint)

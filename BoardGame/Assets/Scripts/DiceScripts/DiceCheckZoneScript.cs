@@ -108,6 +108,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 		for (int i = 1; i <= diceNumber; i++)
 		{
+			FindObjectOfType<AudioManager>().Play("CarSound");
 			CarManager.GetInstance().MoveToNext();
 			//Debug.Log("Rolled:  "+ diceNumber + "  Steps : " + i);
 			yield return new WaitForSeconds(1);
@@ -116,7 +117,13 @@ public class DiceCheckZoneScript : MonoBehaviour
 			GameObject player = GameObject.FindGameObjectWithTag(turn);
 			NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
 
-			if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node") && i<diceNumber)
+			if (GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex ==
+				  GameObject.FindGameObjectWithTag("Player 2").GetComponent<Player>().locationIndex)
+			{
+				FindObjectOfType<AudioManager>().Play("CarHorn");
+
+			}
+				if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node") && i<diceNumber)
             {
 				FindObjectOfType<AudioManager>().Play("Drift");
             }
@@ -125,6 +132,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 		if(GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex ==
 			GameObject.FindGameObjectWithTag("Player 2").GetComponent<Player>().locationIndex)
         {
+			FindObjectOfType<AudioManager>().Play("CarHorn");
 			CarManager.GetInstance().MoveToNext();
 			yield return new WaitForSeconds(1);
 		}
