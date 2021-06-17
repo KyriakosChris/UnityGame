@@ -23,7 +23,6 @@ public class Build : MonoBehaviour
             }
             Rules.states = Rules.MyEnum.CHECK_MONEY;
             string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
-            //GameObject player = GameObject.FindGameObjectWithTag(turn);
             if (turn.Equals("Player 1"))
             {
                 p = 1;
@@ -64,6 +63,7 @@ public class Build : MonoBehaviour
                 InputScript.InputNumber--;
                 Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
                 childs.GetChild(region).GetChild(j-1).gameObject.SetActive(true);
+                FindObjectOfType<AudioManager>().Play("BuildSound");
                 //childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
                 Debug.Log("Set Active region "+ region + 1+" House "+j);
                 if (turn.Equals("Player 1"))

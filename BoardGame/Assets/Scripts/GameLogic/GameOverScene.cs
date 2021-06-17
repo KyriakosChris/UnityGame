@@ -10,6 +10,7 @@ public class GameOverScene : MonoBehaviour
     {
         if (Rules.states == Rules.MyEnum.GAME_OVER)
         {
+            FindObjectOfType<AudioManager>().Play("GameOver");
             Debug.Log(TurnManager.GetInstance().GetCurrentPlayer().ToString()+ "  Lost");
         }
     }

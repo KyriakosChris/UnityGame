@@ -25,6 +25,7 @@ public class FreeEntrance : MonoBehaviour
             Rules.Owners[region, position] += 2;
             Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
             childs.GetChild(region).Find("Entrance"+ (position).ToString()).gameObject.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("BuildSound");
             if (Rules.PlayerEntrancePoint)
             {
                 Rules.PlayerEntrancePoint = false;

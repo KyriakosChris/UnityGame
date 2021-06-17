@@ -111,6 +111,14 @@ public class DiceCheckZoneScript : MonoBehaviour
 			CarManager.GetInstance().MoveToNext();
 			//Debug.Log("Rolled:  "+ diceNumber + "  Steps : " + i);
 			yield return new WaitForSeconds(1);
+			// Drift Audio
+			string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
+			GameObject player = GameObject.FindGameObjectWithTag(turn);
+			NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
+			if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node"))
+            {
+				FindObjectOfType<AudioManager>().Play("Drift");
+            }
 		}
 		// If they end up in the same block, move to the next one.
 		if(GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex ==

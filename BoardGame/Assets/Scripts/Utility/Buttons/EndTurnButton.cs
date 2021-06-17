@@ -17,6 +17,7 @@ public class EndTurnButton : MonoBehaviour
         InitVars.Buildbutton.SetActive(false);
         InitVars.Inputfield.SetActive(false);
         InitVars.Buybutton.SetActive(false);
+        InitVars.EnterButton.SetActive(false);
         Rules.Pay = false;
         Rules. CamChange();
 

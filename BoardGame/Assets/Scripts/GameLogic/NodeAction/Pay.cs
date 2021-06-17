@@ -13,6 +13,7 @@ public class Pay : MonoBehaviour
         {
             int cost = DiceCheckZoneScript.diceNumber * Rules.OverNight * numOfBuilding;
             string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
+            FindObjectOfType<AudioManager>().Play("CashOut");
             if (turn == "Player 1")
             {
                 Rules.P1Money-=cost;
