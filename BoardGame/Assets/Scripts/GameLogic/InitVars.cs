@@ -23,6 +23,7 @@ public class InitVars : MonoBehaviour
         if (Rules.states == Rules.MyEnum.INIT)
         {
             // Disable buttons
+            Debug.Log("What");
             Buildbutton = GameObject.Find("BuildDiceRoll");
             RollDice = GameObject.Find("RollDiceButton");
             Endturn = GameObject.Find("EndTurnButton");
