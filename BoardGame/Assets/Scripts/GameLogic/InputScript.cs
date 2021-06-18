@@ -7,6 +7,7 @@ public class InputScript : MonoBehaviour
     // Start is called before the first frame update
     public static int InputNumber;
 
+    /* Gets the Input From a user, It triggers when the enter button is pressed. The input is useful for building, i.e. get the number of houses.*/
     public void GetInput()
     {
 
@@ -30,7 +31,7 @@ public class InputScript : MonoBehaviour
             Rules.states = Rules.MyEnum.FREE_ENTRANCE;
             InitVars.Regiondropdown.SetActive(false);
             InitVars.EnterButton.SetActive(false);
-            Debug.Log(DropdownMenu.EntrancePosition + " With State "+ Rules.states);
+           // Debug.Log(DropdownMenu.EntrancePosition + " With State "+ Rules.states);
         }
         else if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out InputNumber))
         {

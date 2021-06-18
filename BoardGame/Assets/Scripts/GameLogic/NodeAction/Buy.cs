@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Text.RegularExpressions;
+
 using TMPro;
 public class Buy : MonoBehaviour
 {
@@ -14,26 +14,14 @@ public class Buy : MonoBehaviour
         if (Rules.states == Rules.MyEnum.BUY_NODE)
         {
             BuyNode();
-            Checkmoney();
+            Rules.Checkmoney();
         }
     }
 
-    public static void Checkmoney()
-    {
-        int money;
-        if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
-            money = Rules.P1Money;
-        else
-            money = Rules.P2Money;
-            if (money < 0)
-            {
-                Rules.states = Rules.MyEnum.GAME_OVER; 
-            }
-            else
-            {
-                Rules.states = Rules.MyEnum.END_TURN;
-            }
-    }
+
+    /* Checks if the region that the player is now is avaliable for buying. Of courses if none of the players bought it, it is. 
+     * The other case is if a player bought it, but has not build anything yet.
+    */
     public void BuyNode()
     {
         Rules.states = Rules.MyEnum.CHECK_MONEY;
@@ -49,7 +37,7 @@ public class Buy : MonoBehaviour
             reg = DisplayPlayer2Reg.region;
             
         }
-        index = RegionNumber(reg);
+        index = Rules.RegionNumber(reg);
         if (Rules.Owners[index,0] == 0)
         {
             NormalBuyNode(turn, index);
@@ -61,22 +49,10 @@ public class Buy : MonoBehaviour
 
     }
 
-    public static int RegionNumber(string reg)
-    {
-        if (reg == null)
-            return -1;
-        string[] digits = Regex.Split(reg, @"\D+");
-        foreach (string value in digits)
-        {
-           
-            if (int.TryParse(value, out int number))
-            {
-                return number - 1;
-            }
-        }
-        return -1;
-    }
+   
 
+    /*If the player goes to a region that another player has already bought but hasnt build yet he can buy it from him for the half price.
+    */
     public void SellNode(string turn, int index)
     {
         bool check = true;
@@ -100,6 +76,7 @@ public class Buy : MonoBehaviour
                 }
                 Rules.P1Money -= Rules.CostToBuy / 2;
                 Rules.P2Money += Rules.CostToBuy / 2;
+                Rules.Owners[index, 0] = 1;
                 ColorTheRegion(1); // 1 for red 
 
             }
@@ -113,7 +90,7 @@ public class Buy : MonoBehaviour
                 Rules.P2Money -= Rules.CostToBuy / 2;
                 Rules.P1Money += Rules.CostToBuy / 2;
                 Rules.Owners[index, 0] = 2;
-                ColorTheRegion(0); // 1 for black 
+                ColorTheRegion(0); // 0 for black 
             }
         }
         else
@@ -123,7 +100,7 @@ public class Buy : MonoBehaviour
         }
     }
     
-
+    /* If none player has this region he can buy it for the default price */
     public  void NormalBuyNode(string turn,int index)
     {
         if (turn.Equals("Player 1"))
@@ -147,10 +124,11 @@ public class Buy : MonoBehaviour
             }
             Rules.P2Money -= Rules.CostToBuy;
             Rules.Owners[index,0] = 2;
-            ColorTheRegion(0); // 1 for black 
+            ColorTheRegion(0); // 0 for black 
         }
         
     }
+    /* After a player buy a region, it Changes the color of the region name. The new color is the color of the Owner-Player */
     public void ColorTheRegion(float color)
     {
         reg += "/Name";

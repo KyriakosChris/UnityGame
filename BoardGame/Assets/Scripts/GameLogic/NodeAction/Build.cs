@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class Build : MonoBehaviour
 {
-    // Start is called before the first frame update
-    int p;
+    
+    int p; // player Number
 
     // Update is called once per frame
     void Update()
     {
 
-
+        // Setting up the Results of the build dice before build
         if (Rules.states == Rules.MyEnum.ACTION_BUILDDICE)
         {
+            
             if (DiceCheckZoneScript.BuildDice == "Red")
             {
                 Rules.states = Rules.MyEnum.CHECK_MONEY;
 
-                Debug.Log("Building Rejected");
+                //Debug.Log("Building Rejected");
                 return;
             }
             Rules.states = Rules.MyEnum.CHECK_MONEY;
@@ -39,16 +40,22 @@ public class Build : MonoBehaviour
             {
                 Rules.CostToBuild *= 2;
             }
-            Debug.Log("Building  for: "+ Rules.CostToBuild);
+            //Debug.Log("Building  for: "+ Rules.CostToBuild);
+
+            // The player Build the houses that he chose
             CanBuild(turn);
 
         }
     }
 
+    /* If the player Can Build, firsts checks what region the player chose from the dropdown menu. If it was not null, and he hasnt already build all the houses at this region
+     * He builds as many houses as he can from the number of houses that he chose. The cost of the houses is already fixed from the build Dice. If after a build he has negative amount of money,
+     * he loses.
+     * */
     public void CanBuild(string turn)
     {
 
-        int region = Buy.RegionNumber(DropdownMenu.RegionSelector);
+        int region = Rules.RegionNumber(DropdownMenu.RegionSelector);
         DropdownMenu.RegionSelector = "";
         if (region == -1)
             return;
@@ -65,7 +72,6 @@ public class Build : MonoBehaviour
                 childs.GetChild(region).GetChild(j-1).gameObject.SetActive(true);
                 FindObjectOfType<AudioManager>().Stop("BuildSound");
                 FindObjectOfType<AudioManager>().Play("BuildSound");
-                //childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
                 Debug.Log("Set Active region "+ region + 1+" House "+j);
                 if (turn.Equals("Player 1"))
                 {

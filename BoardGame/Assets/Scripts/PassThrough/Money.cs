@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Money : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Collider of the MoneyPassthrough, Give the player money and play a sound.
     public void OnTriggerEnter(Collider other)
     {
         FindObjectOfType<AudioManager>().Play("CashOut");

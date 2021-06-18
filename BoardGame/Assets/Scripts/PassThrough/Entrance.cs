@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Entrance : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Collider of the EntrancePassthrough
     public void OnTriggerEnter(Collider other)
-    {
+    {  
         Rules.PlayerEntrancePoint = true;
     }
 }

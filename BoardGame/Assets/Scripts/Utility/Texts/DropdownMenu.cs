@@ -12,7 +12,7 @@ public class DropdownMenu : MonoBehaviour
     void Update()
     {
         
-        
+        // Fill the dropdown with the availiables region that a player can build or can buy entrys.
         if (Rules.states == Rules.MyEnum.CHOOSE_REGION)
         {
 
@@ -35,6 +35,7 @@ public class DropdownMenu : MonoBehaviour
 
         }
     }
+    // Fills the dropdown with regions and locations where the player can place entrances.
     public void ChooseEntrancePossition(TMP_Dropdown dropdown)
     {
         dropdown.ClearOptions();
@@ -55,7 +56,7 @@ public class DropdownMenu : MonoBehaviour
            
             if (p == Rules.Owners[i, 0]) // Check the owned regions by the player only
             {
-                int regionHouseNumber = 0;
+                int regionEntranceNumber = 0;
                 // Check if at least a house exist in the Region in order to build an entrance 
                 for (int j = 1; j < 5; j++)
                 {
@@ -63,12 +64,12 @@ public class DropdownMenu : MonoBehaviour
                         houseInRegion = true;
                         
                     }
-                    // If he has build all houses dont add this region to the list
-                    if (Rules.Owners[i, j] == 1 || Rules.Owners[i, j] == 3)
-                        regionHouseNumber++;
+                    // If he has build all entrances dont add this region to the list
+                    if (Rules.Owners[i, j] == 3)
+                        regionEntranceNumber++;
 
                 }
-                if (regionHouseNumber == 4)
+                if (regionEntranceNumber == 4)
                     houseInRegion = false;
 
                 if (houseInRegion)
@@ -85,6 +86,7 @@ public class DropdownMenu : MonoBehaviour
                 }
             }
         }
+        // If he has only one choise.
         if (items.Count == 1)
         {
             RegionSelector = items[0];
@@ -105,7 +107,7 @@ public class DropdownMenu : MonoBehaviour
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Buy Entrys";
             if (Rules.PlayerEntrancePoint)
             {
-                Debug.Log("Bug in Entry");
+                //Debug.Log("Bug in Entry");
                 Rules.states = Rules.MyEnum.CHECK_NODE;
                 Rules.PlayerEntrancePoint = false;
                 return;
@@ -130,6 +132,7 @@ public class DropdownMenu : MonoBehaviour
         }
        
     }
+    // Fills the dropdown with regions where the player can place houses.
     public void RegionToBuild(TMP_Dropdown dropdown)
     {
 
@@ -147,7 +150,13 @@ public class DropdownMenu : MonoBehaviour
         }
         for (int i = 0; i < 8; i++)
         {
-            if (p == Rules.Owners[i, 0])
+            int countHouses = 0; // if it is 4 he cantr
+            for (int j = 1; j < 5; j++)
+            {
+                if (Rules.Owners[i, j] == 1 || Rules.Owners[i, j] == 3)
+                    countHouses++;
+           }
+            if (p == Rules.Owners[i, 0]  &&  countHouses <4)
             {
                 items.Add("Region " + (i+1).ToString());
                 

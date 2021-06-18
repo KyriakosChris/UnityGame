@@ -10,9 +10,10 @@ public class FreeBuild : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*Check if a Player Selected a region from the dropdown, and if he hasnt build already all the houses, he build one for free.*/
         if (Rules.states == Rules.MyEnum.FREE_BUILD)
         {
-            Debug.Log("Free in  " + DropdownMenu.RegionSelector);
+            //Debug.Log("Free in  " + DropdownMenu.RegionSelector);
 
             string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
             int p;
@@ -25,7 +26,7 @@ public class FreeBuild : MonoBehaviour
                 p = 2;
             }
 
-            int region = Buy.RegionNumber(DropdownMenu.RegionSelector);
+            int region = Rules.RegionNumber(DropdownMenu.RegionSelector);
             if (region == -1)
             {
                 Rules.states = Rules.MyEnum.END_TURN;
@@ -41,9 +42,12 @@ public class FreeBuild : MonoBehaviour
                     Rules.Owners[region, j] += 1;
                     Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
                     childs.GetChild(region).GetChild(j - 1).gameObject.SetActive(true);
-                    //childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
-                    Debug.Log("Set Active region " + (region + 1).ToString() + " House " + j);
-                    Debug.Log("Free Build was successful");
+
+                    FindObjectOfType<AudioManager>().Stop("BuildSound");
+                    FindObjectOfType<AudioManager>().Play("BuildSound");
+
+                    //Debug.Log("Set Active region " + (region + 1).ToString() + " House " + j);
+                    //Debug.Log("Free Build was successful");
                     break;
                 }
             }

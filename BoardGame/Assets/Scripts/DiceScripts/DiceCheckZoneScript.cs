@@ -15,8 +15,11 @@ public class DiceCheckZoneScript : MonoBehaviour
 		BuilddiceVelocity = BuildDiceScript.diceVelocity;
 	}
 
+	// IF a Dice Enter in The bottom Collider, it Displays The result. If it is RollDice, The player Move or Pay.
+	// If it is The buildDice The Player learns if he will build and the final price.
 	void OnTriggerStay(Collider col)
 	{
+		// Use this boolean to roll the dice only a time per turn
 		if ((col.name.Contains("Side") && Rules.Roll1DicePerTurn))
 		{
 			if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f && diceNumber == 0)
@@ -100,30 +103,35 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
 	{
-		
+		// Fixes a bug at The start of the turn.
 		if (Rules.Turn_Counter <= 2)
 		{
 			
 			diceNumber++;
 		}
 
+		//Move The Player to the Next node and play some sounds. The next target node changes after 1 second.
 		for (int i = 1; i <= diceNumber; i++)
 		{
 			FindObjectOfType<AudioManager>().Play("CarSound");
 			CarManager.GetInstance().MoveToNext();
-			//Debug.Log("Rolled:  "+ diceNumber + "  Steps : " + i);
 			yield return new WaitForSeconds(1);
+
 			// Drift Audio
 			string turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
 			GameObject player = GameObject.FindGameObjectWithTag(turn);
 			NodeList nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
 
+
+			//If a car passes by the other Player, Horns!
 			if (GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex ==
 				  GameObject.FindGameObjectWithTag("Player 2").GetComponent<Player>().locationIndex)
 			{
 				FindObjectOfType<AudioManager>().Play("CarHorn");
 
 			}
+			
+				//Always Drift at the corners :)
 				if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node") && i<diceNumber)
             {
 				FindObjectOfType<AudioManager>().Play("Drift");

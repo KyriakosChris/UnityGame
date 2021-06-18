@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 public class EndTurnButton : MonoBehaviour
 {
-
     public void EndTurn()
     {
         // Close All the button exept rollDice, to avoid bugs at the start of each turn
@@ -21,7 +20,10 @@ public class EndTurnButton : MonoBehaviour
         InitVars.EnterButton.SetActive(false);
         InitVars.Resign.SetActive(true);
         Rules.Pay = false;
-        Rules. CamChange();
+        Rules.Roll1DicePerTurn = true;
+        Rules.CamChange();
+        Rules.Checkmoney(); // fixes some bugs
+
 
         // Delete all messages at the end of the turn.
         InitVars.Messages.GetComponent<TextMeshProUGUI>().text = null;

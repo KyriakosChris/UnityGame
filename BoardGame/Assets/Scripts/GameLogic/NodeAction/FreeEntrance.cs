@@ -9,6 +9,10 @@ public class FreeEntrance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* 
+         * If a Player is in Free entrance Node and has a region with at least one house, he can build an entrance where he wants to build it. Otherwhise, if
+         * he pass by an entry pass through, he can buy an entrance when the same conditions are met.
+         * */
         if (Rules.states == Rules.MyEnum.FREE_ENTRANCE || Rules.states == Rules.MyEnum.ENTRANCE_POINT) {
             
             
@@ -18,9 +22,11 @@ public class FreeEntrance : MonoBehaviour
             }
             string[] splitArray = DropdownMenu.EntrancePosition.Split(char.Parse(","));
             DropdownMenu.EntrancePosition = null;
-            int region = Buy.RegionNumber(splitArray[0]);
-            int position = Buy.RegionNumber(splitArray[1])+1;
-            Debug.Log("Reg " +region + " Posisiton "+ position);
+            int region =  Rules.RegionNumber(splitArray[0]);
+            int position = Rules.RegionNumber(splitArray[1])+1;
+
+            //Debug.Log("Reg " +region + " Posisiton "+ position);
+
             // Add +2 for entrance
             Rules.Owners[region, position] += 2;
             Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();

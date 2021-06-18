@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/* 
+ In this Funtion the player Moves to the next node. It gives the Vector3 as a target of the next node to the player, and he moves towards it.
+ */
 public class CarManager
 {
     private readonly GameObject car1;

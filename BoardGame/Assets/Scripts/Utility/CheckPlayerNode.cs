@@ -13,13 +13,15 @@ public class CheckPlayerNode : MonoBehaviour
         nodelist = GameObject.FindGameObjectWithTag("Inspector").GetComponent<NodeList>();
     }
 
-    // Update is called once per frame
+    /*
+     * Check if the player while was moving passed an entrance pass through and make the entrance pass through action.
+     * Then checks if in the current node the player must pay the other player. If he must pay, he pays and the turn ends.
+     * Else it check the name of the player current node and make the corresponding action.
+     */
     void Update()
     {
         turn = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         player = GameObject.FindGameObjectWithTag(turn);
-
-
 
         if (Rules.states == Rules.MyEnum.CHECK_NODE)
         {
@@ -29,16 +31,11 @@ public class CheckPlayerNode : MonoBehaviour
 
             if (Rules.PlayerEntrancePoint)
             {
-                
-                Debug.Log("Happend: " + Rules.states);
                 InitVars.Regiondropdown.SetActive(true);
                 Rules.states = Rules.MyEnum.CHOOSE_REGION_NODE;
                 return;
             }
 
-
-
-            
             Rules.CurrentPlayerNode = nodelist.nodes[(player.GetComponent<Player>().locationIndex - 1) % nodelist.nodes.Length].name;
 
             if (MustPay(TurnManager.GetInstance().GetCurrentPlayer().ToString()))
@@ -79,6 +76,10 @@ public class CheckPlayerNode : MonoBehaviour
         
         
     }
+
+    /*
+     * Check if the player must pay to the other player.
+     */
     public bool MustPay(string player)
     {
         string reg;
@@ -100,10 +101,10 @@ public class CheckPlayerNode : MonoBehaviour
 
         }
 
-        int CurrentPlayerRegion = Buy.RegionNumber(reg);
+        int CurrentPlayerRegion = Rules.RegionNumber(reg);
 
-        Debug.Log("Index "+index);
-        Debug.Log("CurrentPlayerRegion:  "+ CurrentPlayerRegion +"  When "+ reg + " Node  "+ nodelist.nodes[(index) % nodelist.nodes.Length].name);
+        //Debug.Log("Index "+index);
+        //Debug.Log("CurrentPlayerRegion:  "+ CurrentPlayerRegion +"  When "+ reg + " Node  "+ nodelist.nodes[(index) % nodelist.nodes.Length].name);
         if (Rules.Owners[CurrentPlayerRegion, 0] == 0)
             return Rules.Pay;
 
@@ -114,7 +115,7 @@ public class CheckPlayerNode : MonoBehaviour
             {
                 
                 NodesWithEntrances[i] = nodelist.nodes[i].name;
-                Debug.Log(NodesWithEntrances[i]);
+                //Debug.Log(NodesWithEntrances[i]);
             }
         }
         
@@ -123,7 +124,7 @@ public class CheckPlayerNode : MonoBehaviour
             // The region belongs to the other player and has entrance at the node that the player is.
             if(Rules.Owners[CurrentPlayerRegion,0] != p && Rules.Owners[CurrentPlayerRegion, i] >1 && nodelist.nodes[(index) % nodelist.nodes.Length].name == NodesWithEntrances[i])
             {
-                Debug.Log("PAYTIME   "+"CurrentPlayerRegion:  " + CurrentPlayerRegion + "  When " + reg + " Node  " + nodelist.nodes[(index) % nodelist.nodes.Length].name);
+                //Debug.Log("PAYTIME   "+"CurrentPlayerRegion:  " + CurrentPlayerRegion + "  When " + reg + " Node  " + nodelist.nodes[(index) % nodelist.nodes.Length].name);
                 Rules.Pay = true;
                 
             }

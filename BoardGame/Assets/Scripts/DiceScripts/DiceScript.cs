@@ -13,11 +13,11 @@ public class DiceScript : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 	}
 
-	// Update is called once per frame
+	
 	void Update()
 	{
 		diceVelocity = rb.velocity;
-
+		//Throws the Dice with a random force 
 		if (Rules.states == Rules.MyEnum.ROLL_DICE && Rules.Roll1DicePerTurn)
 		{
 			
@@ -38,8 +38,8 @@ public class DiceScript : MonoBehaviour
 			rb.AddTorque(dirX, dirY, dirZ);
 		}
 	}
-
-	public  void IsTriggers( bool onOff)
+	// Close the DiceColliderTrigger
+	public void IsTriggers( bool onOff)
     {
 		for(int i=0; i < 6; i++)
         {
@@ -47,7 +47,7 @@ public class DiceScript : MonoBehaviour
         }
     }
 
-
+	//Removes the Dice to a non Visible Area
 	public void DisappearDice()
 	{
 		transform.position = new Vector3(0, 0, 0);

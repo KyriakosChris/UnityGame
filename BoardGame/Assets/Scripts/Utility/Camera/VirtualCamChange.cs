@@ -5,7 +5,7 @@ using UnityEngine;
 public class VirtualCamChange : MonoBehaviour
 {
     public GameObject  Cam1, Cam2, Cam3;
-
+    // Changes the 3 cinemachine cameras. The 2 are for the players and one for the Dice
     private void Update()
     {
         if (TurnManager.GetInstance().GetCurrentPlayer().Equals("Player 1") && Rules.states != Rules.MyEnum.SHOW_DICE)

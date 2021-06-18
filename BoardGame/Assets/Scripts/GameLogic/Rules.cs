@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Text.RegularExpressions;
 public class Rules : MonoBehaviour
 {
 
@@ -61,4 +61,40 @@ public class Rules : MonoBehaviour
             cam = InitVars.cam1.name;
         }
     }
+
+
+    public static void Checkmoney()
+    {
+        int money;
+        if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
+            money = P1Money;
+        else
+            money = P2Money;
+        if (money < 0)
+        {
+            states = MyEnum.GAME_OVER;
+        }
+        else
+        {
+            states = MyEnum.END_TURN;
+        }
+    }
+
+    public static int RegionNumber(string reg)
+    {
+        if (reg == null)
+            return -1;
+        string[] digits = Regex.Split(reg, @"\D+");
+        foreach (string value in digits)
+        {
+
+            if (int.TryParse(value, out int number))
+            {
+                return number - 1;
+            }
+        }
+        return -1;
+    }
+
+
 }

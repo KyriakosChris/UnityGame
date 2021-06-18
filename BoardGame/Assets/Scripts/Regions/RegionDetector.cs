@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class RegionDetector : MonoBehaviour
 {
 
+    // Detects the Current Region of the player.
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player 1"))

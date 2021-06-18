@@ -15,7 +15,7 @@ public class TurnDisplay : MonoBehaviour
 		text = GetComponent<TextMeshProUGUI>();
 	}
 
-	// Update is called once per frame
+	// Display Current Turn Number;
 	void Update()
 	{
 		text.text = "TURN : "+Rules.Turn_Counter.ToString();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResignButton : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Concide Button
     public void Resign()
     {
         Rules.states = Rules.MyEnum.GAME_OVER;

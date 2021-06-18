@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
+/* Init all the gameObject that are not decor to visible or invisible at the start of the game. Here also init and some useful variables and arrays. */
 public class InitVars : MonoBehaviour
 {
 

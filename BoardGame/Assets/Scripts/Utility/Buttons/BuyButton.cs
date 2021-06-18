@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BuyButton : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Button to Buy a Region
     public void Buybutton()
     {
         Rules.states = Rules.MyEnum.BUY_NODE;

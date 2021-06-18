@@ -5,14 +5,14 @@ using TMPro;
 public class DisplayP1Money : MonoBehaviour
 {
 	TextMeshProUGUI text;
+
 	
-	// Use this for initialization
 	void Start()
 	{
 		text = GetComponent<TextMeshProUGUI>();
 	}
 
-	// Update is called once per frame
+	// Display player1 money
 	void Update()
 	{
 		text.text = Rules.P1Money.ToString();

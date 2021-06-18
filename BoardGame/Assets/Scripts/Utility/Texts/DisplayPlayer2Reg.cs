@@ -14,7 +14,7 @@ public class DisplayPlayer2Reg : MonoBehaviour
 		text = GetComponent<TextMeshProUGUI>();
 	}
 
-	// Update is called once per frame
+	// Display player2 region
 	void Update()
 	{
 		text.text =  region.ToString();

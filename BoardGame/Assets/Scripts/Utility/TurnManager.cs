@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Change the turn and the current player name.
+ */
 public class TurnManager
 {
     #region Singleton
@@ -25,14 +28,13 @@ public class TurnManager
         currentTurn = 0;
     }
 
-    private string[] players;
+    private readonly string[] players;
     private int currentTurn;
 
 
     public void EndTurn()
     {
         currentTurn++;
-        Rules.Roll1DicePerTurn = true;
         if (currentTurn>players.Length-1)
         {
             currentTurn = 0;

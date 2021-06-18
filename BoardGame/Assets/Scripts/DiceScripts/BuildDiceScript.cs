@@ -14,11 +14,12 @@ public class BuildDiceScript : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 	}
 
-	// Update is called once per frame
+	
 	void Update()
 	{
 		diceVelocity = rb.velocity;
 
+		//Throws the Dice with a random force 
 		if (Rules.states == Rules.MyEnum.ROLL_BUILDDICE)
 		{
 			Rules.CamChange();
@@ -39,7 +40,7 @@ public class BuildDiceScript : MonoBehaviour
 
 
 
-
+	// Close the DiceColliderTrigger
 	public void IsTriggers(bool onOff)
 	{
 		for (int i = 0; i < 6; i++)
@@ -48,7 +49,7 @@ public class BuildDiceScript : MonoBehaviour
 		}
 	}
 
-
+	//Removes the Dice to a non Visible Area
 	public void DisappearDice()
 	{
 		transform.position = new Vector3(0, 0, 0);

@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class NodeList : MonoBehaviour
 {
-    public GameObject[] nodes;
+    // A list with all the nodes of the game.
+    public GameObject[] nodes; 
 }

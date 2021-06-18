@@ -9,6 +9,7 @@ public class Pay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* If the player has to pay, computes the cost that he has to pay, and if after the payment the player has negative amount of money Loses. */
         if(Rules.states == Rules.MyEnum.PAY)
         {
             int cost = DiceCheckZoneScript.diceNumber * Rules.OverNight * numOfBuilding;
@@ -18,13 +19,15 @@ public class Pay : MonoBehaviour
             if (turn == "Player 1")
             {
                 Rules.P1Money-=cost;
+                Rules.P2Money += cost;
             }
             else
             {
                 Rules.P2Money -= cost;
+                Rules.P1Money += cost;
             }
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You Paid "+ cost + " $";
-            Buy.Checkmoney();
+            Rules.Checkmoney();
 
         }
     }

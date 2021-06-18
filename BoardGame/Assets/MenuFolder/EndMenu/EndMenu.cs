@@ -10,6 +10,7 @@ public class EndMenu : MonoBehaviour
 
     void Start()
     {
+        // Display the Winner Name
         if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
         {
             GameObject.Find("Name").GetComponent<TextMeshProUGUI>().text = "Player 2";
@@ -22,6 +23,7 @@ public class EndMenu : MonoBehaviour
     }
     public void Restart()
     {
+        // Restart The game, goes to init state
         Rules.states = Rules.MyEnum.INIT;
         CarManager.instance = null;
         SceneManager.LoadScene("GameScene");

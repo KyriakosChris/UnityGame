@@ -6,18 +6,13 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     public static AudioManager instance;
+
+    /* 
+    It manages the Audio that is playing. It can play many audio at the same time.
+     * */
     void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        //DontDestroyOnLoad(gameObject);
-        //init the Sounds at the start
+        //init the Sounds at the start from the list of sounds
         foreach(Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -27,10 +22,12 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
+    // Always Play The Theme Song 
     void Start()
     {
         Play("Theme");
     }
+    //Plays The song that has the given name.
     public void Play (string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -39,7 +36,7 @@ public class AudioManager : MonoBehaviour
         if (!s.source.isPlaying)
             s.source.Play();
     }
-
+    //Stop playing The song that has the given name.
     public void Stop (string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
