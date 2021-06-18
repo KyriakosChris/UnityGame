@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /* 
- In this Funtion the player Moves to the next node. It gives the Vector3 as a target of the next node to the player, and he moves towards it.
+ This script sets the new target for the player to move and increase the index of the player node.
  */
 public class CarManager
 {

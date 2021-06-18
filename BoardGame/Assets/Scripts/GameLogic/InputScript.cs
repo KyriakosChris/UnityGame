@@ -49,5 +49,6 @@ public class InputScript : MonoBehaviour
             GameObject.Find("HousesToBuild/ErrorMsg").GetComponent<Text>().text = "The input must be an integer, try again";
         }
         InitVars.Inputfield.SetActive(false);
+        InitVars.Regiondropdown.SetActive(false);
     }
 }

@@ -4,7 +4,10 @@ using UnityEngine;
 using System.Text.RegularExpressions;
 public class Rules : MonoBehaviour
 {
-
+    /*
+     This is the script that controls the flow of the game. Here there is an enumaration with states of the game that control which script is running each time.
+     There are also some public static variables that set some conditions.
+     */
     public enum MyEnum
     {
         INIT,
@@ -44,6 +47,8 @@ public class Rules : MonoBehaviour
     public static bool Pay;
     public static string cam;
 
+
+    // Change the main camera to a ViewMap camera, to see all the map while building.
     public static void CamChange()
     {
 
@@ -62,7 +67,7 @@ public class Rules : MonoBehaviour
         }
     }
 
-
+    // Check if a player has negative amount of money. If he has he loose.
     public static void Checkmoney()
     {
         int money;
@@ -80,6 +85,8 @@ public class Rules : MonoBehaviour
         }
     }
 
+
+    // Convert the Name of the region to a RegionNumber.
     public static int RegionNumber(string reg)
     {
         if (reg == null)

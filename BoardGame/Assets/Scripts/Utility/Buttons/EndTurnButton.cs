@@ -19,8 +19,11 @@ public class EndTurnButton : MonoBehaviour
         InitVars.Buybutton.SetActive(false);
         InitVars.EnterButton.SetActive(false);
         InitVars.Resign.SetActive(true);
+
         Rules.Pay = false;
         Rules.Roll1DicePerTurn = true;
+        Rules.PlayerEntrancePoint = false;
+
         Rules.CamChange();
         Rules.Checkmoney(); // fixes some bugs
 

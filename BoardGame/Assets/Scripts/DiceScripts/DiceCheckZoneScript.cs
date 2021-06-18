@@ -15,8 +15,10 @@ public class DiceCheckZoneScript : MonoBehaviour
 		BuilddiceVelocity = BuildDiceScript.diceVelocity;
 	}
 
-	// IF a Dice Enter in The bottom Collider, it Displays The result. If it is RollDice, The player Move or Pay.
-	// If it is The buildDice The Player learns if he will build and the final price.
+	/* 
+	 IF a Dice Enter in The Zone Collider, it Displays The result. If it is RollDice, The player Move or Pay.
+	 If it is The buildDice The Player learns if he will build and the final price. 
+	*/
 	void OnTriggerStay(Collider col)
 	{
 		// Use this boolean to roll the dice only a time per turn
