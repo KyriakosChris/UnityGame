@@ -74,6 +74,7 @@ public class Buy : MonoBehaviour
                     InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
                     return;
                 }
+                FindObjectOfType<AudioManager>().Play("CashOut");
                 Rules.P1Money -= Rules.CostToBuy / 2;
                 Rules.P2Money += Rules.CostToBuy / 2;
                 Rules.Owners[index, 0] = 1;
@@ -87,6 +88,7 @@ public class Buy : MonoBehaviour
                     InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
                     return;
                 }
+                FindObjectOfType<AudioManager>().Play("CashOut");
                 Rules.P2Money -= Rules.CostToBuy / 2;
                 Rules.P1Money += Rules.CostToBuy / 2;
                 Rules.Owners[index, 0] = 2;
@@ -110,6 +112,7 @@ public class Buy : MonoBehaviour
                 InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You don't have the money to buy it.";
                 return;
             }
+            FindObjectOfType<AudioManager>().Play("CashOut");
             Rules.P1Money -= Rules.CostToBuy;
             Rules.Owners[index,0] = 1;
             ColorTheRegion(1); // 1 for red 
@@ -122,6 +125,7 @@ public class Buy : MonoBehaviour
                 
                 return;
             }
+            FindObjectOfType<AudioManager>().Play("CashOut");
             Rules.P2Money -= Rules.CostToBuy;
             Rules.Owners[index,0] = 2;
             ColorTheRegion(0); // 0 for black 

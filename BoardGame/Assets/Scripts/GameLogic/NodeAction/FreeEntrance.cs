@@ -35,6 +35,7 @@ public class FreeEntrance : MonoBehaviour
             if (Rules.PlayerEntrancePoint)
             {
                 Rules.PlayerEntrancePoint = false;
+                Rules.Checkmoney();
                 Rules.states = Rules.MyEnum.CHECK_NODE;
             }
             else

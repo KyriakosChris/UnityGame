@@ -13,9 +13,13 @@ public class InputScript : MonoBehaviour
 
         if (Rules.PlayerEntrancePoint)
         {
+            InitVars.EnterButton.SetActive(false);
+            InitVars.Regiondropdown.SetActive(false);
+            InitVars.Inputfield.SetActive(false);
             Rules.states = Rules.MyEnum.ENTRANCE_POINT;
             return;
         }
+        // helps some bugs
         InitVars.Inputfield.SetActive(true);
         if (Rules.CurrentPlayerNode.Equals("Free Build Node"))
         {
@@ -36,9 +40,11 @@ public class InputScript : MonoBehaviour
         else if (int.TryParse(GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text, out InputNumber))
         {
            // Debug.Log("String is the number: " + houseNumber);
+
             InitVars.Regiondropdown.SetActive(false);
             Rules.states = Rules.MyEnum.WAITING;
             InitVars.Buildbutton.SetActive(true);
+            GameObject.Find("HousesToBuild/ErrorMsg").GetComponent<Text>().text = "";
             GameObject.Find("HousesToBuild/Text").GetComponent<Text>().text = "";
             InitVars.Inputfield.SetActive(false);
             InitVars.EnterButton.SetActive(false);
@@ -47,8 +53,10 @@ public class InputScript : MonoBehaviour
         else
         {
             GameObject.Find("HousesToBuild/ErrorMsg").GetComponent<Text>().text = "The input must be an integer, try again";
+            return;
         }
         InitVars.Inputfield.SetActive(false);
         InitVars.Regiondropdown.SetActive(false);
+        InitVars.EnterButton.SetActive(false);
     }
 }

@@ -87,9 +87,9 @@ public class DropdownMenu : MonoBehaviour
             }
         }
         // If he has only one choise.
-        if (items.Count == 1)
+        if (items.Count >= 1)
         {
-            RegionSelector = items[0];
+            EntrancePosition = items[0];
         }
 
 
@@ -102,7 +102,7 @@ public class DropdownMenu : MonoBehaviour
         {
 
             InitVars.Regiondropdown.SetActive(false);
-            
+            InitVars.EnterButton.SetActive(false);
             Rules.states = Rules.MyEnum.END_TURN;
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Buy Entrys";
             if (Rules.PlayerEntrancePoint)
@@ -162,7 +162,7 @@ public class DropdownMenu : MonoBehaviour
                 
             }
         }
-        if(items.Count == 1)
+        if(items.Count >= 1)
         {
             RegionSelector = items[0];
         }
@@ -176,6 +176,7 @@ public class DropdownMenu : MonoBehaviour
         {
             InitVars.Regiondropdown.SetActive(false);
             InitVars.Inputfield.SetActive(false);
+            InitVars.EnterButton.SetActive(false);
             InitVars.Messages.GetComponent<TextMeshProUGUI>().text = "You can't Build Houses";
             Rules.states = Rules.MyEnum.END_TURN;
         }

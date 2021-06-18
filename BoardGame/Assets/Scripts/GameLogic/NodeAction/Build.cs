@@ -72,7 +72,7 @@ public class Build : MonoBehaviour
                 childs.GetChild(region).GetChild(j-1).gameObject.SetActive(true);
                 FindObjectOfType<AudioManager>().Stop("BuildSound");
                 FindObjectOfType<AudioManager>().Play("BuildSound");
-                Debug.Log("Set Active region "+ region + 1+" House "+j);
+               // Debug.Log("Set Active region "+ region + 1+" House "+j);
                 if (turn.Equals("Player 1"))
                 {
                     Rules.P1Money -= Rules.CostToBuild;
