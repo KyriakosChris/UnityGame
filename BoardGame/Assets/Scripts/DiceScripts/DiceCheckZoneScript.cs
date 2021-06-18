@@ -139,6 +139,7 @@ public class DiceCheckZoneScript : MonoBehaviour
 		}
 
 		diceNumber = 0;
+		
 		InitVars.Endturn.SetActive(true);
 		Rules.states = Rules.MyEnum.CHECK_NODE;
 	}

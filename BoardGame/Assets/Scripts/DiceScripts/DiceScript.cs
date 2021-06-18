@@ -20,8 +20,11 @@ public class DiceScript : MonoBehaviour
 
 		if (Rules.states == Rules.MyEnum.ROLL_DICE && Rules.Roll1DicePerTurn)
 		{
-			if(Rules.Pay)
+			
+			if (Rules.Pay)
 				Rules.CamChange();
+
+			InitVars.Resign.SetActive(false);
 			InitVars.RollDice.SetActive(false);
 			IsTriggers(true);
 			Rules.states = Rules.MyEnum.SHOW_DICE;

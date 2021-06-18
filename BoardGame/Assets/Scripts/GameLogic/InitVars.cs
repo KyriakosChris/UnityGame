@@ -16,13 +16,15 @@ public class InitVars : MonoBehaviour
     public static GameObject Regiondropdown;
     public static GameObject EnterButton;
     public static GameObject Messages;
+    public static GameObject Resign;
     public static Camera cam1;
     public static Camera cam2;
     void Awake()
     {
+        // The Reset helps for restart game
         if (Rules.states == Rules.MyEnum.INIT)
         {
-            // Disable buttons
+            // Init All the buttons
             Buildbutton = GameObject.Find("BuildDiceRoll");
             RollDice = GameObject.Find("RollDiceButton");
             Endturn = GameObject.Find("EndTurnButton");
@@ -31,16 +33,16 @@ public class InitVars : MonoBehaviour
             Regiondropdown = GameObject.Find("ListOfRegion");
             EnterButton = GameObject.Find("EnterButton");
             Messages = GameObject.Find("MessagesToShow");
+            Resign = GameObject.Find("ResignButton");
             Inputfield.SetActive(false);
             Messages.SetActive(true);
+            Resign.SetActive(true);
             EnterButton.SetActive(false);
             Regiondropdown.SetActive(false);
             Buildbutton.SetActive(false);
             Buybutton.SetActive(false);
             Endturn.SetActive(false);
             Regiondropdown.GetComponent<TMP_Dropdown>().ClearOptions();
-            Debug.Log("RESTART  ");
-            Debug.Log("Loc of p1 " + GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex);
 
             // Init cameras
 
@@ -49,6 +51,7 @@ public class InitVars : MonoBehaviour
             cam1.enabled = true;
             cam2.enabled = false;
             Rules.cam = cam1.name;
+
             // Disable hotels
             Regions = GameObject.Find("Regions");
             Transform childs = Regions.GetComponentInChildren<Transform>();
@@ -59,10 +62,6 @@ public class InitVars : MonoBehaviour
                     // Keep the name of each Region
                     if(!childs.GetChild(i).GetChild(j).gameObject.name.Equals("Name"))
                         childs.GetChild(i).GetChild(j).gameObject.SetActive(false);
-                    else
-                    {
-                        //Later set color to default for restart game
-                    }
 
                 }
                 
@@ -71,7 +70,7 @@ public class InitVars : MonoBehaviour
                
         }
         
-
+        // Reset Owners Array
         for (int i = 0; i < 8; i++)
         {
             for (int j = 0; j < 5; j++)
@@ -80,6 +79,7 @@ public class InitVars : MonoBehaviour
             }
         }
 
+        // Reset some Variables
         Rules.P1Money = 2500;
         Rules.P2Money = 2500;
         Rules.Turn_Counter = 1;

@@ -8,6 +8,7 @@ public class EndTurnButton : MonoBehaviour
 
     public void EndTurn()
     {
+        // Close All the button exept rollDice, to avoid bugs at the start of each turn
         TurnManager.GetInstance().EndTurn();
         Rules.Turn_Counter++;
         InitVars.RollDice.SetActive(true);
@@ -18,6 +19,7 @@ public class EndTurnButton : MonoBehaviour
         InitVars.Inputfield.SetActive(false);
         InitVars.Buybutton.SetActive(false);
         InitVars.EnterButton.SetActive(false);
+        InitVars.Resign.SetActive(true);
         Rules.Pay = false;
         Rules. CamChange();
 

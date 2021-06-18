@@ -63,6 +63,7 @@ public class Build : MonoBehaviour
                 InputScript.InputNumber--;
                 Transform childs = GameObject.Find("Regions").GetComponentInChildren<Transform>();
                 childs.GetChild(region).GetChild(j-1).gameObject.SetActive(true);
+                FindObjectOfType<AudioManager>().Stop("BuildSound");
                 FindObjectOfType<AudioManager>().Play("BuildSound");
                 //childs.GetChild(region).GetChild(j - 1).Find("Entrance").gameObject.SetActive(false);
                 Debug.Log("Set Active region "+ region + 1+" House "+j);
@@ -73,7 +74,6 @@ public class Build : MonoBehaviour
                     {
                         Rules.states = Rules.MyEnum.GAME_OVER;
                         Rules.CostToBuild = 200;
-                        Debug.Log("Dead");
                         return;
                     }
                 }
@@ -84,7 +84,6 @@ public class Build : MonoBehaviour
                     {
                         Rules.states = Rules.MyEnum.GAME_OVER;
                         Rules.CostToBuild = 200;
-                        Debug.Log("Dead");
                         return;
                     }
                 }
