@@ -11,6 +11,7 @@ public class GameOverScene : MonoBehaviour
         // Change The scene when a player loose. 
         if (Rules.states == Rules.MyEnum.GAME_OVER)
         {
+            TurnManager.GetInstance().EndTurn();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             
             

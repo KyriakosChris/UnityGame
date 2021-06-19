@@ -8,8 +8,7 @@ public class EndTurnButton : MonoBehaviour
     public void EndTurn()
     {
         // Close All the button exept rollDice, to avoid bugs at the start of each turn
-        TurnManager.GetInstance().EndTurn();
-        Rules.Turn_Counter++;
+        
         InitVars.RollDice.SetActive(true);
         InitVars.Buybutton.SetActive(false);
         InitVars.Regiondropdown.SetActive(false);
@@ -26,7 +25,8 @@ public class EndTurnButton : MonoBehaviour
 
         Rules.CamChange();
         Rules.Checkmoney(); // fixes some bugs
-
+        Rules.Turn_Counter++;
+        TurnManager.GetInstance().EndTurn();
 
         // Delete all messages at the end of the turn.
         InitVars.Messages.GetComponent<TextMeshProUGUI>().text = null;

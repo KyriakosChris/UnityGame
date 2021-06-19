@@ -8,7 +8,7 @@ using UnityEngine;
 public class TurnManager
 {
     #region Singleton
-    private static TurnManager instance = null;
+    public static TurnManager instance = null;
     public static TurnManager GetInstance()
     {
         if (instance == null)

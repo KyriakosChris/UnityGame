@@ -46,6 +46,7 @@ public class Rules : MonoBehaviour
     public static bool PlayerEntrancePoint;
     public static bool Pay;
     public static string cam;
+    public static string Winner;
 
 
     // Change the main camera to a ViewMap camera, to see all the map while building.
@@ -72,17 +73,29 @@ public class Rules : MonoBehaviour
     {
         int money;
         if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
+        {
+            //Debug.Log("P1 "+TurnManager.GetInstance().GetCurrentPlayer().ToString());
             money = P1Money;
+        }
         else
+        {
+            //Debug.Log("P2 " + TurnManager.GetInstance().GetCurrentPlayer().ToString());
             money = P2Money;
+        }
+        //Debug.Log("Turn player  " + TurnManager.GetInstance().GetCurrentPlayer().ToString() + "  Winner " + Turn_Counter + "  is " + Winner +" money  "+ money);
         if (money < 0)
         {
+
             states = MyEnum.GAME_OVER;
+            
         }
-        else
+        else if (!PlayerEntrancePoint)
         {
             states = MyEnum.END_TURN;
+            
         }
+        else
+            states = MyEnum.CHECK_NODE;
     }
 
 

@@ -105,13 +105,14 @@ public class DiceCheckZoneScript : MonoBehaviour
 
 	IEnumerator MoveToNextNode()
 	{
+		bool secureDrift = true;
 		// Fixes a bug at The start of the turn.
 		if (Rules.Turn_Counter <= 2)
 		{
-			
+			secureDrift = false;
 			diceNumber++;
 		}
-
+		
 		//Move The Player to the Next node and play some sounds. The next target node changes after 1 second.
 		for (int i = 1; i <= diceNumber; i++)
 		{
@@ -132,12 +133,17 @@ public class DiceCheckZoneScript : MonoBehaviour
 				FindObjectOfType<AudioManager>().Play("CarHorn");
 
 			}
-			
-				//Always Drift at the corners :)
-				if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node") && i<diceNumber)
+			// Drift even if it is in the node before the decor
+			if (nodelist.nodes[(player.GetComponent<Player>().locationIndex-1) % nodelist.nodes.Length].name.Equals("Decor Node") && secureDrift)
+			{
+				FindObjectOfType<AudioManager>().Play("Drift");
+			}
+			//Always Drift at the corners :)
+			if (nodelist.nodes[(player.GetComponent<Player>().locationIndex) % nodelist.nodes.Length].name.Equals("Decor Node") && i<diceNumber)
             {
 				FindObjectOfType<AudioManager>().Play("Drift");
             }
+			secureDrift = false;
 		}
 		// If they end up in the same block, move to the next one.
 		if(GameObject.FindGameObjectWithTag("Player 1").GetComponent<Player>().locationIndex ==

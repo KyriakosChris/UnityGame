@@ -34,9 +34,19 @@ public class FreeEntrance : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("BuildSound");
             if (Rules.PlayerEntrancePoint)
             {
-                Rules.PlayerEntrancePoint = false;
-                Rules.Checkmoney();
+
+                if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
+                {
+                    Rules.P1Money -= Rules.EntryCost;
+                }
+                else
+                {
+                    Rules.P2Money -= Rules.EntryCost;
+                }
+                
                 Rules.states = Rules.MyEnum.CHECK_NODE;
+                Rules.Checkmoney();
+                Rules.PlayerEntrancePoint = false;
             }
             else
             {

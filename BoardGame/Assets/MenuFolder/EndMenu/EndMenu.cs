@@ -11,21 +11,17 @@ public class EndMenu : MonoBehaviour
     void Start()
     {
         // Display the Winner Name
-        if (TurnManager.GetInstance().GetCurrentPlayer().ToString().Equals("Player 1"))
-        {
-            GameObject.Find("Name").GetComponent<TextMeshProUGUI>().text = "Player 2";
-        }
+        if (Rules.Winner == null)
+            GameObject.Find("Name").GetComponent<TextMeshProUGUI>().text = TurnManager.GetInstance().GetCurrentPlayer().ToString();
         else
-        {
-            TurnManager.GetInstance().EndTurn();
-            GameObject.Find("Name").GetComponent<TextMeshProUGUI>().text = "Player 1";
-        }
+            GameObject.Find("Name").GetComponent<TextMeshProUGUI>().text = Rules.Winner;
     }
     public void Restart()
     {
-        // Restart The game, goes to init state
+        // Restart The game, goes to init state and reset instances
         Rules.states = Rules.MyEnum.INIT;
         CarManager.instance = null;
+        TurnManager.instance = null;
         SceneManager.LoadScene("GameScene");
     }
 

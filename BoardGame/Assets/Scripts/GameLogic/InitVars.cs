@@ -45,7 +45,7 @@ public class InitVars : MonoBehaviour
             Buybutton.SetActive(false);
             Endturn.SetActive(false);
             Regiondropdown.GetComponent<TMP_Dropdown>().ClearOptions();
-
+            Rules.Winner = null;
             // Init cameras
 
             cam1 =GameObject.Find("Player_camera").GetComponent<Camera>();

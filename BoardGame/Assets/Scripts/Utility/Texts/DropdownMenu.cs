@@ -115,18 +115,7 @@ public class DropdownMenu : MonoBehaviour
         }
         else
         {
-            if (Rules.PlayerEntrancePoint)
-            {
-                if (turn.Equals("Player 1"))
-                {
-                    Rules.P1Money -= Rules.EntryCost;
-                }
-                else
-                {
-                    Rules.P2Money -= Rules.EntryCost;
-                }
 
-            }
             Rules.states = Rules.MyEnum.WAITING;
             InitVars.EnterButton.SetActive(true);
         }
